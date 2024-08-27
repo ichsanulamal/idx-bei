@@ -1,1 +1,0 @@
-GetPerfSumLq45Company

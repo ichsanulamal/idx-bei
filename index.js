@@ -15,6 +15,12 @@ export { getBrokerSummary } from "./market-data/trading-summary/broker-summary/G
 
 export { getPedSummary } from "./market-data/trading-summary/ped-summary/getPedSummary.js";
 
+export { getStatistic } from "./market-data/statistical-reports/statistics/getStatistic.js";
+export { getPerfSumLq45Company } from "./market-data/statistical-reports/company-fact-sheet-lq45/getPerfSumLq45Company.js";
+export { getBook } from "./market-data/statistical-reports/bond-book/getBook.js";
+export { getFactSheetIndex } from "./market-data/statistical-reports/fact-sheet-index/getFactSheetIndex.js";
+export { getNewListing } from "./market-data/statistical-reports/new-listing-information/getNewListing.js";
+
 export { getIndexGroupPrevalues } from "./market-data/stocks-data/stock-index/getIndexGroupPrevalues.js";
 export { getStockUploader } from "./market-data/stocks-data/stock-index/getStockUploader.js";
 
@@ -79,19 +85,22 @@ export { getSlbTopActiveStock } from "./market-data/securities-borrowing-and-len
 export { getSlbTopLenderFreq } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderFreq.js";
 export { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderVal.js";
 
-import { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderVal.js";
+// getBook
 
-const data = await getSlbTopLenderVal();
 
-https://www.idx.co.id/primary/MarketData/GetAbsSearchTable?draw=1&start=0&length=9999&yearMatured=&bondId=SPSMFBTN02A2
-// console.log(data);
-// const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
+// getStatistic
 
-// Write JSON to file
-fs.writeFile('data.json', data, (err) => {
-  if (err) {
-    console.error('Error writing to file', err);
-  } else {
-    console.log('Data successfully written to file');
-  }
-});
+// const data = await getSlbTopLenderVal();
+
+// https://www.idx.co.id/primary/MarketData/GetAbsSearchTable?draw=1&start=0&length=9999&yearMatured=&bondId=SPSMFBTN02A2
+// // console.log(data);
+// // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
+
+// // Write JSON to file
+// fs.writeFile('data.json', data, (err) => {
+//   if (err) {
+//     console.error('Error writing to file', err);
+//   } else {
+//     console.log('Data successfully written to file');
+//   }
+// });
