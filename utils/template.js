@@ -2,6 +2,7 @@ import fs from 'fs';
 
 // Helper function to fetch data from the server
 async function fetchData(url, referrer) {
+  console.log(`fetching ${url}`)
   const response = await fetch(url, {
     headers: {
       "accept": "application/json, text/plain, */*",
