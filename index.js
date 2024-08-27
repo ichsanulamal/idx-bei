@@ -23,7 +23,12 @@ import { getBrokerSummary } from "./market-data/trading-summary/broker-summary/G
 
 import { getPedSummary } from "./market-data/trading-summary/ped-summary/getPedSummary.js";
 
-const data = await getPedSummary();
+import { getIndexGroupPrevalues } from "./market-data/stocks-data/stock-index/getIndexGroupPrevalues.js";
+import { getStockUploader } from "./market-data/stocks-data/stock-index/getStockUploader.js";
+
+
+
+const data = await getIndexGroupPrevalues();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 

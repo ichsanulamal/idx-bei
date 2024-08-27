@@ -1,21 +1,138 @@
-{
-  "SearchCriteria": {
-    "date": null,
-    "indexfrom": 1,
-    "pagesize": 9999
+[
+  {
+    "IndexCode": "LQ45",
+    "IndexName": "LQ45"
   },
-  "ResultCount": 1,
-  "Results": [
-    {
-      "No": 1,
-      "Id": 10795,
-      "BrokerCode": "CC",
-      "Date": "2024-08-27T00:00:00",
-      "IDFirm": "JB",
-      "FirmName": "BJB Sekuritas Jawa Barat",
-      "Volume": 3969500,
-      "Value": 5316265900,
-      "Frequency": 269
-    }
-  ]
-}
+  {
+    "IndexCode": "IDX30",
+    "IndexName": "IDX30"
+  },
+  {
+    "IndexCode": "KOMPAS100",
+    "IndexName": "KOMPAS100"
+  },
+  {
+    "IndexCode": "BISNIS-27",
+    "IndexName": "BISNIS-27"
+  },
+  {
+    "IndexCode": "PEFINDO25",
+    "IndexName": "PEFINDO25"
+  },
+  {
+    "IndexCode": "SRI-KEHATI",
+    "IndexName": "SRI-KEHATI"
+  },
+  {
+    "IndexCode": "JII",
+    "IndexName": "JII"
+  },
+  {
+    "IndexCode": "ISSI",
+    "IndexName": "ISSI"
+  },
+  {
+    "IndexCode": "INFOBANK15",
+    "IndexName": "INFOBANK15"
+  },
+  {
+    "IndexCode": "SMINFRA18",
+    "IndexName": "SMInfra18"
+  },
+  {
+    "IndexCode": "MNC36",
+    "IndexName": "MNC36"
+  },
+  {
+    "IndexCode": "INVESTOR33",
+    "IndexName": "Investor33"
+  },
+  {
+    "IndexCode": "IDXSMC-COM",
+    "IndexName": "IDXSMC-COM"
+  },
+  {
+    "IndexCode": "IDXSMC-LIQ",
+    "IndexName": "IDXSMC-LIQ"
+  },
+  {
+    "IndexCode": "I-GRADE",
+    "IndexName": "I-GRADE"
+  },
+  {
+    "IndexCode": "IDXBUMN20",
+    "IndexName": "IDXBUMN20"
+  },
+  {
+    "IndexCode": "IDXHIDIV20",
+    "IndexName": "IDXHIDIV20"
+  },
+  {
+    "IndexCode": "JII70",
+    "IndexName": "JII70"
+  },
+  {
+    "IndexCode": "IDX80",
+    "IndexName": "IDX80"
+  },
+  {
+    "IndexCode": "IDXV30",
+    "IndexName": "IDXV30"
+  },
+  {
+    "IndexCode": "IDXG30",
+    "IndexName": "IDXG30"
+  },
+  {
+    "IndexCode": "IDXQ30",
+    "IndexName": "IDXQ30"
+  },
+  {
+    "IndexCode": "IDXESGL",
+    "IndexName": "IDXESGL"
+  },
+  {
+    "IndexCode": "IDX-IC",
+    "IndexName": "Sector Indices (IDX-IC)"
+  },
+  {
+    "IndexCode": "IDXSHAGROW",
+    "IndexName": "IDXSHAGROW"
+  },
+  {
+    "IndexCode": "ESGSKEHATI",
+    "IndexName": "ESGSKEHATI"
+  },
+  {
+    "IndexCode": "ESGQKEHATI",
+    "IndexName": "ESGQKEHATI"
+  },
+  {
+    "IndexCode": "IDXLQ45LCL",
+    "IndexName": "IDXLQ45LCL"
+  },
+  {
+    "IndexCode": "IDXMESBUMN",
+    "IndexName": "IDXMESBUMN"
+  },
+  {
+    "IndexCode": "MBX",
+    "IndexName": "MBX"
+  },
+  {
+    "IndexCode": "DBX",
+    "IndexName": "DBX"
+  },
+  {
+    "IndexCode": "ABX",
+    "IndexName": "ABX"
+  },
+  {
+    "IndexCode": "PRIMBANK10",
+    "IndexName": "PRIMBANK10"
+  },
+  {
+    "IndexCode": "ECONOMIC30",
+    "IndexName": "ECONOMIC30"
+  }
+]
