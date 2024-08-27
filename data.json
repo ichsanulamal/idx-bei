@@ -1,0 +1,1748 @@
+[
+  {
+    "Nomor": 1,
+    "BondId": "VR0060                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0060                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-11-23T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 6750000000000
+  },
+  {
+    "Nomor": 2,
+    "BondId": "VR0061                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0061                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-11-23T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 6750000000000
+  },
+  {
+    "Nomor": 3,
+    "BondId": "FR0088                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0088                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2036-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 54994500000000
+  },
+  {
+    "Nomor": 4,
+    "BondId": "PBS029                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS029                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2034-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 78666794000000
+  },
+  {
+    "Nomor": 5,
+    "BondId": "FR0091                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0091                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2032-04-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 179978300000000
+  },
+  {
+    "Nomor": 6,
+    "BondId": "FR0092                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0092                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2042-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 108828400000000
+  },
+  {
+    "Nomor": 7,
+    "BondId": "PBS030                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS030                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 31915000000000
+  },
+  {
+    "Nomor": 8,
+    "BondId": "PBS032                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS032                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 77807000000000
+  },
+  {
+    "Nomor": 9,
+    "BondId": "ORI020                                                                                              ",
+    "BondName": "Obligasi Negara Ritel Seri ORI020                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 15000000000000
+  },
+  {
+    "Nomor": 10,
+    "BondId": "VR0066                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0066                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 14500000000000
+  },
+  {
+    "Nomor": 11,
+    "BondId": "VR0067                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0067                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 14500000000000
+  },
+  {
+    "Nomor": 12,
+    "BondId": "VR0068                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0068                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 14500000000000
+  },
+  {
+    "Nomor": 13,
+    "BondId": "SR015                                                                                               ",
+    "BondName": "Sukuk Negara Ritel Seri SR-015                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 27000639000000
+  },
+  {
+    "Nomor": 14,
+    "BondId": "VR0069                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0069                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 14500000000000
+  },
+  {
+    "Nomor": 15,
+    "BondId": "VR0071                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0071                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 40000000000000
+  },
+  {
+    "Nomor": 16,
+    "BondId": "VR0073                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0073                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 37000000000000
+  },
+  {
+    "Nomor": 17,
+    "BondId": "VR0070                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0070                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 40000000000000
+  },
+  {
+    "Nomor": 18,
+    "BondId": "VR0072                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0072                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 40000000000000
+  },
+  {
+    "Nomor": 19,
+    "BondId": "FR0093                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0093                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2037-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 19193000000000
+  },
+  {
+    "Nomor": 20,
+    "BondId": "PBS033                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS033                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2047-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 52427000000000
+  },
+  {
+    "Nomor": 21,
+    "BondId": "PBS034                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS034                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2039-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 19295000000000
+  },
+  {
+    "Nomor": 22,
+    "BondId": "ORI021                                                                                              ",
+    "BondName": "Obligasi Negara Ritel Seri ORI021                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 25065802000000
+  },
+  {
+    "Nomor": 23,
+    "BondId": "VR0085                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0085                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 24,
+    "BondId": "FR0094                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0094                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-01-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3990927000000
+  },
+  {
+    "Nomor": 25,
+    "BondId": "SR016                                                                                               ",
+    "BondName": "Sukuk Negara Ritel seri SR-016                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-03-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 18409546000000
+  },
+  {
+    "Nomor": 26,
+    "BondId": "USDFR0003                                                                                           ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri USDFR0003                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2032-01-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 127099000
+  },
+  {
+    "Nomor": 27,
+    "BondId": "PBS035                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS035                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2042-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1908862000000
+  },
+  {
+    "Nomor": 28,
+    "BondId": "VR0074                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0074                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467230000000
+  },
+  {
+    "Nomor": 29,
+    "BondId": "VR0075                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0075                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467240000000
+  },
+  {
+    "Nomor": 30,
+    "BondId": "VR0076                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0076                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467240000000
+  },
+  {
+    "Nomor": 31,
+    "BondId": "VR0077                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0077                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467240000000
+  },
+  {
+    "Nomor": 32,
+    "BondId": "FR0096                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0096                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2033-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 152564000000000
+  },
+  {
+    "Nomor": 33,
+    "BondId": "FR0097                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0097                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2043-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 90904300000000
+  },
+  {
+    "Nomor": 34,
+    "BondId": "VR0078                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0078                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 35,
+    "BondId": "VR0079                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0079                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 36,
+    "BondId": "VR0080                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0080                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 37,
+    "BondId": "VR0081                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0081                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 38,
+    "BondId": "VR0082                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0082                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 39,
+    "BondId": "VR0083                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0083                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 40,
+    "BondId": "VR0084                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0084                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 41,
+    "BondId": "PBS036                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS036                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-08-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 78797600000000
+  },
+  {
+    "Nomor": 42,
+    "BondId": "FR0095                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0095                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-08-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 99123000000000
+  },
+  {
+    "Nomor": 43,
+    "BondId": "PBSG001                                                                                             ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBSG001                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-09-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 30320000000000
+  },
+  {
+    "Nomor": 44,
+    "BondId": "USDPBS004                                                                                           ",
+    "BondName": "Surat Berharga Syariah Negara Seri USDPBS004                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-09-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 25000000
+  },
+  {
+    "Nomor": 45,
+    "BondId": "USDPBS003                                                                                           ",
+    "BondName": "Surat Berharga Syariah Negara Seri USDPBS003                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-09-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 150000000
+  },
+  {
+    "Nomor": 46,
+    "BondId": "FR0098                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0098                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2038-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 100399000000000
+  },
+  {
+    "Nomor": 47,
+    "BondId": "VR0086                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0086                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288330000000
+  },
+  {
+    "Nomor": 48,
+    "BondId": "VR0087                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0087                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288330000000
+  },
+  {
+    "Nomor": 49,
+    "BondId": "FRS001                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri FRS001                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288320000000
+  },
+  {
+    "Nomor": 50,
+    "BondId": "FRS002                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri FRS002                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288330000000
+  },
+  {
+    "Nomor": 51,
+    "BondId": "SR017                                                                                               ",
+    "BondName": "Sukuk Negara Ritel seri SR-017                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 26974976000000
+  },
+  {
+    "Nomor": 52,
+    "BondId": "ORI022                                                                                              ",
+    "BondName": "Obligasi Negara Ritel Seri ORI022                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 13017714000000
+  },
+  {
+    "Nomor": 53,
+    "BondId": "FRSDG001                                                                                            ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FRSDG001                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 12160000000000
+  },
+  {
+    "Nomor": 54,
+    "BondId": "VR0088                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0088                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334205000000
+  },
+  {
+    "Nomor": 55,
+    "BondId": "VR0089                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0089                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334195000000
+  },
+  {
+    "Nomor": 56,
+    "BondId": "VR0090                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0090                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334195000000
+  },
+  {
+    "Nomor": 57,
+    "BondId": "VR0092                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0092                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810245000000
+  },
+  {
+    "Nomor": 58,
+    "BondId": "VR0093                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0093                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810235000000
+  },
+  {
+    "Nomor": 59,
+    "BondId": "VR0094                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0094                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810235000000
+  },
+  {
+    "Nomor": 60,
+    "BondId": "VR0095                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0095                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810235000000
+  },
+  {
+    "Nomor": 61,
+    "BondId": "VR0091                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0091                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334195000000
+  },
+  {
+    "Nomor": 62,
+    "BondId": "FR0099                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0099                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-01-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2871531000000
+  },
+  {
+    "Nomor": 63,
+    "BondId": "SR018T5                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR018T5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-03-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 4544818000000
+  },
+  {
+    "Nomor": 64,
+    "BondId": "SR018T3                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR018T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-03-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 16949759000000
+  },
+  {
+    "Nomor": 65,
+    "BondId": "PBS020                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS020                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2250000000000
+  },
+  {
+    "Nomor": 66,
+    "BondId": "FR0044                                                                                              ",
+    "BondName": "Obligasi Negara Th. 2007 Seri FR0044                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 17138000000000
+  },
+  {
+    "Nomor": 67,
+    "BondId": "FR0065                                                                                              ",
+    "BondName": "Obligasi Negara RI Seri FR0065                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2033-05-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 96392304000000
+  },
+  {
+    "Nomor": 68,
+    "BondId": "FR0054                                                                                              ",
+    "BondName": "Obligasi Negara RI Seri FR0054                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 27096000000000
+  },
+  {
+    "Nomor": 69,
+    "BondId": "IFR0006                                                                                             ",
+    "BondName": "SBSN RI Seri IFR-0006                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2175000000000
+  },
+  {
+    "Nomor": 70,
+    "BondId": "PBS012                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS012                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-11-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 47680694000000
+  },
+  {
+    "Nomor": 71,
+    "BondId": "FR0085                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0085                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-04-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 21177940000000
+  },
+  {
+    "Nomor": 72,
+    "BondId": "FR0087                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0087                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 182911300000000
+  },
+  {
+    "Nomor": 73,
+    "BondId": "VR0042                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0042                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-09-28T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 21100000000000
+  },
+  {
+    "Nomor": 74,
+    "BondId": "FR0089                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0089                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2051-08-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 73674385000000
+  },
+  {
+    "Nomor": 75,
+    "BondId": "PBS037                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS037                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2036-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 30350000000000
+  },
+  {
+    "Nomor": 76,
+    "BondId": "ORI023T6                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI023T6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8900050000000
+  },
+  {
+    "Nomor": 77,
+    "BondId": "ORI023T3                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI023T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 20000000000000
+  },
+  {
+    "Nomor": 78,
+    "BondId": "FR0100                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0100                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2034-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 158676489000000
+  },
+  {
+    "Nomor": 79,
+    "BondId": "SR019T5                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR019T5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7790600000000
+  },
+  {
+    "Nomor": 80,
+    "BondId": "SR019T3                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR019T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 17543813000000
+  },
+  {
+    "Nomor": 81,
+    "BondId": "FR0101                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0101                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-04-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 155368877000000
+  },
+  {
+    "Nomor": 82,
+    "BondId": "ORI024T6                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI024T6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2644853000000
+  },
+  {
+    "Nomor": 83,
+    "BondId": "ORI024T3                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI024T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 11862803000000
+  },
+  {
+    "Nomor": 84,
+    "BondId": "SPN12241114                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12241114                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-11-14T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3150000000000
+  },
+  {
+    "Nomor": 85,
+    "BondId": "PBS038                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS038                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2049-12-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 36108000000000
+  },
+  {
+    "Nomor": 86,
+    "BondId": "SPN12241212                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12241212                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-12-12T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 300000000000
+  },
+  {
+    "Nomor": 87,
+    "BondId": "FR0102                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0102                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2054-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 34741000000000
+  },
+  {
+    "Nomor": 88,
+    "BondId": "SPNS07102024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS07102024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-10-07T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2850000000000
+  },
+  {
+    "Nomor": 89,
+    "BondId": "PBS039                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS039                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2041-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7065500000000
+  },
+  {
+    "Nomor": 90,
+    "BondId": "SPN12250116                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250116                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-01-16T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1100000000000
+  },
+  {
+    "Nomor": 91,
+    "BondId": "SPN12250213                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250213                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-02-13T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3250000000000
+  },
+  {
+    "Nomor": 92,
+    "BondId": "SPNS18112024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS18112024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-11-18T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3250000000000
+  },
+  {
+    "Nomor": 93,
+    "BondId": "ORI025T3                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI025T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 19381360000000
+  },
+  {
+    "Nomor": 94,
+    "BondId": "ORI025T6                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI025T6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 4539342000000
+  },
+  {
+    "Nomor": 95,
+    "BondId": "SPNS03092024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS03092024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-03T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 650000000000
+  },
+  {
+    "Nomor": 96,
+    "BondId": "SPNS02122024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS02122024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3100000000000
+  },
+  {
+    "Nomor": 97,
+    "BondId": "SPN12250314                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250314                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-03-14T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3400000000000
+  },
+  {
+    "Nomor": 98,
+    "BondId": "SPN12250502                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250502                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-05-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2600000000000
+  },
+  {
+    "Nomor": 99,
+    "BondId": "SPNS02022025                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS02022025                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-02-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 4075600000000
+  },
+  {
+    "Nomor": 100,
+    "BondId": "SPN03240925                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN03240925                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-25T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 350000000000
+  },
+  {
+    "Nomor": 101,
+    "BondId": "VR0069                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0069                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 14500000000000
+  },
+  {
+    "Nomor": 102,
+    "BondId": "VR0071                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0071                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 40000000000000
+  },
+  {
+    "Nomor": 103,
+    "BondId": "VR0073                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0073                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 37000000000000
+  },
+  {
+    "Nomor": 104,
+    "BondId": "VR0070                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0070                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 40000000000000
+  },
+  {
+    "Nomor": 105,
+    "BondId": "VR0072                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0072                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-30T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 40000000000000
+  },
+  {
+    "Nomor": 106,
+    "BondId": "FR0093                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0093                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2037-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 19193000000000
+  },
+  {
+    "Nomor": 107,
+    "BondId": "PBS033                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS033                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2047-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 52427000000000
+  },
+  {
+    "Nomor": 108,
+    "BondId": "PBS034                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS034                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2039-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 19295000000000
+  },
+  {
+    "Nomor": 109,
+    "BondId": "ORI021                                                                                              ",
+    "BondName": "Obligasi Negara Ritel Seri ORI021                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 25065802000000
+  },
+  {
+    "Nomor": 110,
+    "BondId": "VR0085                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0085                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 111,
+    "BondId": "FR0094                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0094                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-01-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3990927000000
+  },
+  {
+    "Nomor": 112,
+    "BondId": "SR016                                                                                               ",
+    "BondName": "Sukuk Negara Ritel seri SR-016                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-03-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 18409546000000
+  },
+  {
+    "Nomor": 113,
+    "BondId": "USDFR0003                                                                                           ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri USDFR0003                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2032-01-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 127099000
+  },
+  {
+    "Nomor": 114,
+    "BondId": "PBS035                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS035                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2042-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1908862000000
+  },
+  {
+    "Nomor": 115,
+    "BondId": "VR0074                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0074                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467230000000
+  },
+  {
+    "Nomor": 116,
+    "BondId": "VR0075                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0075                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467240000000
+  },
+  {
+    "Nomor": 117,
+    "BondId": "VR0076                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0076                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467240000000
+  },
+  {
+    "Nomor": 118,
+    "BondId": "VR0077                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0077                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-07-01T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 5467240000000
+  },
+  {
+    "Nomor": 119,
+    "BondId": "FR0096                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0096                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2033-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 152564000000000
+  },
+  {
+    "Nomor": 120,
+    "BondId": "FR0097                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0097                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2043-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 90904300000000
+  },
+  {
+    "Nomor": 121,
+    "BondId": "VR0078                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0078                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 122,
+    "BondId": "VR0079                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0079                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 123,
+    "BondId": "VR0080                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0080                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 124,
+    "BondId": "VR0081                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0081                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2198565000000
+  },
+  {
+    "Nomor": 125,
+    "BondId": "VR0082                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0082                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 126,
+    "BondId": "VR0083                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0083                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 127,
+    "BondId": "VR0084                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0084                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-08-26T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7901435000000
+  },
+  {
+    "Nomor": 128,
+    "BondId": "PBS036                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS036                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-08-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 78797600000000
+  },
+  {
+    "Nomor": 129,
+    "BondId": "FR0095                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0095                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-08-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 99123000000000
+  },
+  {
+    "Nomor": 130,
+    "BondId": "PBSG001                                                                                             ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBSG001                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-09-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 30320000000000
+  },
+  {
+    "Nomor": 131,
+    "BondId": "USDPBS004                                                                                           ",
+    "BondName": "Surat Berharga Syariah Negara Seri USDPBS004                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-09-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 25000000
+  },
+  {
+    "Nomor": 132,
+    "BondId": "USDPBS003                                                                                           ",
+    "BondName": "Surat Berharga Syariah Negara Seri USDPBS003                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-09-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 150000000
+  },
+  {
+    "Nomor": 133,
+    "BondId": "FR0098                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0098                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2038-06-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 100399000000000
+  },
+  {
+    "Nomor": 134,
+    "BondId": "VR0086                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0086                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288330000000
+  },
+  {
+    "Nomor": 135,
+    "BondId": "VR0087                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0087                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288330000000
+  },
+  {
+    "Nomor": 136,
+    "BondId": "FRS001                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri FRS001                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288320000000
+  },
+  {
+    "Nomor": 137,
+    "BondId": "FRS002                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri FRS002                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-09-27T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8288330000000
+  },
+  {
+    "Nomor": 138,
+    "BondId": "SR017                                                                                               ",
+    "BondName": "Sukuk Negara Ritel seri SR-017                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 26974976000000
+  },
+  {
+    "Nomor": 139,
+    "BondId": "ORI022                                                                                              ",
+    "BondName": "Obligasi Negara Ritel Seri ORI022                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 13017714000000
+  },
+  {
+    "Nomor": 140,
+    "BondId": "FRSDG001                                                                                            ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FRSDG001                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 12160000000000
+  },
+  {
+    "Nomor": 141,
+    "BondId": "VR0088                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0088                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334205000000
+  },
+  {
+    "Nomor": 142,
+    "BondId": "VR0089                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0089                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334195000000
+  },
+  {
+    "Nomor": 143,
+    "BondId": "VR0090                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0090                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334195000000
+  },
+  {
+    "Nomor": 144,
+    "BondId": "VR0092                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0092                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810245000000
+  },
+  {
+    "Nomor": 145,
+    "BondId": "VR0093                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0093                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810235000000
+  },
+  {
+    "Nomor": 146,
+    "BondId": "VR0094                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0094                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810235000000
+  },
+  {
+    "Nomor": 147,
+    "BondId": "VR0095                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0095                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 29810235000000
+  },
+  {
+    "Nomor": 148,
+    "BondId": "VR0091                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0091                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-12-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2334195000000
+  },
+  {
+    "Nomor": 149,
+    "BondId": "FR0099                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0099                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-01-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2871531000000
+  },
+  {
+    "Nomor": 150,
+    "BondId": "SR018T5                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR018T5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-03-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 4544818000000
+  },
+  {
+    "Nomor": 151,
+    "BondId": "SR018T3                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR018T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-03-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 16949759000000
+  },
+  {
+    "Nomor": 152,
+    "BondId": "PBS020                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS020                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2250000000000
+  },
+  {
+    "Nomor": 153,
+    "BondId": "FR0044                                                                                              ",
+    "BondName": "Obligasi Negara Th. 2007 Seri FR0044                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 17138000000000
+  },
+  {
+    "Nomor": 154,
+    "BondId": "FR0065                                                                                              ",
+    "BondName": "Obligasi Negara RI Seri FR0065                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2033-05-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 96392304000000
+  },
+  {
+    "Nomor": 155,
+    "BondId": "FR0054                                                                                              ",
+    "BondName": "Obligasi Negara RI Seri FR0054                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 27096000000000
+  },
+  {
+    "Nomor": 156,
+    "BondId": "IFR0006                                                                                             ",
+    "BondName": "SBSN RI Seri IFR-0006                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2175000000000
+  },
+  {
+    "Nomor": 157,
+    "BondId": "PBS012                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS012                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-11-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 47680694000000
+  },
+  {
+    "Nomor": 158,
+    "BondId": "FR0085                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0085                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-04-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 21177940000000
+  },
+  {
+    "Nomor": 159,
+    "BondId": "FR0087                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0087                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2031-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 182911300000000
+  },
+  {
+    "Nomor": 160,
+    "BondId": "VR0042                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri VR0042                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-09-28T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 21100000000000
+  },
+  {
+    "Nomor": 161,
+    "BondId": "FR0089                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0089                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2051-08-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 73674385000000
+  },
+  {
+    "Nomor": 162,
+    "BondId": "PBS037                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS037                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2036-03-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 30350000000000
+  },
+  {
+    "Nomor": 163,
+    "BondId": "ORI023T6                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI023T6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 8900050000000
+  },
+  {
+    "Nomor": 164,
+    "BondId": "ORI023T3                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI023T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 20000000000000
+  },
+  {
+    "Nomor": 165,
+    "BondId": "FR0100                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0100                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2034-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 158676489000000
+  },
+  {
+    "Nomor": 166,
+    "BondId": "SR019T5                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR019T5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2028-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7790600000000
+  },
+  {
+    "Nomor": 167,
+    "BondId": "SR019T3                                                                                             ",
+    "BondName": "Sukuk Negara Ritel Seri SR019T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-09-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 17543813000000
+  },
+  {
+    "Nomor": 168,
+    "BondId": "FR0101                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0101                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-04-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 155368877000000
+  },
+  {
+    "Nomor": 169,
+    "BondId": "ORI024T6                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI024T6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2029-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2644853000000
+  },
+  {
+    "Nomor": 170,
+    "BondId": "ORI024T3                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI024T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2026-10-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 11862803000000
+  },
+  {
+    "Nomor": 171,
+    "BondId": "SPN12241114                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12241114                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-11-14T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3150000000000
+  },
+  {
+    "Nomor": 172,
+    "BondId": "PBS038                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS038                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2049-12-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 36108000000000
+  },
+  {
+    "Nomor": 173,
+    "BondId": "SPN12241212                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12241212                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-12-12T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 300000000000
+  },
+  {
+    "Nomor": 174,
+    "BondId": "FR0102                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0102                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2054-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 34741000000000
+  },
+  {
+    "Nomor": 175,
+    "BondId": "SPNS07102024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS07102024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-10-07T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2850000000000
+  },
+  {
+    "Nomor": 176,
+    "BondId": "PBS039                                                                                              ",
+    "BondName": "Surat Berharga Syariah Negara Seri PBS039                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2041-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 7065500000000
+  },
+  {
+    "Nomor": 177,
+    "BondId": "SPN12250116                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250116                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-01-16T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1100000000000
+  },
+  {
+    "Nomor": 178,
+    "BondId": "SPN12250213                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250213                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-02-13T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3250000000000
+  },
+  {
+    "Nomor": 179,
+    "BondId": "SPNS18112024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS18112024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-11-18T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3250000000000
+  },
+  {
+    "Nomor": 180,
+    "BondId": "ORI025T3                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI025T3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2027-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 19381360000000
+  },
+  {
+    "Nomor": 181,
+    "BondId": "ORI025T6                                                                                            ",
+    "BondName": "Obligasi Negara Ritel Seri ORI025T6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-02-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 4539342000000
+  },
+  {
+    "Nomor": 182,
+    "BondId": "SPNS03092024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS03092024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-03T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 650000000000
+  },
+  {
+    "Nomor": 183,
+    "BondId": "SPNS02122024                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS02122024                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-12-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3100000000000
+  },
+  {
+    "Nomor": 184,
+    "BondId": "SPN12250314                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250314                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-03-14T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3400000000000
+  },
+  {
+    "Nomor": 185,
+    "BondId": "SPN12250502                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250502                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-05-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 2600000000000
+  },
+  {
+    "Nomor": 186,
+    "BondId": "SPNS02022025                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS02022025                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-02-02T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 4075600000000
+  },
+  {
+    "Nomor": 187,
+    "BondId": "SPN03240925                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN03240925                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-09-25T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 350000000000
+  },
+  {
+    "Nomor": 188,
+    "BondId": "SPN12250710                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250710                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-07-10T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1000000000000
+  },
+  {
+    "Nomor": 189,
+    "BondId": "SPN03241023                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN03241023                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2024-10-23T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1000000000000
+  },
+  {
+    "Nomor": 190,
+    "BondId": "SPNS29052025                                                                                        ",
+    "BondName": "Surat Perbendaharaan Negara Syariah Seri SPNS29052025                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-05-29T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 1550000000000
+  },
+  {
+    "Nomor": 191,
+    "BondId": "SECTESTPOC1                                                                                         ",
+    "BondName": "Securities Test POC1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-08-03T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 10000000000
+  },
+  {
+    "Nomor": 192,
+    "BondId": "SPN12250807                                                                                         ",
+    "BondName": "Surat Perbendaharaan Negara Seri SPN12250807                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2025-08-07T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 3200000000000
+  },
+  {
+    "Nomor": 193,
+    "BondId": "FR0103                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0103                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2035-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 22350000000000
+  },
+  {
+    "Nomor": 194,
+    "BondId": "FR0104                                                                                              ",
+    "BondName": "Obligasi Negara Republik Indonesia Seri FR0104                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ",
+    "IssuerCode": "GOVT                                                                                                ",
+    "MatureDate": "2030-07-15T07:00:00",
+    "Rating": "                                                                                                    ",
+    "Outstanding": 11000000000000
+  }
+]

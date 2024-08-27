@@ -1,12 +1,15 @@
 {
   "name": "idx-bei",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
     "main": "node index.js"
   },
   "author": "",
+  "keywords": [
+    "IDX"
+  ],
   "license": "ISC",
   "description": "",
   "dependencies": {
