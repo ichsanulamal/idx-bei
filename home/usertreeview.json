@@ -1,0 +1,1076 @@
+{
+  "lang": "en",
+  "items": [
+    {
+      "name": "Market Data",
+      "alias": "en_marketData",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "Trading Summary",
+          "alias": "en_tradingSummaryMenu",
+          "type": "emptyPage",
+          "url": "/en/#",
+          "level": 1,
+          "children": [
+            {
+              "name": "Trading Summary and Recapitulation",
+              "alias": "en_tradingSummary",
+              "type": "aPIPage",
+              "url": "/en/market-data/trading-summary/trading-summary-and-recapitulation/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Index Summary",
+              "alias": "en_indexSummary",
+              "type": "aPIPage",
+              "url": "/en/market-data/trading-summary/index-summary/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Stock Summary",
+              "alias": "en_stockSummary",
+              "type": "aPIPage",
+              "url": "/en/market-data/trading-summary/stock-summary/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Broker Summary",
+              "alias": "en_brokerSummary",
+              "type": "aPIPage",
+              "url": "/en/market-data/trading-summary/broker-summary/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "PED Summary",
+              "alias": "en_pEDSummary",
+              "type": "aPIPage",
+              "url": "/en/market-data/trading-summary/ped-summary/",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Statistical Reports",
+          "alias": "en_statisticalReports",
+          "type": "emptyPage",
+          "url": "/en/#",
+          "level": 1,
+          "children": [
+            {
+              "name": "Statistics",
+              "alias": "en_statistics",
+              "type": "statisticUploader",
+              "url": "/en/market-data/statistical-reports/statistics/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Company Fact Sheet LQ45",
+              "alias": "en_perfSumLq45Comp",
+              "type": "fileUploader",
+              "url": "/en/market-data/statistical-reports/company-fact-sheet-lq45",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Bond Book",
+              "alias": "en_bondBook",
+              "type": "fileUploader",
+              "url": "/en/market-data/statistical-reports/bond-book/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Digital Statistic",
+              "alias": "en_digitalStatistic",
+              "type": "dpsPage",
+              "url": "/en/market-data/statistical-reports/digital-statistic/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Fact Sheet Index",
+              "alias": "en_factSheetIndex",
+              "type": "fileUploader",
+              "url": "/en/market-data/statistical-reports/fact-sheet-index/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "New Listing Information",
+              "alias": "en_newListingInformation",
+              "type": "prospectusUploader",
+              "url": "/en/market-data/statistical-reports/new-listing-information/",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Stocks Data",
+          "alias": "en_stocksData",
+          "type": "emptyPage",
+          "url": "/en/#",
+          "level": 1,
+          "children": [
+            {
+              "name": "Stock Index",
+              "alias": "en_stockIndex",
+              "type": "stockUploaderIndex",
+              "url": "/en/market-data/stocks-data/stock-index/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Stock List",
+              "alias": "en_listOfStocks",
+              "type": "aPIPage",
+              "url": "/en/market-data/stocks-data/stock-list/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Margin Stock List",
+              "alias": "en_marginStocks",
+              "type": "stockUploader",
+              "url": "/en/market-data/stocks-data/margin-stock-list/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Pre-Opening Stock List",
+              "alias": "en_preOpeningStocks",
+              "type": "stockUploader",
+              "url": "/en/market-data/stocks-data/pre-opening-stock-list/",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Bonds & Sukuk Data",
+          "alias": "en_bondsSukukData",
+          "type": "emptyPage",
+          "url": "/en/#",
+          "level": 1,
+          "children": [
+            {
+              "name": "INDOBeX",
+              "alias": "en_iNDOBeX",
+              "type": "aPIPage",
+              "url": "/en/market-data/bonds-sukuk/indobex/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Bonds & Sukuk",
+              "alias": "en_corporateBondsSukuk",
+              "type": "aPIPage",
+              "url": "/en/market-data/bonds-sukuk/corporate-bonds-sukuk/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "ETP Trading",
+              "alias": "en_eTPTrading",
+              "type": "aPIPage",
+              "url": "/en/market-data/bonds-sukuk/etp-trading/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "OTC Trading Report",
+              "alias": "en_oTCTradingReport",
+              "type": "aPIPage",
+              "url": "/en/market-data/bonds-sukuk/otc-trading-report/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "PD's Quotation",
+              "alias": "en_pdsQuotation",
+              "type": "aPIPage",
+              "url": "/en/market-data/bonds-sukuk/pds-quotation/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Indonesia Government Securities Yield Curve (IGSYC)",
+              "alias": "en_indonesiaGovernmentSecuritiesYieldCurve(IGSYC)",
+              "type": "singleArticle",
+              "url": "/en/market-data/bonds-sukuk/indonesia-government-securities-yield-curve-igsyc/",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Asset Backed Securities Data",
+          "alias": "en_assetBackedSecuritiesData",
+          "type": "aPIPage",
+          "url": "/en/market-data/asset-backed-securities-data/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Exchange-Traded Fund (ETF) Data",
+          "alias": "en_exchangedTradedFundETFData",
+          "type": "aPIPage",
+          "url": "/en/market-data/exchanged-traded-fund-etf-data/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Derivatives Data",
+          "alias": "en_derivativesData",
+          "type": "emptyPage",
+          "url": "/en/#",
+          "level": 1,
+          "children": [
+            {
+              "name": "Futures",
+              "alias": "en_futures",
+              "type": "aPIPage",
+              "url": "/en/market-data/derivatives-data/futures/",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Data Structured Warrant (SW)",
+          "alias": "en_structuredWarrantData",
+          "type": "emptyPage",
+          "url": "/en/#",
+          "level": 1,
+          "children": [
+            {
+              "name": "Issuer Company List",
+              "alias": "en_issuerCompanyList",
+              "type": "aPIPage",
+              "url": "/en/market-data/structured-warrant-sw/issuer-company-list/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Structured Warrant Information",
+              "alias": "en_structuredWarrantInformation",
+              "type": "aPIPage",
+              "url": "/en/market-data/structured-warrant-sw/structured-warrant-information/",
+              "level": 2,
+              "children": []
+            },
+            {
+              "name": "Structured Warrant Summary",
+              "alias": "en_structuredWarrantSummary",
+              "type": "aPIPage",
+              "url": "/en/market-data/structured-warrant-sw/structured-warrant-summary/",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "REITS & DINFRA Data",
+          "alias": "en_dIREDINFRA",
+          "type": "aPIPage",
+          "url": "/en/market-data/reits-dinfra/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Securities Borrowing and Lending",
+          "alias": "en_securitiesBorrowingAndLending",
+          "type": "sLBPMEPage",
+          "url": "/en/market-data/securities-borrowing-and-lending/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Products & Services",
+      "alias": "en_products",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "Stock",
+          "alias": "en_stocks",
+          "type": "productArticle",
+          "url": "/en/products/stocks/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Bonds",
+          "alias": "en_bonds",
+          "type": "productArticle",
+          "url": "/en/products/bonds/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Mutual Funds",
+          "alias": "en_mutualFunds",
+          "type": "productArticle",
+          "url": "/en/products/mutual-funds/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Exchange-Traded Fund (ETF)",
+          "alias": "en_exchangeTradedFund",
+          "type": "productArticle",
+          "url": "/en/products/exchange-traded-fund-etf/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "REITS & DINFRA",
+          "alias": "en_rEITSDINFRA",
+          "type": "productArticle",
+          "url": "/en/products/reits-dinfra/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Derivatives",
+          "alias": "en_derivatives",
+          "type": "productArticle",
+          "url": "/en/products/derivatives/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Structured Warrant",
+          "alias": "en_structuredWarrant",
+          "type": "productArticle",
+          "url": "/en/products/structured-warrant-sw/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Index",
+          "alias": "en_index",
+          "type": "productArticle",
+          "url": "/en/products/index/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Trading Hours and Mechanism",
+          "alias": "en_equitiesTradingMechanism",
+          "type": "singleArticle",
+          "url": "/en/products-services/trading-hours-and-mechanism/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Taxation",
+          "alias": "en_taxation",
+          "type": "singleArticle",
+          "url": "/en/investhub/taxation/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Securities Borrowing and Lending",
+          "alias": "en_borrowingAndLending",
+          "type": "productArticle",
+          "url": "/en/products/securities-borrowing-and-lending/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "IDX Mobile",
+          "alias": "en_iDXMobile",
+          "type": "productArticle",
+          "url": "/en/products-services/idx-mobile/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "IDX Data Services",
+          "alias": "en_iDXDataServices",
+          "type": "productArticle",
+          "url": "/en/products/idx-data-services/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Visit to IDX",
+          "alias": "en_visitToIDX",
+          "type": "singleArticle",
+          "url": "/en/products-services/visit-to-idx/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Capital Market e-Library",
+          "alias": "en_capitalMarketELibrary",
+          "type": "redirectionPage",
+          "url": "https://ticmidata.co.id/home",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "IDX Investment Gallery",
+          "alias": "en_iDXInvestmentGalleryCapitalMarketCommunity",
+          "type": "singleArticle",
+          "url": "/en/about-idx/idx-investment-gallery-and-capital-market-community/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Capital Market Certification and Education",
+          "alias": "en_capitalMarketCertificationAndEducation",
+          "type": "productArticle",
+          "url": "/en/products/capital-market-certification-and-education/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Listed Companies",
+      "alias": "en_listedCompany",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "Go Public Information Center",
+          "alias": "en_goPublicInformationCenter",
+          "type": "redirectionPage",
+          "url": "https://gopublic.idx.co.id/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Services for Listed Companies",
+          "alias": "en_servicesForListedCompanies",
+          "type": "singleArticle",
+          "url": "/en/listed-companies/services-for-listed-companies/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Listing Activities",
+          "alias": "en_listingActivities",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/listing-activities/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Prospectus",
+          "alias": "en_prospectus",
+          "type": "prospectusUploader",
+          "url": "/en/listed-companies/prospectus/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Company Profiles",
+          "alias": "en_companyProfiles",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/company-profiles/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Corporate Actions",
+          "alias": "en_corporateActions",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/corporate-actions/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Financial Statements and Annual Report",
+          "alias": "en_financialStatementsAnnualReport",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/financial-statements-and-annual-report/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Disclosure",
+          "alias": "en_disclosure",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/disclosure/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Listed Company Calendar",
+          "alias": "en_listedCompanyCalendar",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/listed-company-calendar/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Special Notation",
+          "alias": "en_specialNotation",
+          "type": "stockNotation",
+          "url": "/en/listed-companies/special-notation/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Securities on Watchlist Board",
+          "alias": "en_listOfSecuritiesUnderSpecialMonitoring",
+          "type": "watchlistCriteria",
+          "url": "/en/listed-companies/list-of-securities-under-special-monitoring/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "XBRL",
+          "alias": "en_xBRL",
+          "type": "productArticle",
+          "url": "/en/listed-companies/xbrl/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "ESG score",
+          "alias": "en_esgValue",
+          "type": "aPIPage",
+          "url": "/en/listed-companies/esg-score",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "ESG Implementation by Listed Companies",
+          "alias": "en_eSGApplicationsByListedCompanies",
+          "type": "redirectionPage",
+          "url": "https://esg.idx.co.id/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Equity Research Report",
+          "alias": "en_equityResearchReport",
+          "type": "prospectusUploader",
+          "url": "/en/listed-companies/equity-research-report/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Newly Listed Stock Performance",
+          "alias": "en_newlyListedStockPerformance",
+          "type": "singleArticle",
+          "url": "/en/listed-companies/newly-listed-stock-performance/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Suspension > 6 Months",
+          "alias": "en_suspensi>6Bulan",
+          "type": "productArticle",
+          "url": "/en/listed-companies/suspension-6-months/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_sanksi",
+          "type": "productArticle",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "IDX Islamic",
+      "alias": "en_iDXIslamic",
+      "type": "singleArticle",
+      "url": "/en/idx-islamic/",
+      "level": 0,
+      "children": [
+        {
+          "name": "Islamic Product",
+          "alias": "en_islamicProduct",
+          "type": "productArticle",
+          "url": "/en/idx-islamic/islamic-product/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Islamic Stock Index",
+          "alias": "en_islamicStockIndex",
+          "type": "productArticle",
+          "url": "/en/idx-islamic/islamic-stock-index/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Islamic Based Transactions",
+          "alias": "en_islamicBasedTransactions",
+          "type": "singleArticle",
+          "url": "/en/idx-islamic/islamic-based-transactions/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Fatwa & Regulations",
+          "alias": "en_fatwaRegulations",
+          "type": "singleArticle",
+          "url": "/en/idx-islamic/fatwa-regulations/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Islamic Capital Market Education",
+          "alias": "en_islamicCapitalMarketEducation",
+          "type": "singleArticle",
+          "url": "/en/idx-islamic/islamic-capital-market-education/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Question and Answer",
+          "alias": "en_islamicQuestionAnswers",
+          "type": "fAQ",
+          "url": "/en/idx-islamic/question-and-answer/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Contact Us",
+          "alias": "en_islamicContactUs",
+          "type": "singleArticle",
+          "url": "/en/idx-islamic/contact-us/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Sharia Investment Week 2024",
+          "alias": "en_shariaInvestmentWeek",
+          "type": "redirectionPage",
+          "url": "https://siw.idx.co.id/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Become a Sharia Investor",
+          "alias": "en_becomeAShariaInvestor",
+          "type": "redirectionPage",
+          "url": "https://idxislamic.idx.co.id/investor-syariah/menjadi-investor-syariah/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Members & Participants",
+      "alias": "en_membersParticipants",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "Exchange Members’ Profiles",
+          "alias": "en_exchangeMemberProfiles",
+          "type": "aPIPage",
+          "url": "/en/members-and-participants/exchange-members-profiles/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Participants’ Profiles",
+          "alias": "en_participantsProfile",
+          "type": "aPIPage",
+          "url": "/en/members-and-participants/participants-profiles/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Primary Dealers’ Profiles",
+          "alias": "en_primaryDealersProfile",
+          "type": "aPIPage",
+          "url": "/en/members-and-participants/primary-dealers-profiles/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Indonesia Alternative Market Trading System User Profile",
+          "alias": "en_sPPAUserProfile",
+          "type": "sPPAProfile",
+          "url": "/en/members-and-participants/indonesia-alternative-market-trading-system-user-profile/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "alias": "en_newsMenu",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "News",
+          "alias": "en_news",
+          "type": "news",
+          "url": "/en/news/news/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Press Release",
+          "alias": "en_pressRelease",
+          "type": "pressRelease",
+          "url": "/en/news/press-release/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_artikel",
+          "type": "pressRelease",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Announcement",
+          "alias": "en_announcements",
+          "type": "aPIPage",
+          "url": "/en/news/announcement/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "PPA Announcement",
+          "alias": "en_sPPAAnnouncement",
+          "type": "sPPAAnnouncement",
+          "url": "/en/news/sppa-announcement/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Unusual Market Activity (UMA)",
+          "alias": "en_unusualMarketActivity",
+          "type": "aPIPage",
+          "url": "/en/news/unusual-market-activity-uma/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Suspension",
+          "alias": "en_suspension",
+          "type": "aPIPage",
+          "url": "/en/news/suspension/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Designated Stock (DS)",
+          "alias": "en_designatedStock(DS)",
+          "type": "aPIPage",
+          "url": "/en/news/designated-stock-ds/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Isolated Trade (IT)",
+          "alias": "en_isolatedTrade",
+          "type": "aPIPage",
+          "url": "/en/news/isolated-trade-it/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Trading Holiday",
+          "alias": "en_tradingHoliday",
+          "type": "cards",
+          "url": "/en/about-idx/trading-holiday/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Regulation",
+      "alias": "en_regulation",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "Capital Market Act",
+          "alias": "en_capitalMarketAct",
+          "type": "productArticle",
+          "url": "/en/regulation/capital-market-act/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "IDX Regulations",
+          "alias": "en_iDXRegulations",
+          "type": "aPIPage",
+          "url": "/en/regulation/idx-regulation/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Decree of Directors",
+          "alias": "en_decreeOfDirectors",
+          "type": "attachments",
+          "url": "/en/regulation/decree-of-directors/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Circular Letter",
+          "alias": "en_circularLetter",
+          "type": "attachments",
+          "url": "/en/regulation/circular-letter/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Regulation Draft",
+          "alias": "en_regulationDraft",
+          "type": "attachments",
+          "url": "/en/regulation/regulation-draft/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Another Listing Regulation",
+          "alias": "en_otherRegulations",
+          "type": "emptyPage",
+          "url": "/en/regulation/another-listing-regulation/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Investor",
+      "alias": "en_investor",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "InvestHub",
+          "alias": "en_investHub",
+          "type": "singleArticle",
+          "url": "/en/investhub/investhub",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Capital Market School",
+          "alias": "en_capitalMarketSchool",
+          "type": "singleArticle",
+          "url": "/en/investhub/capital-market-school/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Investor Protection",
+          "alias": "en_investorProtection",
+          "type": "singleArticle",
+          "url": "/en/investhub/investor-protection/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Brokerage Near You",
+          "alias": "en_brokerageNearYou",
+          "type": "aPIPage",
+          "url": "/en/investhub/brokerage-near-you/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Online Opening Account",
+          "alias": "en_createAccount",
+          "type": "singleArticleWithList",
+          "url": "/en/investhub/online-opening-account/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Investment Gallery Events List",
+          "alias": "en_investmentGalleryEventsList",
+          "type": "redirectionPage",
+          "url": "https://rdis.idx.co.id/en/events",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "e-IPO",
+          "alias": "en_eIPO",
+          "type": "redirectionPage",
+          "url": "https://www.e-ipo.co.id/id",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Stock Screener",
+          "alias": "en_stockScreener",
+          "type": "aPIPage",
+          "url": "/en/investhub/stock-screener/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_capitalMarketSummit&Expo2023",
+          "type": "productArticle",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_structuredProductDay2023",
+          "type": "productArticle",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_publicExposeLive2024",
+          "type": "productArticle",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_investorRewardProgram2024",
+          "type": "productArticle",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "About IDX",
+      "alias": "en_aboutIDX",
+      "type": "emptyPage",
+      "url": "/en/#",
+      "level": 0,
+      "children": [
+        {
+          "name": "Overview and History of IDX",
+          "alias": "en_overviewAndHistory",
+          "type": "singleArticle",
+          "url": "/en/about-idx/overview-and-history-of-idx/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Organization",
+          "alias": "en_organization",
+          "type": "organization",
+          "url": "/en/about-idx/organization/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Corporate Governance",
+          "alias": "en_corporateGovernance",
+          "type": "singleArticle",
+          "url": "/en/about-idx/corporate-governance/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Management System Certification",
+          "alias": "en_managementSystemCertification",
+          "type": "singleArticle",
+          "url": "/en/about-idx/management-system-certification/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Subsidiaries",
+          "alias": "en_subsidiaries",
+          "type": "cards",
+          "url": "/en/about-idx/subsidiaries/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Annual Report",
+          "alias": "en_annualReport",
+          "type": "documentAttachments",
+          "url": "/en/about-idx/annual-report/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Sustainability Report",
+          "alias": "en_sustainabilityReport",
+          "type": "documentAttachments",
+          "url": "/en/about-idx/sustainability-report/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "ESG Website",
+          "alias": "en_eSGWebsite",
+          "type": "redirectionPage",
+          "url": "/en/ESG",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Career",
+          "alias": "en_career",
+          "type": "productArticle",
+          "url": "/en/about-idx/career/",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_iDXBellNewsletter",
+          "type": "documentAttachments",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": null,
+          "alias": "en_rangkaianKompetisiHUTKe-46PasarModalIndonesia",
+          "type": "productArticle",
+          "url": "/en/#",
+          "level": 1,
+          "children": []
+        },
+        {
+          "name": "Contact Us",
+          "alias": "en_contactUs",
+          "type": "cards",
+          "url": "/en/about-idx/contact-us/",
+          "level": 1,
+          "children": []
+        }
+      ]
+    }
+  ]
+}
