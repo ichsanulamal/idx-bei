@@ -1,138 +1,66 @@
-[
-  {
-    "IndexCode": "LQ45",
-    "IndexName": "LQ45"
+{
+  "SearchCriteria": {
+    "date": null,
+    "table": "preOpeningStocks",
+    "year": null,
+    "typeIndex": null,
+    "locale": "en",
+    "indexfrom": 0,
+    "pagesize": 0
   },
-  {
-    "IndexCode": "IDX30",
-    "IndexName": "IDX30"
-  },
-  {
-    "IndexCode": "KOMPAS100",
-    "IndexName": "KOMPAS100"
-  },
-  {
-    "IndexCode": "BISNIS-27",
-    "IndexName": "BISNIS-27"
-  },
-  {
-    "IndexCode": "PEFINDO25",
-    "IndexName": "PEFINDO25"
-  },
-  {
-    "IndexCode": "SRI-KEHATI",
-    "IndexName": "SRI-KEHATI"
-  },
-  {
-    "IndexCode": "JII",
-    "IndexName": "JII"
-  },
-  {
-    "IndexCode": "ISSI",
-    "IndexName": "ISSI"
-  },
-  {
-    "IndexCode": "INFOBANK15",
-    "IndexName": "INFOBANK15"
-  },
-  {
-    "IndexCode": "SMINFRA18",
-    "IndexName": "SMInfra18"
-  },
-  {
-    "IndexCode": "MNC36",
-    "IndexName": "MNC36"
-  },
-  {
-    "IndexCode": "INVESTOR33",
-    "IndexName": "Investor33"
-  },
-  {
-    "IndexCode": "IDXSMC-COM",
-    "IndexName": "IDXSMC-COM"
-  },
-  {
-    "IndexCode": "IDXSMC-LIQ",
-    "IndexName": "IDXSMC-LIQ"
-  },
-  {
-    "IndexCode": "I-GRADE",
-    "IndexName": "I-GRADE"
-  },
-  {
-    "IndexCode": "IDXBUMN20",
-    "IndexName": "IDXBUMN20"
-  },
-  {
-    "IndexCode": "IDXHIDIV20",
-    "IndexName": "IDXHIDIV20"
-  },
-  {
-    "IndexCode": "JII70",
-    "IndexName": "JII70"
-  },
-  {
-    "IndexCode": "IDX80",
-    "IndexName": "IDX80"
-  },
-  {
-    "IndexCode": "IDXV30",
-    "IndexName": "IDXV30"
-  },
-  {
-    "IndexCode": "IDXG30",
-    "IndexName": "IDXG30"
-  },
-  {
-    "IndexCode": "IDXQ30",
-    "IndexName": "IDXQ30"
-  },
-  {
-    "IndexCode": "IDXESGL",
-    "IndexName": "IDXESGL"
-  },
-  {
-    "IndexCode": "IDX-IC",
-    "IndexName": "Sector Indices (IDX-IC)"
-  },
-  {
-    "IndexCode": "IDXSHAGROW",
-    "IndexName": "IDXSHAGROW"
-  },
-  {
-    "IndexCode": "ESGSKEHATI",
-    "IndexName": "ESGSKEHATI"
-  },
-  {
-    "IndexCode": "ESGQKEHATI",
-    "IndexName": "ESGQKEHATI"
-  },
-  {
-    "IndexCode": "IDXLQ45LCL",
-    "IndexName": "IDXLQ45LCL"
-  },
-  {
-    "IndexCode": "IDXMESBUMN",
-    "IndexName": "IDXMESBUMN"
-  },
-  {
-    "IndexCode": "MBX",
-    "IndexName": "MBX"
-  },
-  {
-    "IndexCode": "DBX",
-    "IndexName": "DBX"
-  },
-  {
-    "IndexCode": "ABX",
-    "IndexName": "ABX"
-  },
-  {
-    "IndexCode": "PRIMBANK10",
-    "IndexName": "PRIMBANK10"
-  },
-  {
-    "IndexCode": "ECONOMIC30",
-    "IndexName": "ECONOMIC30"
-  }
-]
+  "ResultCount": 4,
+  "Results": [
+    {
+      "No": 0,
+      "StockUploaderID": 5866,
+      "Date": "2024-08-01T12:00:00",
+      "Group": "preOpeningStocks",
+      "NoPengumuman": "-",
+      "TypeIndex": "-",
+      "Description": "August 2023-January 2024",
+      "Year": "2024",
+      "AttachmentName": "saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-2024",
+      "AttachmentSize": "236",
+      "AttachmentUrl": "/media/uwdg1e0s/saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-2024.zip"
+    },
+    {
+      "No": 0,
+      "StockUploaderID": 5940,
+      "Date": "2024-07-26T12:00:00",
+      "Group": "preOpeningStocks",
+      "NoPengumuman": "Pengumuman Umbraco 00001",
+      "TypeIndex": "-",
+      "Description": "1 August 2024-31 October 2024",
+      "Year": "2024",
+      "AttachmentName": "peng-00164_bei-pop_07-2024-en.zip",
+      "AttachmentSize": "396 KB",
+      "AttachmentUrl": "/media/eiab2rse/peng-00164_bei-pop_07-2024-en.zip"
+    },
+    {
+      "No": 0,
+      "StockUploaderID": 5875,
+      "Date": "2024-04-24T12:00:00",
+      "Group": "preOpeningStocks",
+      "NoPengumuman": "-",
+      "TypeIndex": "-",
+      "Description": "2 May 2024-31 July 2024",
+      "Year": "2024",
+      "AttachmentName": "saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-20240424",
+      "AttachmentSize": "366",
+      "AttachmentUrl": "/media/23dpix3q/saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-20240424.zip"
+    },
+    {
+      "No": 0,
+      "StockUploaderID": 5874,
+      "Date": "2024-01-31T12:00:00",
+      "Group": "preOpeningStocks",
+      "NoPengumuman": "-",
+      "TypeIndex": "-",
+      "Description": "1 February 2024-31 July 2024",
+      "Year": "2024",
+      "AttachmentName": "pengumuman-saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-preop",
+      "AttachmentSize": "371",
+      "AttachmentUrl": "/media/rglf1zp2/pengumuman-saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-preop.zip"
+    }
+  ]
+}

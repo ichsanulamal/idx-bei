@@ -2,9 +2,8 @@ import fs from "fs";
 
 export { BondSukuk } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/BondSukuk.js";
 
-import { getBoards } from "./market-data/stocks-data/stock-list/getBoards.js";
-import { getSectors } from "./market-data/stocks-data/stock-list/getSectors.js";
-import { getSecuritiesStock } from "./market-data/stocks-data/stock-list/getSecuritiesStock.js";
+
+
 import { getGovIssuer } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/getGovIssuer.js";
 
 
@@ -26,9 +25,13 @@ import { getPedSummary } from "./market-data/trading-summary/ped-summary/getPedS
 import { getIndexGroupPrevalues } from "./market-data/stocks-data/stock-index/getIndexGroupPrevalues.js";
 import { getStockUploader } from "./market-data/stocks-data/stock-index/getStockUploader.js";
 
+import { getSectors } from "./market-data/stocks-data/stock-list/getSectors.js";
+import { getBoards } from "./market-data/stocks-data/stock-list/getBoards.js";
+import { getSecuritiesStock } from "./market-data/stocks-data/stock-list/getSecuritiesStock.js";
 
 
-const data = await getIndexGroupPrevalues();
+
+const data = await getStockUploader('', '', 'preOpeningStocks');
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 
