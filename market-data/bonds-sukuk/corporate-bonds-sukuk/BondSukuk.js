@@ -32,17 +32,7 @@ export async function BondSukuk(pageSize = 100, indexFrom = 1, bondType = 2) {
       indexFrom += 1; // Move to the next page
     }
 
-    const jsonData = JSON.stringify(allResults, null, 2); // The `null` and `2` are for formatting the JSON with indentation
-
-    fs.writeFile('data.json', jsonData, (err) => {
-      if (err) {
-        console.error('Error writing file', err);
-      } else {
-        console.log('File successfully written');
-      }
-    });
-
-    return allResults;
+    return JSON.stringify(allResults, null, 2);
 
   } catch (error) {
     console.error('There was a problem with the fetch operation:', error);
