@@ -1,217 +1,480 @@
 {
   "draw": 0,
-  "recordsTotal": 10,
-  "recordsFiltered": 10,
+  "recordsTotal": 43,
+  "recordsFiltered": 43,
   "data": [
     {
-      "Id": "MGIA01",
-      "Name": "Efek Beragun Aset Mandiri GIAA01 - Surat Berharga Hak Atas Penjualan Tiket Kelas A",
-      "Type": 3,
-      "ListingDate": "2018-07-31T00:00:00",
-      "MatureDate": "2032-12-31T00:00:00",
-      "Outstanding": 935325000000,
-      "CouponRate": 0,
-      "Rating": "idAA+",
-      "Trustee": "Bank Maybank Indonesia Tbk.",
-      "IssuerCode": "MGIA",
-      "TTM": 9.34,
-      "ISIN": "IDU000002107",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/MGIA01",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 1,
+      "Kode": "XMSK",
+      "NamaProduk": "Reksa Dana Indeks Mandiri ETF SRI-Kehati",
+      "TanggalPencatatan": "2024-07-18T00:00:00",
+      "ManajemenInvestasi": "PT Mandiri Manajemen Investasi",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 405,
+      "HargaPenutupanHarian": 418,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBRIS01A",
-      "Name": "EBAS SP SMF-BRIS 01 KELAS A",
-      "Type": 3,
-      "ListingDate": "2023-06-08T00:00:00",
-      "MatureDate": "2041-10-30T00:00:00",
-      "Outstanding": 297700000000,
-      "CouponRate": 7,
-      "Rating": "idAAA-sfsy",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFR01",
-      "TTM": 18.17,
-      "ISIN": "IDU0000029A7",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBRIS01A",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 2,
+      "Kode": "XKID",
+      "NamaProduk": "Reksa Dana Indeks KISI IDX30 ETF",
+      "TanggalPencatatan": "2023-11-24T00:00:00",
+      "ManajemenInvestasi": "PT KISI Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 1000,
+      "HargaPenutupanHarian": 1041,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN02A2",
-      "Name": "EBA-SP SMF-BTN 02 Kelas A Seri A2",
-      "Type": 3,
-      "ListingDate": "2016-11-01T00:00:00",
-      "MatureDate": "2027-06-07T00:00:00",
-      "Outstanding": 14588917800,
-      "CouponRate": 8.75,
-      "Rating": "idAAA",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFB02",
-      "TTM": 3.76,
-      "ISIN": "IDU0000014A9",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN02A2",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 3,
+      "Kode": "XMGB",
+      "NamaProduk": "Reksa Dana Majoris Government Bonds ETF Indonesia",
+      "TanggalPencatatan": "2023-06-15T00:00:00",
+      "ManajemenInvestasi": "PT Majoris Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 1000,
+      "HargaPenutupanHarian": 1041,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN03A2",
-      "Name": "EBA-SP SMF-BTN 03 Kelas A Seri A2",
-      "Type": 3,
-      "ListingDate": "2017-05-02T00:00:00",
-      "MatureDate": "2029-07-07T00:00:00",
-      "Outstanding": 111917728000,
-      "CouponRate": 8.4,
-      "Rating": "idAAA",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFB03",
-      "TTM": 5.85,
-      "ISIN": "IDU0000016A4",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN03A2",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 4,
+      "Kode": "XMLF",
+      "NamaProduk": "Reksa Dana Indeks Mandiri ETF LQ45",
+      "TanggalPencatatan": "2023-03-06T00:00:00",
+      "ManajemenInvestasi": "PT Mandiri Manajemen Investasi",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 946,
+      "HargaPenutupanHarian": 995,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN04A2",
-      "Name": "EBA-SP SMF-BTN 04 Kelas A Seri A2",
-      "Type": 3,
-      "ListingDate": "2018-03-01T00:00:00",
-      "MatureDate": "2029-05-07T00:00:00",
-      "Outstanding": 290157658000,
-      "CouponRate": 7.5,
-      "Rating": "idAAA",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFB04",
-      "TTM": 5.68,
-      "ISIN": "IDU0000020A6",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN04A2",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 5,
+      "Kode": "XCEG",
+      "NamaProduk": "Reksa Dana Indeks Capital ETF IDX ESG Leaders",
+      "TanggalPencatatan": "2022-04-28T00:00:00",
+      "ManajemenInvestasi": "PT Capital Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 100,
+      "HargaPenutupanHarian": 116,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN05A1",
-      "Name": "EBA-SP SMF-BTN 05 kelas A Seri A1",
-      "Type": 3,
-      "ListingDate": "2019-11-28T00:00:00",
-      "MatureDate": "2025-06-27T00:00:00",
-      "Outstanding": 120397791000,
-      "CouponRate": 8.5,
-      "Rating": "idAAA(sf)",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFB05",
-      "TTM": 1.82,
-      "ISIN": "IDU0000023A0",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN05A1",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 6,
+      "Kode": "XBIG",
+      "NamaProduk": "Reksa Dana Indeks BNP Paribas IDX Growth30 ETF",
+      "TanggalPencatatan": "2021-09-21T00:00:00",
+      "ManajemenInvestasi": "PT BNP Paribas Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 600,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN05A2",
-      "Name": "EBA-SP SMF-BTN 05 Kelas A Seri A2",
-      "Type": 3,
-      "ListingDate": "2019-11-28T00:00:00",
-      "MatureDate": "2028-03-27T00:00:00",
-      "Outstanding": 706186100000,
-      "CouponRate": 8.75,
-      "Rating": "idAAA(sf)",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFB05",
-      "TTM": 4.57,
-      "ISIN": "IDU0000024A8",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN05A2",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 7,
+      "Kode": "XIFE",
+      "NamaProduk": "Reksa Dana Indeks Premier ETF FTSE Indonesia ESG",
+      "TanggalPencatatan": "2021-03-25T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 101,
+      "HargaPenutupanHarian": 117,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN06A",
-      "Name": "EBA-SP SMF-BTN 06 Kelas A",
-      "Type": 3,
-      "ListingDate": "2021-01-05T00:00:00",
-      "MatureDate": "2027-08-27T00:00:00",
-      "Outstanding": 262381552000,
-      "CouponRate": 6.5,
-      "Rating": "idAAA(sf)",
-      "Trustee": "Bank Mandiri Tbk.",
-      "IssuerCode": "SMFB06",
-      "TTM": 3.99,
-      "ISIN": "IDU0000027A1",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN06A",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 8,
+      "Kode": "XKMS",
+      "NamaProduk": "Reksa Dana Indeks KISI MSCI Indonesia ETF",
+      "TanggalPencatatan": "2020-11-23T00:00:00",
+      "ManajemenInvestasi": "PT Kisi Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 1000,
+      "HargaPenutupanHarian": 1320,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFBTN07A",
-      "Name": "EBA-SP SMF-BTN 07 Kelas A",
-      "Type": 3,
-      "ListingDate": "2022-12-23T00:00:00",
-      "MatureDate": "2034-01-07T00:00:00",
-      "Outstanding": 382219878000,
-      "CouponRate": 7.7,
-      "Rating": "idAAA(sf)",
-      "Trustee": "Bank Mandiri Tbk",
-      "IssuerCode": "SMFB07",
-      "TTM": 10.36,
-      "ISIN": "IDU0000028A9",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFBTN07A",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 9,
+      "Kode": "XIID",
+      "NamaProduk": "Reksa Dana Indeks Premier ETF Index IDX30",
+      "TanggalPencatatan": "2020-06-23T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 423,
+      "HargaPenutupanHarian": 540,
+      "LastDividend": 0
     },
     {
-      "Id": "SPSMFMRI01A2",
-      "Name": "Efek Beragun Aset Berbentuk Surat Partisipasi SMF-BMRI 01 Kelas A2",
-      "Type": 3,
-      "ListingDate": "2016-08-26T00:00:00",
-      "MatureDate": "2029-10-27T00:00:00",
-      "Outstanding": 31156441100,
-      "CouponRate": 9.1,
-      "Rating": "idAAA",
-      "Trustee": "BRI Tbk.",
-      "IssuerCode": "SMFM01",
-      "TTM": 6.16,
-      "ISIN": "IDU0000012A3",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/securities/bond/SPSMFMRI01A2",
-          "Method": "GET"
-        }
-      ]
+      "IntRow": 10,
+      "Kode": "XILV",
+      "NamaProduk": "Insight ETF FTSE Indonesia Low Volatility Factor",
+      "TanggalPencatatan": "2020-06-11T00:00:00",
+      "ManajemenInvestasi": "PT Insight Investments Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 100,
+      "HargaPenutupanHarian": 143,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 11,
+      "Kode": "XSSK",
+      "NamaProduk": "Reksa Dana Indeks SAM ETF SRI-KEHATI",
+      "TanggalPencatatan": "2020-05-14T00:00:00",
+      "ManajemenInvestasi": "PT Samuel Aset Manajemen",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 776,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 12,
+      "Kode": "XIML",
+      "NamaProduk": "RD Indeks Premier ETF MSCI Indonesia Large Cap",
+      "TanggalPencatatan": "2020-03-04T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 247,
+      "HargaPenutupanHarian": 304,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 13,
+      "Kode": "XBES",
+      "NamaProduk": "RD INDEKS BNI-AM ETF MSCI ESG LEADERS INDONESIA",
+      "TanggalPencatatan": "2020-01-09T00:00:00",
+      "ManajemenInvestasi": "PT BNI Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 998,
+      "HargaPenutupanHarian": 1045,
+      "LastDividend": 200
+    },
+    {
+      "IntRow": 14,
+      "Kode": "XNVE",
+      "NamaProduk": "Reksa Dana Indeks Nusadana ETF IDX Value30",
+      "TanggalPencatatan": "2019-12-05T00:00:00",
+      "ManajemenInvestasi": "PT Nusadana Investama Indonesia",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 151,
+      "HargaPenutupanHarian": 176,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 15,
+      "Kode": "XCLQ",
+      "NamaProduk": "Reksa Dana Indeks Cipta ETF Index LQ45",
+      "TanggalPencatatan": "2019-11-27T00:00:00",
+      "ManajemenInvestasi": "PT Ciptadana Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 100,
+      "HargaPenutupanHarian": 104,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 16,
+      "Kode": "XKIV",
+      "NamaProduk": "Reksa Dana Indeks KISI IDX Value30 ETF",
+      "TanggalPencatatan": "2019-11-12T00:00:00",
+      "ManajemenInvestasi": "PT KISI Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 576,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 17,
+      "Kode": "XBIN",
+      "NamaProduk": "Reksa Dana Indeks Bahana ETF Bisnis - 27",
+      "TanggalPencatatan": "2019-10-01T00:00:00",
+      "ManajemenInvestasi": "PT Bahana TCW Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 626,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 18,
+      "Kode": "XSSI",
+      "NamaProduk": "Reksa Dana Syariah Indeks Simas ETF JII",
+      "TanggalPencatatan": "2019-09-17T00:00:00",
+      "ManajemenInvestasi": "PT Sinarmas Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 100,
+      "HargaPenutupanHarian": 76,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 19,
+      "Kode": "XMIG",
+      "NamaProduk": "Reksa Dana Indeks Majoris Pefindo I-Grade ETF Indo",
+      "TanggalPencatatan": "2019-07-25T00:00:00",
+      "ManajemenInvestasi": "PT Majoris Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 179,
+      "HargaPenutupanHarian": 246,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 20,
+      "Kode": "XAQA",
+      "NamaProduk": "Ashmore ETF LQ45 ALPHA",
+      "TanggalPencatatan": "2019-07-12T00:00:00",
+      "ManajemenInvestasi": "PT Ashmore Asset Management Indonesia",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 1003,
+      "HargaPenutupanHarian": 1009,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 21,
+      "Kode": "XPTD",
+      "NamaProduk": "Reksa Dana Indeks Panin ETF IDX30 Dinamis",
+      "TanggalPencatatan": "2019-05-27T00:00:00",
+      "ManajemenInvestasi": "PT Panin Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 515,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 22,
+      "Kode": "XBSK",
+      "NamaProduk": "Reksa Dana Indeks Batavia SRI-KEHATI ETF",
+      "TanggalPencatatan": "2019-03-22T00:00:00",
+      "ManajemenInvestasi": "PT Batavia Prosperindo Aset Manajemen",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 395,
+      "HargaPenutupanHarian": 488,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 23,
+      "Kode": "XBID",
+      "NamaProduk": "Reksa Dana Indeks Batavia IDX30 ETF",
+      "TanggalPencatatan": "2019-02-19T00:00:00",
+      "ManajemenInvestasi": "PT Batavia Prosperindo Aset Manajemen\t",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 554,
+      "HargaPenutupanHarian": 555,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 24,
+      "Kode": "XIPI",
+      "NamaProduk": "Reksa Dana Indeks Premier ETF PEFINDO i-Grade ",
+      "TanggalPencatatan": "2018-12-21T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 160,
+      "HargaPenutupanHarian": 256,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 25,
+      "Kode": "XIHD",
+      "NamaProduk": "Reksadana Indeks Premier ETF IDX HIGH DIVIDEN 20",
+      "TanggalPencatatan": "2018-12-18T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 518,
+      "HargaPenutupanHarian": 698,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 26,
+      "Kode": "XSBC",
+      "NamaProduk": "Reksa Dana Indeks Simas ETF IDX30",
+      "TanggalPencatatan": "2018-09-12T00:00:00",
+      "ManajemenInvestasi": "PT Sinarmas Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 100,
+      "HargaPenutupanHarian": 109,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 27,
+      "Kode": "XPFT",
+      "NamaProduk": "Reksa Dana Pinnacle FTSE Indonesia",
+      "TanggalPencatatan": "2018-09-10T00:00:00",
+      "ManajemenInvestasi": "PT Pinnacle Persada Investama",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 627,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 28,
+      "Kode": "XBNI",
+      "NamaProduk": "Reksa Dana Indeks BNI-AM Nusantara ETF MSCI Indone",
+      "TanggalPencatatan": "2018-05-23T00:00:00",
+      "ManajemenInvestasi": "PT BNI Asset Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 1000,
+      "HargaPenutupanHarian": 1178,
+      "LastDividend": 36
+    },
+    {
+      "IntRow": 29,
+      "Kode": "XDIF",
+      "NamaProduk": "Reksa Dana Danareks ETF Indonesia Top 40",
+      "TanggalPencatatan": "2018-04-23T00:00:00",
+      "ManajemenInvestasi": "PT BRI Manajemen Investasi",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 497,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 30,
+      "Kode": "XBLQ",
+      "NamaProduk": "Reksa Dana Batavia Smart Liquid ETF",
+      "TanggalPencatatan": "2018-04-10T00:00:00",
+      "ManajemenInvestasi": "PT Batavia Prosperindo Aset Manajemen",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 495,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 31,
+      "Kode": "XPSG",
+      "NamaProduk": "Reksa Dana Pinnacle Indonesia ESG ETF",
+      "TanggalPencatatan": "2018-02-02T00:00:00",
+      "ManajemenInvestasi": "PT Pinnacle Persada Investama",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 429,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 32,
+      "Kode": "XPDV",
+      "NamaProduk": "Reksa Dana Pinncale Core High Dividend ETF",
+      "TanggalPencatatan": "2017-06-09T00:00:00",
+      "ManajemenInvestasi": "PT Pinnacle Persada Investama",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 605,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 33,
+      "Kode": "XISB",
+      "NamaProduk": "Premier ETF Indonesia Sovereign Bonds",
+      "TanggalPencatatan": "2017-02-02T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 398,
+      "HargaPenutupanHarian": 398,
+      "LastDividend": 2.01
+    },
+    {
+      "IntRow": 34,
+      "Kode": "XPLQ",
+      "NamaProduk": "Reksa Dana Pinacle Enhanced Liquid ETF ",
+      "TanggalPencatatan": "2016-08-15T00:00:00",
+      "ManajemenInvestasi": "PT Pinnacle Persada Investama",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 500,
+      "HargaPenutupanHarian": 473,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 35,
+      "Kode": "XISC",
+      "NamaProduk": "Premier ETF Indonesia State-Owned Companies",
+      "TanggalPencatatan": "2015-10-01T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 498.9277,
+      "HargaPenutupanHarian": 775,
+      "LastDividend": 7.83
+    },
+    {
+      "IntRow": 36,
+      "Kode": "XIIF",
+      "NamaProduk": "Reksa Dana Premier ETF Indonesia Financial ",
+      "TanggalPencatatan": "2014-11-19T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 499,
+      "HargaPenutupanHarian": 553,
+      "LastDividend": 5.72
+    },
+    {
+      "IntRow": 37,
+      "Kode": "XISR",
+      "NamaProduk": "Reksa Dana KIK Premier ETF SRI-KEHATI",
+      "TanggalPencatatan": "2014-09-26T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 295,
+      "HargaPenutupanHarian": 484,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 38,
+      "Kode": "XISI",
+      "NamaProduk": "Reksa Dana KIK Premier ETF SMinfra18",
+      "TanggalPencatatan": "2014-03-06T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 308,
+      "HargaPenutupanHarian": 365,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 39,
+      "Kode": "XIJI",
+      "NamaProduk": "Reksa Dana KIK Syariah Premier ETF JII",
+      "TanggalPencatatan": "2013-04-30T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 677,
+      "HargaPenutupanHarian": 606,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 40,
+      "Kode": "XIIC",
+      "NamaProduk": "Reksa Dana KIK Premier ETF Indonesia Consumer",
+      "TanggalPencatatan": "2013-04-30T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 1000,
+      "HargaPenutupanHarian": 997,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 41,
+      "Kode": "XIIT",
+      "NamaProduk": "Reksa Dana KIK Premier IDX30",
+      "TanggalPencatatan": "2012-10-30T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 380,
+      "HargaPenutupanHarian": 565,
+      "LastDividend": 5.98
+    },
+    {
+      "IntRow": 42,
+      "Kode": "R-ABFII",
+      "NamaProduk": "Reksa Dana KIK ABF IBI Funds",
+      "TanggalPencatatan": "2007-12-18T00:00:00",
+      "ManajemenInvestasi": "PT Bahana TCW Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 13803,
+      "HargaPenutupanHarian": 28600,
+      "LastDividend": 0
+    },
+    {
+      "IntRow": 43,
+      "Kode": "R-LQ45X",
+      "NamaProduk": "Reksa Dana KIK Premier LQ45",
+      "TanggalPencatatan": "2007-12-18T00:00:00",
+      "ManajemenInvestasi": "PT Indo Premier Investment Management",
+      "DealerPartisipan": "",
+      "HargaPencatatanAwal": 584,
+      "HargaPenutupanHarian": 1106,
+      "LastDividend": 11.53
     }
   ]
 }

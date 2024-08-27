@@ -48,8 +48,10 @@ import { getPdQuotationReference } from "./market-data/bonds-sukuk/pds-quotation
 import { getMaturityYear } from "./market-data/asset-backed-securities-data/getMaturityYear.js";
 import { getAbs } from "./market-data/asset-backed-securities-data/getAbs.js";
 import { getAbsSearchTable } from "./market-data/asset-backed-securities-data/getAbsSearchTable.js";
+import { getEtfMarket } from "./market-data/exchanged-traded-fund-etf-data/getEtfMarket.js";
 
-const data = await getAbsSearchTable('2021', 'SPSMFBRIS01A');
+
+const data = await getEtfMarket();
 
 https://www.idx.co.id/primary/MarketData/GetAbsSearchTable?draw=1&start=0&length=9999&yearMatured=&bondId=SPSMFBTN02A2
 // console.log(data);
