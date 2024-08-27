@@ -45,8 +45,13 @@ import { getInstrumentList } from "./market-data/bonds-sukuk/pds-quotation/getIn
 import { getPdQuotation } from "./market-data/bonds-sukuk/pds-quotation/getPdQuotation.js";
 import { getPdQuotationReference } from "./market-data/bonds-sukuk/pds-quotation/getPdQuotationReference.js";
 
+import { getMaturityYear } from "./market-data/asset-backed-securities-data/getMaturityYear.js";
+import { getAbs } from "./market-data/asset-backed-securities-data/getAbs.js";
+import { getAbsSearchTable } from "./market-data/asset-backed-securities-data/getAbsSearchTable.js";
 
-const data = await getPdQuotationReference();
+const data = await getAbsSearchTable('2021', 'SPSMFBRIS01A');
+
+https://www.idx.co.id/primary/MarketData/GetAbsSearchTable?draw=1&start=0&length=9999&yearMatured=&bondId=SPSMFBTN02A2
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 

@@ -1,28 +1,217 @@
 {
-  "Results": [
+  "draw": 0,
+  "recordsTotal": 10,
+  "recordsFiltered": 10,
+  "data": [
     {
-      "Instrument": "FR0097",
-      "OutputDateTime": "2024-08-28T00:00:00",
-      "AllMidPrice": 0,
-      "AllAvgBidPrice": 0,
-      "AllAvgOfferPrice": 0,
-      "FirmMidPrice": 0,
-      "FirmAvgBidPrice": 0,
-      "FirmAvgOfferPrice": 0,
-      "IndicativeMidPrice": 0,
-      "IndicativeAvgBidPrice": 0,
-      "IndicativeAvgOfferPrice": 0,
-      "AllMidPricePrev": 103.3976,
-      "AllAvgBidPricePrev": 103.0977,
-      "AllAvgOfferPricePrev": 103.6975,
-      "FirmMidPricePrev": 103.1,
-      "FirmAvgBidPricePrev": 103.7,
-      "FirmAvgOfferPricePrev": 103.4,
-      "IndicativeMidPricePrev": 103.3919,
-      "IndicativeAvgBidPricePrev": 103.0923,
-      "IndicativeAvgOfferPricePrev": 103.6915,
-      "LastTrade": 0
+      "Id": "MGIA01",
+      "Name": "Efek Beragun Aset Mandiri GIAA01 - Surat Berharga Hak Atas Penjualan Tiket Kelas A",
+      "Type": 3,
+      "ListingDate": "2018-07-31T00:00:00",
+      "MatureDate": "2032-12-31T00:00:00",
+      "Outstanding": 935325000000,
+      "CouponRate": 0,
+      "Rating": "idAA+",
+      "Trustee": "Bank Maybank Indonesia Tbk.",
+      "IssuerCode": "MGIA",
+      "TTM": 9.34,
+      "ISIN": "IDU000002107",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/MGIA01",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBRIS01A",
+      "Name": "EBAS SP SMF-BRIS 01 KELAS A",
+      "Type": 3,
+      "ListingDate": "2023-06-08T00:00:00",
+      "MatureDate": "2041-10-30T00:00:00",
+      "Outstanding": 297700000000,
+      "CouponRate": 7,
+      "Rating": "idAAA-sfsy",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFR01",
+      "TTM": 18.17,
+      "ISIN": "IDU0000029A7",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBRIS01A",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN02A2",
+      "Name": "EBA-SP SMF-BTN 02 Kelas A Seri A2",
+      "Type": 3,
+      "ListingDate": "2016-11-01T00:00:00",
+      "MatureDate": "2027-06-07T00:00:00",
+      "Outstanding": 14588917800,
+      "CouponRate": 8.75,
+      "Rating": "idAAA",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFB02",
+      "TTM": 3.76,
+      "ISIN": "IDU0000014A9",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN02A2",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN03A2",
+      "Name": "EBA-SP SMF-BTN 03 Kelas A Seri A2",
+      "Type": 3,
+      "ListingDate": "2017-05-02T00:00:00",
+      "MatureDate": "2029-07-07T00:00:00",
+      "Outstanding": 111917728000,
+      "CouponRate": 8.4,
+      "Rating": "idAAA",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFB03",
+      "TTM": 5.85,
+      "ISIN": "IDU0000016A4",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN03A2",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN04A2",
+      "Name": "EBA-SP SMF-BTN 04 Kelas A Seri A2",
+      "Type": 3,
+      "ListingDate": "2018-03-01T00:00:00",
+      "MatureDate": "2029-05-07T00:00:00",
+      "Outstanding": 290157658000,
+      "CouponRate": 7.5,
+      "Rating": "idAAA",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFB04",
+      "TTM": 5.68,
+      "ISIN": "IDU0000020A6",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN04A2",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN05A1",
+      "Name": "EBA-SP SMF-BTN 05 kelas A Seri A1",
+      "Type": 3,
+      "ListingDate": "2019-11-28T00:00:00",
+      "MatureDate": "2025-06-27T00:00:00",
+      "Outstanding": 120397791000,
+      "CouponRate": 8.5,
+      "Rating": "idAAA(sf)",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFB05",
+      "TTM": 1.82,
+      "ISIN": "IDU0000023A0",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN05A1",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN05A2",
+      "Name": "EBA-SP SMF-BTN 05 Kelas A Seri A2",
+      "Type": 3,
+      "ListingDate": "2019-11-28T00:00:00",
+      "MatureDate": "2028-03-27T00:00:00",
+      "Outstanding": 706186100000,
+      "CouponRate": 8.75,
+      "Rating": "idAAA(sf)",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFB05",
+      "TTM": 4.57,
+      "ISIN": "IDU0000024A8",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN05A2",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN06A",
+      "Name": "EBA-SP SMF-BTN 06 Kelas A",
+      "Type": 3,
+      "ListingDate": "2021-01-05T00:00:00",
+      "MatureDate": "2027-08-27T00:00:00",
+      "Outstanding": 262381552000,
+      "CouponRate": 6.5,
+      "Rating": "idAAA(sf)",
+      "Trustee": "Bank Mandiri Tbk.",
+      "IssuerCode": "SMFB06",
+      "TTM": 3.99,
+      "ISIN": "IDU0000027A1",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN06A",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFBTN07A",
+      "Name": "EBA-SP SMF-BTN 07 Kelas A",
+      "Type": 3,
+      "ListingDate": "2022-12-23T00:00:00",
+      "MatureDate": "2034-01-07T00:00:00",
+      "Outstanding": 382219878000,
+      "CouponRate": 7.7,
+      "Rating": "idAAA(sf)",
+      "Trustee": "Bank Mandiri Tbk",
+      "IssuerCode": "SMFB07",
+      "TTM": 10.36,
+      "ISIN": "IDU0000028A9",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFBTN07A",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPSMFMRI01A2",
+      "Name": "Efek Beragun Aset Berbentuk Surat Partisipasi SMF-BMRI 01 Kelas A2",
+      "Type": 3,
+      "ListingDate": "2016-08-26T00:00:00",
+      "MatureDate": "2029-10-27T00:00:00",
+      "Outstanding": 31156441100,
+      "CouponRate": 9.1,
+      "Rating": "idAAA",
+      "Trustee": "BRI Tbk.",
+      "IssuerCode": "SMFM01",
+      "TTM": 6.16,
+      "ISIN": "IDU0000012A3",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPSMFMRI01A2",
+          "Method": "GET"
+        }
+      ]
     }
-  ],
-  "SearchCriteria": null
+  ]
 }
