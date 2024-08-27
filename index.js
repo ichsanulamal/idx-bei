@@ -40,9 +40,13 @@ import { getOtcTrade } from "./market-data/bonds-sukuk/otc-trading-report/getOtc
 import { getOtcCorrected } from "./market-data/bonds-sukuk/otc-trading-report/getOtcCorrected.js";
 import { getOtcCancelled } from "./market-data/bonds-sukuk/otc-trading-report/getOtcCancelled.js";
 
+import { getMarketTime } from "./market-data/bonds-sukuk/pds-quotation/getMarketTime.js";
+import { getInstrumentList } from "./market-data/bonds-sukuk/pds-quotation/getInstrumentList.js";
+import { getPdQuotation } from "./market-data/bonds-sukuk/pds-quotation/getPdQuotation.js";
+import { getPdQuotationReference } from "./market-data/bonds-sukuk/pds-quotation/getPdQuotationReference.js";
 
 
-const data = await getOtcCorrected();
+const data = await getPdQuotationReference();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 
