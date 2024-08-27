@@ -2,19 +2,25 @@ import fs from "fs";
 
 import { fetchData } from '../../../utils/template.js';
 
+const pageSize=100
+
 // Helper function to build the fetch URL
-function buildFetchUrl(pageSize, indexFrom, bondType) {
-  return `https://www.idx.co.id/secondary/get/BondSukuk/bond?pageSize=${pageSize}&indexFrom=${indexFrom}&bondType=${bondType}`;
+function buildFetchUrl(indexFrom, bondType, instrumentId) {
+  return `https://www.idx.co.id/secondary/get/BondSukuk/bond?pageSize=${pageSize}&indexFrom=${indexFrom}&bondType=${bondType}&instrumentId=${instrumentId}`;
 }
 
 const referrer = "https://www.idx.co.id/en/market-data/bonds-sukuk/corporate-bonds-sukuk/";
 
 // Main function to fetch bond data with pagination
-export async function BondSukuk(pageSize = 100, indexFrom = 1, bondType = 2) {
+
+// bondType 1 corporate 2 gov
+// instrumentId 0 all 1 obligation 2 sukuk
+
+export async function getBondSukuk(indexFrom = 1, bondType = 2, instrumentId=0) {
   const allResults = [];
 
   try {
-    const initialUrl = buildFetchUrl(pageSize, indexFrom, bondType);
+    const initialUrl = buildFetchUrl(pageSize, indexFrom, bondType, instrumentId);
     const initialData = await fetchData(initialUrl, referrer);
 
     const totalResultCount = initialData.ResultCount;

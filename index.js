@@ -1,12 +1,5 @@
 import fs from "fs";
 
-export { BondSukuk } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/BondSukuk.js";
-
-
-
-import { getGovIssuer } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/getGovIssuer.js";
-
-
 import { getTradeSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getTradeSummary.js";
 import { getRecapSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getRecapSummary.js";
 
@@ -33,8 +26,10 @@ import { getCompositeBondIndex } from "./market-data/bonds-sukuk/indobex/getComp
 import { getGovernmentBondIndex } from "./market-data/bonds-sukuk/indobex/getGovernmentBondIndex.js";
 import { getCorporateBondIndex } from "./market-data/bonds-sukuk/indobex/getCorporateBondIndex.js";
 
+import { getGovIssuer } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/getGovIssuer.js";
+import { getBondSukuk } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/getBondSukuk.js";
 
-const data = await getCorporateBondIndex();
+const data = await getGovIssuer();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 

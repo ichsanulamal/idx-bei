@@ -6,11 +6,9 @@ export async function getGovIssuer() {
 
   try {
     const res = await fetchData(url, referrer);
-    console.log(res)
     return JSON.stringify(res, null, 2);
   } catch (error) {
     console.error("Error fetching boards:", error);
     throw error;
   }
 }
-

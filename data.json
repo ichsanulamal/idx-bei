@@ -1,102 +1,1964 @@
 {
   "Items": [
     {
-      "IndexId": 27855,
-      "DateInserted": "2024-08-27T17:00:00",
-      "IndexCode": "INDOBeXC-TR",
-      "IndexType": "3",
-      "IndexMethodType": "1",
-      "IndexValue": 445.3168,
-      "IndexChgVal": 0.0699,
-      "IndexChgPct": 0.0157,
+      "Id": "FR0037",
+      "Name": "Obligasi Negara Th. 2006 Seri FR0037",
       "Links": [
         {
           "Rel": "self",
-          "Href": "/api/api/indices/indobex/27855",
+          "Href": "/api/api/securities/bond/FR0037",
           "Method": "GET"
         }
       ]
     },
     {
-      "IndexId": 27859,
-      "DateInserted": "2024-08-27T17:00:00",
-      "IndexCode": "INDOBeXC-CP",
-      "IndexType": "3",
-      "IndexMethodType": "2",
-      "IndexValue": 111.3992,
-      "IndexChgVal": -0.0079,
-      "IndexChgPct": -0.0071,
+      "Id": "FR0040",
+      "Name": "Obligasi Negara Th. 2006 Seri FR0040",
       "Links": [
         {
           "Rel": "self",
-          "Href": "/api/api/indices/indobex/27859",
+          "Href": "/api/api/securities/bond/FR0040",
           "Method": "GET"
         }
       ]
     },
     {
-      "IndexId": 27857,
-      "DateInserted": "2024-08-27T17:00:00",
-      "IndexCode": "INDOBeXC-GP",
-      "IndexType": "3",
-      "IndexMethodType": "3",
-      "IndexValue": 112.584,
-      "IndexChgVal": 0.0126,
-      "IndexChgPct": 0.0112,
+      "Id": "FR0042",
+      "Name": "Obligasi Negara Th. 2007 Seri FR0042",
       "Links": [
         {
           "Rel": "self",
-          "Href": "/api/api/indices/indobex/27857",
+          "Href": "/api/api/securities/bond/FR0042",
           "Method": "GET"
         }
       ]
     },
     {
-      "IndexId": 27858,
-      "DateInserted": "2024-08-27T17:00:00",
-      "IndexCode": "INDOBeXC-EY",
-      "IndexType": "3",
-      "IndexMethodType": "4",
-      "IndexValue": 7.8522,
-      "IndexChgVal": 0.0006,
-      "IndexChgPct": 0.008,
+      "Id": "FR0044",
+      "Name": "Obligasi Negara Th. 2007 Seri FR0044",
       "Links": [
         {
           "Rel": "self",
-          "Href": "/api/api/indices/indobex/27858",
+          "Href": "/api/api/securities/bond/FR0044",
           "Method": "GET"
         }
       ]
     },
     {
-      "IndexId": 27856,
-      "DateInserted": "2024-08-27T17:00:00",
-      "IndexCode": "INDOBeXC-GY",
-      "IndexType": "3",
-      "IndexMethodType": "5",
-      "IndexValue": 7.8672,
-      "IndexChgVal": 0.0022,
-      "IndexChgPct": 0.028,
+      "Id": "FR0045",
+      "Name": "Obligasi Negara Th. 2007 Seri FR0045",
       "Links": [
         {
           "Rel": "self",
-          "Href": "/api/api/indices/indobex/27856",
+          "Href": "/api/api/securities/bond/FR0045",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0047",
+      "Name": "Obligasi Negara Th. 2007 Seri FR0047",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0047",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0050",
+      "Name": "Obligasi Negara RI Seri FR0050",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0050",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0052",
+      "Name": "Obligasi Negara RI Seri FR0052",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0052",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0054",
+      "Name": "Obligasi Negara RI Seri FR0054",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0054",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0056",
+      "Name": "Obligasi Negara RI Seri FR0056",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0056",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0057",
+      "Name": "Obligasi Negara RI Seri FR0057",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0057",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0058",
+      "Name": "Obligasi Negara RI Seri FR0058",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0058",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0059",
+      "Name": "Obligasi Negara RI Seri FR0059",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0059",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0062",
+      "Name": "Obligasi Negara RI Seri FR0062",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0062",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0064",
+      "Name": "Obligasi Negara RI Seri FR0064",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0064",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0065",
+      "Name": "Obligasi Negara RI Seri FR0065",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0065",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0067",
+      "Name": "Obligasi Negara RI Seri FR0067",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0067",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0068",
+      "Name": "Obligasi Negara RI Seri FR0068",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0068",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0070",
+      "Name": "Obligasi Negara Seri FR0070",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0070",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0071",
+      "Name": "Obligasi Negara Seri FR0071",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0071",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0072",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0072",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0072",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0073",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0073",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0073",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0074",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0074",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0074",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0075",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0075",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0075",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0076",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0076",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0076",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0077",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0077",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0077",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0078",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0078",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0078",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0079",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0079",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0079",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0080",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0080",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0080",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0081",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0081",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0081",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0082",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0082",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0082",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0083",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0083",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0083",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0084",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0084",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0084",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0085",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0085",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0085",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0086",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0086",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0086",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0087",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0087",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0087",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0088",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0088",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0088",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0089",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0089",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0089",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0090",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0090",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0090",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0091",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0091",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0091",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0092",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0092",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0092",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0093",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0093",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0093",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0094",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0094",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0094",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0095",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0095",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0095",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0096",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0096",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0096",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0097",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0097",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0097",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0098",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0098",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0098",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FR0099",
+      "Name": "Obligasi Negara Republik Indonesia Seri FR0099",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FR0099",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FRS001",
+      "Name": "Surat Berharga Syariah Negara Seri FRS001",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FRS001",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FRS002",
+      "Name": "Surat Berharga Syariah Negara Seri FRS002",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FRS002",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "FRSDG001",
+      "Name": "Obligasi Negara Republik Indonesia Seri FRSDG001",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/FRSDG001",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "IFR0006",
+      "Name": "SBSN RI Seri IFR-0006",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/IFR0006",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "IFR0007",
+      "Name": "SBSN RI Seri IFR-0007",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/IFR0007",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "IFR0010",
+      "Name": "SBSN RI Seri IFR-0010",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/IFR0010",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI018",
+      "Name": "Obligasi Negara Ritel Seri ORI018",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI018",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI019",
+      "Name": "Obligasi Negara Ritel Seri ORI019",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI019",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI020",
+      "Name": "Obligasi Negara Ritel Seri ORI020",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI020",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI021",
+      "Name": "Obligasi Negara Ritel Seri ORI021",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI021",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI022",
+      "Name": "Obligasi Negara Ritel Seri ORI022",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI022",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI023T3",
+      "Name": "Obligasi Negara Ritel Seri ORI023T3",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI023T3",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "ORI023T6",
+      "Name": "Obligasi Negara Ritel Seri ORI023T6",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/ORI023T6",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS003",
+      "Name": "SBSN RI Seri PBS003",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS003",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS004",
+      "Name": "SBSN RI Seri PBS004",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS004",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS005",
+      "Name": "SBSN RI Seri PBS005",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS005",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS007",
+      "Name": "Surat Berharga Syariah Negara RI Seri PBS007",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS007",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS012",
+      "Name": "Surat Berharga Syariah Negara Seri PBS012",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS012",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS015",
+      "Name": "Surat Berharga Syariah Negara Seri PBS015",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS015",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS017",
+      "Name": "Surat Berharga Syariah Negara Seri PBS017",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS017",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS018",
+      "Name": "Surat Berharga Syariah Negara Seri PBS018",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS018",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS019",
+      "Name": "Surat Berharga Syariah Negara Seri PBS019",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS019",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS020",
+      "Name": "Surat Berharga Syariah Negara Seri PBS020",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS020",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS021",
+      "Name": "Surat Berharga Syariah Negara Seri PBS021",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS021",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS022",
+      "Name": "Surat Berharga Syariah Negara Seri PBS022",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS022",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS023",
+      "Name": "Surat Berharga Syariah Negara Seri PBS023",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS023",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS024",
+      "Name": "Surat Berharga Syariah Negara Seri PBS024",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS024",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS025",
+      "Name": "Surat Berharga Syariah Negara Seri PBS025",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS025",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS026",
+      "Name": "Surat Berharga Syariah Negara Seri PBS026",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS026",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS028",
+      "Name": "Surat Berharga Syariah Negara Seri PBS028",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS028",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS029",
+      "Name": "Surat Berharga Syariah Negara Seri PBS029",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS029",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS030",
+      "Name": "Surat Berharga Syariah Negara Seri PBS030",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS030",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS031",
+      "Name": "Surat Berharga Syariah Negara Seri PBS031",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS031",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS032",
+      "Name": "Surat Berharga Syariah Negara Seri PBS032",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS032",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS033",
+      "Name": "Surat Berharga Syariah Negara Seri PBS033",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS033",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS034",
+      "Name": "Surat Berharga Syariah Negara Seri PBS034",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS034",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS035",
+      "Name": "Surat Berharga Syariah Negara Seri PBS035",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS035",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS036",
+      "Name": "Surat Berharga Syariah Negara Seri PBS036",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS036",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBS037",
+      "Name": "Surat Berharga Syariah Negara Seri PBS037",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBS037",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "PBSG001",
+      "Name": "Surat Berharga Syariah Negara Seri PBSG001",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/PBSG001",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12230914",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12230914",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12230914",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12231012",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12231012",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12231012",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12231109",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12231109",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12231109",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12231207",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12231207",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12231207",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240104",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240104",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240104",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240201",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240201",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240201",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240229",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240229",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240229",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240328",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240328",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240328",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240411",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240411",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240411",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240529",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240529",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240529",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240628",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240628",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240628",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPN12240725",
+      "Name": "Surat Perbendaharaan Negara Seri SPN12240725",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPN12240725",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPNS03102023",
+      "Name": "Surat Perbendaharaan Negara Syariah Seri SPNS03102023",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPNS03102023",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPNS05092023",
+      "Name": "Surat Perbendaharaan Negara Syariah Seri SPNS05092023",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPNS05092023",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SPNS07112023",
+      "Name": "Surat Perbendaharaan Negara Syariah Seri SPNS07112023",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SPNS07112023",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR013",
+      "Name": "Sukuk Negara Ritel Seri SR-013",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR013",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR014",
+      "Name": "Sukuk Negara Ritel seri SR-014",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR014",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR015",
+      "Name": "Sukuk Negara Ritel Seri SR-015",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR015",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR016",
+      "Name": "Sukuk Negara Ritel seri SR-016",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR016",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR017",
+      "Name": "Sukuk Negara Ritel seri SR-017",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR017",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR018T3",
+      "Name": "Sukuk Negara Ritel Seri SR018T3",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR018T3",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "SR018T5",
+      "Name": "Sukuk Negara Ritel Seri SR018T5",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/SR018T5",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "USDFR0002",
+      "Name": "Obligasi Negara Republik Indonesia Seri USDFR0002",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/USDFR0002",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "USDFR0003",
+      "Name": "Obligasi Negara Republik Indonesia Seri USDFR0003",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/USDFR0003",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "USDPBS003",
+      "Name": "Surat Berharga Syariah Negara Seri USDPBS003",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/USDPBS003",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "USDPBS004",
+      "Name": "Surat Berharga Syariah Negara Seri USDPBS004",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/USDPBS004",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0033",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0033",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0033",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0034",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0034",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0034",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0035",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0035",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0035",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0036",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0036",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0036",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0037",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0037",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0037",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0038",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0038",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0038",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0039",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0039",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0039",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0040",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0040",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0040",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0041",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0041",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0041",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0042",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0042",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0042",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0043",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0043",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0043",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0044",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0044",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0044",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0045",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0045",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0045",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0046",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0046",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0046",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0047",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0047",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0047",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0048",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0048",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0048",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0049",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0049",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0049",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0050",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0050",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0050",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0051",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0051",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0051",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0052",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0052",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0052",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0053",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0053",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0053",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0054",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0054",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0054",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0055",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0055",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0055",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0056",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0056",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0056",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0057",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0057",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0057",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0058",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0058",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0058",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0059",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0059",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0059",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0060",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0060",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0060",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0061",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0061",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0061",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0062",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0062",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0062",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0063",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0063",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0063",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0064",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0064",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0064",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0065",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0065",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0065",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0066",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0066",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0066",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0067",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0067",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0067",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0068",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0068",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0068",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0069",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0069",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0069",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0070",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0070",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0070",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0071",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0071",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0071",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0072",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0072",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0072",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0073",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0073",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0073",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0074",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0074",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0074",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0075",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0075",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0075",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0076",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0076",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0076",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0077",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0077",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0077",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0078",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0078",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0078",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0079",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0079",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0079",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0080",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0080",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0080",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0081",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0081",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0081",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0082",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0082",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0082",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0083",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0083",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0083",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0084",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0084",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0084",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0085",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0085",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0085",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0086",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0086",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0086",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0087",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0087",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0087",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0088",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0088",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0088",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0089",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0089",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0089",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0090",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0090",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0090",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0091",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0091",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0091",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0092",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0092",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0092",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0093",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0093",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0093",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0094",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0094",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0094",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "Id": "VR0095",
+      "Name": "Obligasi Negara Republik Indonesia Seri VR0095",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/securities/bond/VR0095",
           "Method": "GET"
         }
       ]
     }
   ],
-  "ItemCount": 5,
+  "ItemCount": 177,
   "PageSize": 1000,
   "Links": [
     {
       "Rel": "all",
-      "Href": "/api/api/indices/indobex",
+      "Href": "/api/api/securities/bond",
       "Method": "GET"
     },
     {
       "Rel": "currentPage",
-      "Href": "/IDX/api/v1/indices/indobex/corporate?pagenumber=1&pagesize=1000",
+      "Href": "/IDX/api/v1/securities/bond/type/government?pagenumber=1&pagesize=1000",
       "Method": "GET"
     }
   ],
