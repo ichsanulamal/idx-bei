@@ -35,7 +35,14 @@ import { getETPMarketSnapshot } from "./market-data/bonds-sukuk/etp-trading/getE
 import { getETPDailySummary } from "./market-data/bonds-sukuk/etp-trading/getETPDailySummary.js";
 import { getETPSecurityList } from "./market-data/bonds-sukuk/etp-trading/getETPSecurityList.js";
 
-const data = await getETPSecurityList();
+import { getOtcReport } from "./market-data/bonds-sukuk/otc-trading-report/getOtcReport.js";
+import { getOtcTrade } from "./market-data/bonds-sukuk/otc-trading-report/getOtcTrade.js";
+import { getOtcCorrected } from "./market-data/bonds-sukuk/otc-trading-report/getOtcCorrected.js";
+import { getOtcCancelled } from "./market-data/bonds-sukuk/otc-trading-report/getOtcCancelled.js";
+
+
+
+const data = await getOtcCorrected();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 
