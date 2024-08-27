@@ -69,9 +69,19 @@ export { getSwInformation } from "./market-data/structured-warrant-sw/structured
 
 export { getSwTrading } from "./market-data/structured-warrant-sw/structured-warrant-summary/getSwTrading.js";
 
-import { getSwInformation } from "./market-data/structured-warrant-sw/structured-warrant-information/getSwInformation.js";
+export { getDireMarket } from "./market-data/reits-dinfra/getDireMarket.js";
+export { getDinfraMarket } from "./market-data/reits-dinfra/getDinfraMarket.js";
 
-const data = await getSwInformation();
+export { getSlbDaily } from "./market-data/securities-borrowing-and-lending/getSlbDaily.js";
+export { getSlbFiles } from "./market-data/securities-borrowing-and-lending/getSlbFiles.js";
+export { getSlbLendableStock } from "./market-data/securities-borrowing-and-lending/getSlbLendableStock.js";
+export { getSlbTopActiveStock } from "./market-data/securities-borrowing-and-lending/getSlbTopActiveStock.js";
+export { getSlbTopLenderFreq } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderFreq.js";
+export { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderVal.js";
+
+import { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderVal.js";
+
+const data = await getSlbTopLenderVal();
 
 https://www.idx.co.id/primary/MarketData/GetAbsSearchTable?draw=1&start=0&length=9999&yearMatured=&bondId=SPSMFBTN02A2
 // console.log(data);
