@@ -1,599 +1,1783 @@
 {
-  "Items": [
+  "draw": 0,
+  "recordsTotal": 148,
+  "recordsFiltered": 148,
+  "data": [
     {
-      "IndexCode": "COMPOSITE",
-      "PrevVal": 7606.195,
-      "HighVal": 7610.201,
-      "LowVal": 7547.263,
-      "LastVal": 7597.881,
-      "ChgVal": -8.31,
-      "ChgPct": -0.11,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/COMPOSITE",
-          "Method": "GET"
-        }
-      ]
+      "No": 1,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "AALI",
+      "High": 6175,
+      "Low": 6125,
+      "Close": 6125,
+      "Change": 0,
+      "Volume": 14700,
+      "Value": 90250000,
+      "Frekuensi": 10
     },
     {
-      "IndexCode": "MBX",
-      "PrevVal": 2099.566,
-      "HighVal": 2100.531,
-      "LowVal": 2080.627,
-      "LastVal": 2094.154,
-      "ChgVal": -5.41,
-      "ChgPct": -0.26,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/MBX",
-          "Method": "GET"
-        }
-      ]
+      "No": 2,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ABMM",
+      "High": 3960,
+      "Low": 3880,
+      "Close": 3940,
+      "Change": 60,
+      "Volume": 153500,
+      "Value": 602082000,
+      "Frekuensi": 43
     },
     {
-      "IndexCode": "DBX",
-      "PrevVal": 1759.229,
-      "HighVal": 1768.469,
-      "LowVal": 1756.451,
-      "LastVal": 1768.469,
-      "ChgVal": 9.24,
-      "ChgPct": 0.53,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/DBX",
-          "Method": "GET"
-        }
-      ]
+      "No": 3,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ACES",
+      "High": 735,
+      "Low": 715,
+      "Close": 735,
+      "Change": 20,
+      "Volume": 1895300,
+      "Value": 1387517000,
+      "Frekuensi": 70
     },
     {
-      "IndexCode": "INFOBANK15",
-      "PrevVal": 1338.703,
-      "HighVal": 1337.667,
-      "LowVal": 1308.532,
-      "LastVal": 1319.921,
-      "ChgVal": -18.78,
-      "ChgPct": -1.4,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/INFOBANK15",
-          "Method": "GET"
-        }
-      ]
+      "No": 4,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ADHI",
+      "High": 310,
+      "Low": 300,
+      "Close": 300,
+      "Change": -8,
+      "Volume": 3505400,
+      "Value": 1070423400,
+      "Frekuensi": 202
     },
     {
-      "IndexCode": "KOMPAS100",
-      "PrevVal": 1170.167,
-      "HighVal": 1171.103,
-      "LowVal": 1160.665,
-      "LastVal": 1169.55,
-      "ChgVal": -0.62,
-      "ChgPct": -0.05,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/KOMPAS100",
-          "Method": "GET"
-        }
-      ]
+      "No": 5,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ADRO",
+      "High": 3570,
+      "Low": 3460,
+      "Close": 3500,
+      "Change": 10,
+      "Volume": 2796500,
+      "Value": 9827554000,
+      "Frekuensi": 323
     },
     {
-      "IndexCode": "ABX",
-      "PrevVal": 1115.901,
-      "HighVal": 1120.987,
-      "LowVal": 1101.446,
-      "LastVal": 1118.719,
-      "ChgVal": 2.82,
-      "ChgPct": 0.25,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/ABX",
-          "Method": "GET"
-        }
-      ]
+      "No": 6,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "AKRA",
+      "High": 1480,
+      "Low": 1470,
+      "Close": 1475,
+      "Change": 15,
+      "Volume": 344500,
+      "Value": 507399500,
+      "Frekuensi": 54
     },
     {
-      "IndexCode": "LQ45",
-      "PrevVal": 950.058,
-      "HighVal": 950.267,
-      "LowVal": 939.757,
-      "LastVal": 946.512,
-      "ChgVal": -3.55,
-      "ChgPct": -0.37,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/LQ45",
-          "Method": "GET"
-        }
-      ]
+      "No": 7,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "AMRT",
+      "High": 2870,
+      "Low": 2850,
+      "Close": 2860,
+      "Change": 50,
+      "Volume": 14400,
+      "Value": 41115000,
+      "Frekuensi": 7
     },
     {
-      "IndexCode": "BISNIS-27",
-      "PrevVal": 597.783,
-      "HighVal": 597.931,
-      "LowVal": 589.054,
-      "LastVal": 593.634,
-      "ChgVal": -4.15,
-      "ChgPct": -0.69,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/BISNIS-27",
-          "Method": "GET"
-        }
-      ]
+      "No": 8,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ANJT",
+      "High": 690,
+      "Low": 690,
+      "Close": 690,
+      "Change": 0,
+      "Volume": 10000,
+      "Value": 6900000,
+      "Frekuensi": 1
     },
     {
-      "IndexCode": "IDXHIDIV20",
-      "PrevVal": 581.761,
-      "HighVal": 582.116,
-      "LowVal": 573.32,
-      "LastVal": 578.374,
-      "ChgVal": -3.39,
-      "ChgPct": -0.58,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXHIDIV20",
-          "Method": "GET"
-        }
-      ]
+      "No": 9,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ANTM",
+      "High": 1480,
+      "Low": 1450,
+      "Close": 1470,
+      "Change": -10,
+      "Volume": 2057800,
+      "Value": 3004009500,
+      "Frekuensi": 260
     },
     {
-      "IndexCode": "JII",
-      "PrevVal": 519.334,
-      "HighVal": 521.775,
-      "LowVal": 517.994,
-      "LastVal": 521.613,
-      "ChgVal": 2.28,
-      "ChgPct": 0.44,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/JII",
-          "Method": "GET"
-        }
-      ]
+      "No": 10,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "APLN",
+      "High": 124,
+      "Low": 116,
+      "Close": 120,
+      "Change": 5,
+      "Volume": 9579100,
+      "Value": 1155399700,
+      "Frekuensi": 179
     },
     {
-      "IndexCode": "Investor33",
-      "PrevVal": 496.766,
-      "HighVal": 496.741,
-      "LowVal": 489.219,
-      "LastVal": 493.768,
-      "ChgVal": -3,
-      "ChgPct": -0.6,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/Investor33",
-          "Method": "GET"
-        }
-      ]
+      "No": 11,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ARCI",
+      "High": 302,
+      "Low": 294,
+      "Close": 302,
+      "Change": 6,
+      "Volume": 1565900,
+      "Value": 472383000,
+      "Frekuensi": 53
     },
     {
-      "IndexCode": "IDX30",
-      "PrevVal": 481.659,
-      "HighVal": 481.857,
-      "LowVal": 474.311,
-      "LastVal": 478.263,
-      "ChgVal": -3.4,
-      "ChgPct": -0.71,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDX30",
-          "Method": "GET"
-        }
-      ]
+      "No": 12,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ASII",
+      "High": 5125,
+      "Low": 5100,
+      "Close": 5100,
+      "Change": -50,
+      "Volume": 1801400,
+      "Value": 9208100000,
+      "Frekuensi": 424
     },
     {
-      "IndexCode": "SRI-KEHATI",
-      "PrevVal": 426.251,
-      "HighVal": 426.4,
-      "LowVal": 419.377,
-      "LastVal": 422.924,
-      "ChgVal": -3.33,
-      "ChgPct": -0.78,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/SRI-KEHATI",
-          "Method": "GET"
-        }
-      ]
+      "No": 13,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ASLC",
+      "High": 106,
+      "Low": 104,
+      "Close": 104,
+      "Change": -1,
+      "Volume": 140100,
+      "Value": 14690400,
+      "Frekuensi": 8
     },
     {
-      "IndexCode": "IDXBUMN20",
-      "PrevVal": 412.951,
-      "HighVal": 413.159,
-      "LowVal": 404.088,
-      "LastVal": 407.53,
-      "ChgVal": -5.42,
-      "ChgPct": -1.31,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXBUMN20",
-          "Method": "GET"
-        }
-      ]
+      "No": 14,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ASRI",
+      "High": 192,
+      "Low": 167,
+      "Close": 182,
+      "Change": 16,
+      "Volume": 23332500,
+      "Value": 4183116600,
+      "Frekuensi": 531
     },
     {
-      "IndexCode": "MNC36",
-      "PrevVal": 364.479,
-      "HighVal": 364.636,
-      "LowVal": 359.27,
-      "LastVal": 362.188,
-      "ChgVal": -2.29,
-      "ChgPct": -0.63,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/MNC36",
-          "Method": "GET"
-        }
-      ]
+      "No": 15,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ASSA",
+      "High": 760,
+      "Low": 730,
+      "Close": 750,
+      "Change": 0,
+      "Volume": 215100,
+      "Value": 161078000,
+      "Frekuensi": 40
     },
     {
-      "IndexCode": "IDXSMC-LIQ",
-      "PrevVal": 326.234,
-      "HighVal": 327.033,
-      "LowVal": 323.941,
-      "LastVal": 325.232,
-      "ChgVal": -1,
-      "ChgPct": -0.31,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXSMC-LIQ",
-          "Method": "GET"
-        }
-      ]
+      "No": 16,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "AUTO",
+      "High": 2230,
+      "Low": 2180,
+      "Close": 2190,
+      "Change": -30,
+      "Volume": 816000,
+      "Value": 1796958000,
+      "Frekuensi": 116
     },
     {
-      "IndexCode": "IDXSMC-COM",
-      "PrevVal": 322.385,
-      "HighVal": 323,
-      "LowVal": 321.759,
-      "LastVal": 322.701,
-      "ChgVal": 0.32,
-      "ChgPct": 0.1,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXSMC-COM",
-          "Method": "GET"
-        }
-      ]
+      "No": 17,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "AVIA",
+      "High": 482,
+      "Low": 478,
+      "Close": 482,
+      "Change": 2,
+      "Volume": 188400,
+      "Value": 90742000,
+      "Frekuensi": 11
     },
     {
-      "IndexCode": "SMInfra18",
-      "PrevVal": 306.469,
-      "HighVal": 306.559,
-      "LowVal": 301.943,
-      "LastVal": 304.937,
-      "ChgVal": -1.53,
-      "ChgPct": -0.5,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/SMInfra18",
-          "Method": "GET"
-        }
-      ]
+      "No": 18,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BBCA",
+      "High": 10300,
+      "Low": 10175,
+      "Close": 10200,
+      "Change": -125,
+      "Volume": 4318300,
+      "Value": 44108667500,
+      "Frekuensi": 703
     },
     {
-      "IndexCode": "PRIMBANK10",
-      "PrevVal": 250.3,
-      "HighVal": 249.604,
-      "LowVal": 244.46,
-      "LastVal": 246.679,
-      "ChgVal": -3.62,
-      "ChgPct": -1.45,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/PRIMBANK10",
-          "Method": "GET"
-        }
-      ]
+      "No": 19,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BBNI",
+      "High": 5525,
+      "Low": 5350,
+      "Close": 5400,
+      "Change": -125,
+      "Volume": 3410000,
+      "Value": 18335132500,
+      "Frekuensi": 662
     },
     {
-      "IndexCode": "I-GRADE",
-      "PrevVal": 243.949,
-      "HighVal": 243.789,
-      "LowVal": 239.323,
-      "LastVal": 241.702,
-      "ChgVal": -2.25,
-      "ChgPct": -0.92,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/I-GRADE",
-          "Method": "GET"
-        }
-      ]
+      "No": 20,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BBRI",
+      "High": 5250,
+      "Low": 5100,
+      "Close": 5175,
+      "Change": -125,
+      "Volume": 25990000,
+      "Value": 134254657500,
+      "Frekuensi": 2593
     },
     {
-      "IndexCode": "ISSI",
-      "PrevVal": 223.398,
-      "HighVal": 224.458,
-      "LowVal": 223.15,
-      "LastVal": 224.458,
-      "ChgVal": 1.06,
-      "ChgPct": 0.47,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/ISSI",
-          "Method": "GET"
-        }
-      ]
+      "No": 21,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BBTN",
+      "High": 1440,
+      "Low": 1390,
+      "Close": 1400,
+      "Change": -35,
+      "Volume": 4981600,
+      "Value": 7026893500,
+      "Frekuensi": 372
     },
     {
-      "IndexCode": "PEFINDO25",
-      "PrevVal": 208.2,
-      "HighVal": 209.483,
-      "LowVal": 206.59,
-      "LastVal": 207.926,
-      "ChgVal": -0.27,
-      "ChgPct": -0.13,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/PEFINDO25",
-          "Method": "GET"
-        }
-      ]
+      "No": 22,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BDKR",
+      "High": 905,
+      "Low": 795,
+      "Close": 905,
+      "Change": 110,
+      "Volume": 82900,
+      "Value": 67958000,
+      "Frekuensi": 18
     },
     {
-      "IndexCode": "JII70",
-      "PrevVal": 184.718,
-      "HighVal": 185.558,
-      "LowVal": 184.162,
-      "LastVal": 185.558,
-      "ChgVal": 0.84,
-      "ChgPct": 0.46,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/JII70",
-          "Method": "GET"
-        }
-      ]
+      "No": 23,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BDMN",
+      "High": 2640,
+      "Low": 2630,
+      "Close": 2630,
+      "Change": -30,
+      "Volume": 26900,
+      "Value": 70996000,
+      "Frekuensi": 4
     },
     {
-      "IndexCode": "IDXESGL",
-      "PrevVal": 166.312,
-      "HighVal": 166.274,
-      "LowVal": 163.456,
-      "LastVal": 165.11,
-      "ChgVal": -1.2,
-      "ChgPct": -0.72,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXESGL",
-          "Method": "GET"
-        }
-      ]
+      "No": 24,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BEST",
+      "High": 128,
+      "Low": 123,
+      "Close": 127,
+      "Change": 6,
+      "Volume": 2917600,
+      "Value": 368703700,
+      "Frekuensi": 60
     },
     {
-      "IndexCode": "IDXQ30",
-      "PrevVal": 160.954,
-      "HighVal": 161.032,
-      "LowVal": 159.153,
-      "LastVal": 160.356,
-      "ChgVal": -0.6,
-      "ChgPct": -0.37,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXQ30",
-          "Method": "GET"
-        }
-      ]
+      "No": 25,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BFIN",
+      "High": 1010,
+      "Low": 990,
+      "Close": 995,
+      "Change": -5,
+      "Volume": 85900,
+      "Value": 85494500,
+      "Frekuensi": 15
     },
     {
-      "IndexCode": "IDXG30",
-      "PrevVal": 157.996,
-      "HighVal": 158.107,
-      "LowVal": 155.628,
-      "LastVal": 156.851,
-      "ChgVal": -1.15,
-      "ChgPct": -0.73,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXG30",
-          "Method": "GET"
-        }
-      ]
+      "No": 26,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BIKE",
+      "High": 715,
+      "Low": 715,
+      "Close": 715,
+      "Change": 15,
+      "Volume": 47700,
+      "Value": 34105500,
+      "Frekuensi": 3
     },
     {
-      "IndexCode": "ESGQKEHATI",
-      "PrevVal": 141.604,
-      "HighVal": 141.589,
-      "LowVal": 139.423,
-      "LastVal": 140.599,
-      "ChgVal": -1.01,
-      "ChgPct": -0.71,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/ESGQKEHATI",
-          "Method": "GET"
-        }
-      ]
+      "No": 27,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BIRD",
+      "High": 1885,
+      "Low": 1850,
+      "Close": 1885,
+      "Change": 40,
+      "Volume": 293200,
+      "Value": 546885500,
+      "Frekuensi": 37
     },
     {
-      "IndexCode": "ESGSKEHATI",
-      "PrevVal": 141.387,
-      "HighVal": 141.372,
-      "LowVal": 139.309,
-      "LastVal": 140.46,
-      "ChgVal": -0.93,
-      "ChgPct": -0.66,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/ESGSKEHATI",
-          "Method": "GET"
-        }
-      ]
+      "No": 28,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BJBR",
+      "High": 1005,
+      "Low": 1000,
+      "Close": 1000,
+      "Change": -5,
+      "Volume": 94100,
+      "Value": 94483000,
+      "Frekuensi": 14
     },
     {
-      "IndexCode": "IDXV30",
-      "PrevVal": 140.092,
-      "HighVal": 140.493,
-      "LowVal": 138.783,
-      "LastVal": 139.632,
-      "ChgVal": -0.46,
-      "ChgPct": -0.33,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXV30",
-          "Method": "GET"
-        }
-      ]
+      "No": 29,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BJTM",
+      "High": 570,
+      "Low": 570,
+      "Close": 570,
+      "Change": 0,
+      "Volume": 128900,
+      "Value": 73473000,
+      "Frekuensi": 7
     },
     {
-      "IndexCode": "ECONOMIC30",
-      "PrevVal": 135.364,
-      "HighVal": 135.107,
-      "LowVal": 132.603,
-      "LastVal": 133.829,
-      "ChgVal": -1.54,
-      "ChgPct": -1.13,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/ECONOMIC30",
-          "Method": "GET"
-        }
-      ]
+      "No": 30,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BMRI",
+      "High": 7025,
+      "Low": 6925,
+      "Close": 7025,
+      "Change": -25,
+      "Volume": 7602200,
+      "Value": 52972380000,
+      "Frekuensi": 959
     },
     {
-      "IndexCode": "IDXLQ45LCL",
-      "PrevVal": 132.795,
-      "HighVal": 132.782,
-      "LowVal": 130.9,
-      "LastVal": 131.952,
-      "ChgVal": -0.84,
-      "ChgPct": -0.64,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXLQ45LCL",
-          "Method": "GET"
-        }
-      ]
+      "No": 31,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BMTR",
+      "High": 232,
+      "Low": 228,
+      "Close": 230,
+      "Change": -4,
+      "Volume": 3788800,
+      "Value": 871024200,
+      "Frekuensi": 70
     },
     {
-      "IndexCode": "IDX80",
-      "PrevVal": 132.437,
-      "HighVal": 132.569,
-      "LowVal": 131.442,
-      "LastVal": 132.314,
-      "ChgVal": -0.12,
-      "ChgPct": -0.09,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDX80",
-          "Method": "GET"
-        }
-      ]
+      "No": 32,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BNGA",
+      "High": 1915,
+      "Low": 1890,
+      "Close": 1900,
+      "Change": -10,
+      "Volume": 376100,
+      "Value": 715905500,
+      "Frekuensi": 37
     },
     {
-      "IndexCode": "IDXSHAGROW",
-      "PrevVal": 93.435,
-      "HighVal": 93.684,
-      "LowVal": 92.628,
-      "LastVal": 93.31,
-      "ChgVal": -0.13,
-      "ChgPct": -0.13,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXSHAGROW",
-          "Method": "GET"
-        }
-      ]
+      "No": 33,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BRIS",
+      "High": 2740,
+      "Low": 2670,
+      "Close": 2740,
+      "Change": 10,
+      "Volume": 699500,
+      "Value": 1893133000,
+      "Frekuensi": 87
     },
     {
-      "IndexCode": "IDXMESBUMN",
-      "PrevVal": 77.615,
-      "HighVal": 77.635,
-      "LowVal": 76.199,
-      "LastVal": 76.656,
-      "ChgVal": -0.96,
-      "ChgPct": -1.24,
-      "DtCreate": "2024-08-27T00:00:00",
-      "Links": [
-        {
-          "Rel": "self",
-          "Href": "/api/api/marketsummary/indexsummary/IDXMESBUMN",
-          "Method": "GET"
-        }
-      ]
+      "No": 34,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BRMS",
+      "High": 162,
+      "Low": 159,
+      "Close": 161,
+      "Change": 0,
+      "Volume": 10726700,
+      "Value": 1714958000,
+      "Frekuensi": 114
+    },
+    {
+      "No": 35,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BRPT",
+      "High": 1135,
+      "Low": 1105,
+      "Close": 1110,
+      "Change": -15,
+      "Volume": 3871500,
+      "Value": 4326776500,
+      "Frekuensi": 218
+    },
+    {
+      "No": 36,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BSDE",
+      "High": 1270,
+      "Low": 1210,
+      "Close": 1245,
+      "Change": 35,
+      "Volume": 1572700,
+      "Value": 1960757500,
+      "Frekuensi": 109
+    },
+    {
+      "No": 37,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BSML",
+      "High": 109,
+      "Low": 106,
+      "Close": 106,
+      "Change": -1,
+      "Volume": 9675700,
+      "Value": 1044350700,
+      "Frekuensi": 13
+    },
+    {
+      "No": 38,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BSSR",
+      "High": 4700,
+      "Low": 4660,
+      "Close": 4700,
+      "Change": 100,
+      "Volume": 171900,
+      "Value": 804543000,
+      "Frekuensi": 55
+    },
+    {
+      "No": 39,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "BTPS",
+      "High": 1310,
+      "Low": 1285,
+      "Close": 1295,
+      "Change": -15,
+      "Volume": 357600,
+      "Value": 463485500,
+      "Frekuensi": 32
+    },
+    {
+      "No": 40,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "CFIN",
+      "High": 420,
+      "Low": 420,
+      "Close": 420,
+      "Change": -2,
+      "Volume": 100,
+      "Value": 42000,
+      "Frekuensi": 1
+    },
+    {
+      "No": 41,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "CMRY",
+      "High": 5325,
+      "Low": 5325,
+      "Close": 5325,
+      "Change": -75,
+      "Volume": 11500,
+      "Value": 61237500,
+      "Frekuensi": 9
+    },
+    {
+      "No": 42,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "CPIN",
+      "High": 5075,
+      "Low": 4980,
+      "Close": 5075,
+      "Change": 75,
+      "Volume": 704800,
+      "Value": 3558415000,
+      "Frekuensi": 194
+    },
+    {
+      "No": 43,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "CTRA",
+      "High": 1330,
+      "Low": 1295,
+      "Close": 1300,
+      "Change": -15,
+      "Volume": 3516000,
+      "Value": 4594349000,
+      "Frekuensi": 203
+    },
+    {
+      "No": 44,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "DILD",
+      "High": 200,
+      "Low": 188,
+      "Close": 189,
+      "Change": -6,
+      "Volume": 7957600,
+      "Value": 1545450500,
+      "Frekuensi": 259
+    },
+    {
+      "No": 45,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "DMAS",
+      "High": 163,
+      "Low": 162,
+      "Close": 163,
+      "Change": 1,
+      "Volume": 1070000,
+      "Value": 174403300,
+      "Frekuensi": 44
+    },
+    {
+      "No": 46,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "DOID",
+      "High": 735,
+      "Low": 720,
+      "Close": 725,
+      "Change": -5,
+      "Volume": 438400,
+      "Value": 318895000,
+      "Frekuensi": 42
+    },
+    {
+      "No": 47,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "DRMA",
+      "High": 1095,
+      "Low": 1085,
+      "Close": 1085,
+      "Change": -25,
+      "Volume": 20800,
+      "Value": 22685000,
+      "Frekuensi": 10
+    },
+    {
+      "No": 48,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ELSA",
+      "High": 498,
+      "Low": 486,
+      "Close": 488,
+      "Change": -4,
+      "Volume": 6125600,
+      "Value": 3019842800,
+      "Frekuensi": 188
+    },
+    {
+      "No": 49,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "EMTK",
+      "High": 400,
+      "Low": 396,
+      "Close": 398,
+      "Change": -4,
+      "Volume": 110000,
+      "Value": 43743600,
+      "Frekuensi": 18
+    },
+    {
+      "No": 50,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ENRG",
+      "High": 210,
+      "Low": 208,
+      "Close": 208,
+      "Change": -2,
+      "Volume": 273000,
+      "Value": 56984000,
+      "Frekuensi": 14
+    },
+    {
+      "No": 51,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ERAA",
+      "High": 426,
+      "Low": 420,
+      "Close": 422,
+      "Change": -4,
+      "Volume": 1476200,
+      "Value": 623539600,
+      "Frekuensi": 22
+    },
+    {
+      "No": 52,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ERAL",
+      "High": 264,
+      "Low": 262,
+      "Close": 264,
+      "Change": 18,
+      "Volume": 9500,
+      "Value": 2496600,
+      "Frekuensi": 2
+    },
+    {
+      "No": 53,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ESSA",
+      "High": 820,
+      "Low": 780,
+      "Close": 805,
+      "Change": 15,
+      "Volume": 3426300,
+      "Value": 2749419500,
+      "Frekuensi": 293
+    },
+    {
+      "No": 54,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "EXCL",
+      "High": 2240,
+      "Low": 2210,
+      "Close": 2240,
+      "Change": 20,
+      "Volume": 583400,
+      "Value": 1299091000,
+      "Frekuensi": 70
+    },
+    {
+      "No": 55,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "GGRM",
+      "High": 16050,
+      "Low": 15875,
+      "Close": 15875,
+      "Change": 50,
+      "Volume": 34300,
+      "Value": 549250000,
+      "Frekuensi": 28
+    },
+    {
+      "No": 56,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "GJTL",
+      "High": 1335,
+      "Low": 1305,
+      "Close": 1320,
+      "Change": 0,
+      "Volume": 508300,
+      "Value": 673884500,
+      "Frekuensi": 72
+    },
+    {
+      "No": 57,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "GPRA",
+      "High": 93,
+      "Low": 93,
+      "Close": 93,
+      "Change": 4,
+      "Volume": 12500,
+      "Value": 1162500,
+      "Frekuensi": 4
+    },
+    {
+      "No": 58,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "GULA",
+      "High": 1000,
+      "Low": 995,
+      "Close": 1000,
+      "Change": 5,
+      "Volume": 530000,
+      "Value": 529850000,
+      "Frekuensi": 20
+    },
+    {
+      "No": 59,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "HEAL",
+      "High": 1290,
+      "Low": 1285,
+      "Close": 1285,
+      "Change": 0,
+      "Volume": 22300,
+      "Value": 28740500,
+      "Frekuensi": 10
+    },
+    {
+      "No": 60,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "HMSP",
+      "High": 730,
+      "Low": 715,
+      "Close": 725,
+      "Change": 5,
+      "Volume": 1643800,
+      "Value": 1189708500,
+      "Frekuensi": 107
+    },
+    {
+      "No": 61,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "HOKI",
+      "High": 129,
+      "Low": 128,
+      "Close": 129,
+      "Change": -1,
+      "Volume": 117300,
+      "Value": 15060700,
+      "Frekuensi": 5
+    },
+    {
+      "No": 62,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "HRTA",
+      "High": 398,
+      "Low": 394,
+      "Close": 396,
+      "Change": -4,
+      "Volume": 659400,
+      "Value": 261603600,
+      "Frekuensi": 20
+    },
+    {
+      "No": 63,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "HRUM",
+      "High": 1430,
+      "Low": 1360,
+      "Close": 1430,
+      "Change": 80,
+      "Volume": 2324200,
+      "Value": 3241256000,
+      "Frekuensi": 287
+    },
+    {
+      "No": 64,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ICBP",
+      "High": 11475,
+      "Low": 11425,
+      "Close": 11450,
+      "Change": 125,
+      "Volume": 2900,
+      "Value": 33207500,
+      "Frekuensi": 5
+    },
+    {
+      "No": 65,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "IMAS",
+      "High": 1285,
+      "Low": 1270,
+      "Close": 1270,
+      "Change": -15,
+      "Volume": 2000,
+      "Value": 2552500,
+      "Frekuensi": 12
+    },
+    {
+      "No": 66,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "IMJS",
+      "High": 187,
+      "Low": 187,
+      "Close": 187,
+      "Change": -3,
+      "Volume": 118500,
+      "Value": 22159500,
+      "Frekuensi": 13
+    },
+    {
+      "No": 67,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "INCO",
+      "High": 3810,
+      "Low": 3750,
+      "Close": 3770,
+      "Change": -40,
+      "Volume": 1129300,
+      "Value": 4271850000,
+      "Frekuensi": 352
+    },
+    {
+      "No": 68,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "INDF",
+      "High": 6875,
+      "Low": 6725,
+      "Close": 6725,
+      "Change": -125,
+      "Volume": 118200,
+      "Value": 799192500,
+      "Frekuensi": 128
+    },
+    {
+      "No": 69,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "INDY",
+      "High": 1570,
+      "Low": 1535,
+      "Close": 1555,
+      "Change": 5,
+      "Volume": 1005500,
+      "Value": 1569205500,
+      "Frekuensi": 129
+    },
+    {
+      "No": 70,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "INKP",
+      "High": 8750,
+      "Low": 8625,
+      "Close": 8650,
+      "Change": -100,
+      "Volume": 138600,
+      "Value": 1198845000,
+      "Frekuensi": 64
+    },
+    {
+      "No": 71,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "INTP",
+      "High": 7100,
+      "Low": 7000,
+      "Close": 7000,
+      "Change": -50,
+      "Volume": 24700,
+      "Value": 174050000,
+      "Frekuensi": 32
+    },
+    {
+      "No": 72,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "IPCC",
+      "High": 680,
+      "Low": 680,
+      "Close": 680,
+      "Change": -5,
+      "Volume": 101000,
+      "Value": 68680000,
+      "Frekuensi": 3
+    },
+    {
+      "No": 73,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ISAT",
+      "High": 10750,
+      "Low": 10575,
+      "Close": 10625,
+      "Change": -125,
+      "Volume": 71200,
+      "Value": 757677500,
+      "Frekuensi": 62
+    },
+    {
+      "No": 74,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ISSP",
+      "High": 312,
+      "Low": 310,
+      "Close": 310,
+      "Change": -4,
+      "Volume": 704000,
+      "Value": 218242000,
+      "Frekuensi": 42
+    },
+    {
+      "No": 75,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ITMG",
+      "High": 27150,
+      "Low": 26875,
+      "Close": 26950,
+      "Change": -50,
+      "Volume": 43400,
+      "Value": 1175985000,
+      "Frekuensi": 92
+    },
+    {
+      "No": 76,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "JARR",
+      "High": 248,
+      "Low": 248,
+      "Close": 248,
+      "Change": 0,
+      "Volume": 1000,
+      "Value": 248000,
+      "Frekuensi": 2
+    },
+    {
+      "No": 77,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "JKON",
+      "High": 110,
+      "Low": 105,
+      "Close": 105,
+      "Change": -4,
+      "Volume": 470600,
+      "Value": 50949600,
+      "Frekuensi": 17
+    },
+    {
+      "No": 78,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "JPFA",
+      "High": 1655,
+      "Low": 1590,
+      "Close": 1650,
+      "Change": 70,
+      "Volume": 1556900,
+      "Value": 2532929500,
+      "Frekuensi": 257
+    },
+    {
+      "No": 79,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "JSMR",
+      "High": 5375,
+      "Low": 5375,
+      "Close": 5375,
+      "Change": -25,
+      "Volume": 900,
+      "Value": 4837500,
+      "Frekuensi": 3
+    },
+    {
+      "No": 80,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "KEEN",
+      "High": 715,
+      "Low": 710,
+      "Close": 710,
+      "Change": -5,
+      "Volume": 316000,
+      "Value": 225915000,
+      "Frekuensi": 22
+    },
+    {
+      "No": 81,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "KIJA",
+      "High": 156,
+      "Low": 150,
+      "Close": 153,
+      "Change": 3,
+      "Volume": 1090000,
+      "Value": 164688100,
+      "Frekuensi": 19
+    },
+    {
+      "No": 82,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "KKGI",
+      "High": 630,
+      "Low": 620,
+      "Close": 620,
+      "Change": -10,
+      "Volume": 445800,
+      "Value": 277646000,
+      "Frekuensi": 44
+    },
+    {
+      "No": 83,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "KLBF",
+      "High": 1765,
+      "Low": 1720,
+      "Close": 1720,
+      "Change": -10,
+      "Volume": 76400,
+      "Value": 132908500,
+      "Frekuensi": 8
+    },
+    {
+      "No": 84,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "LSIP",
+      "High": 895,
+      "Low": 890,
+      "Close": 890,
+      "Change": -5,
+      "Volume": 165800,
+      "Value": 148037000,
+      "Frekuensi": 31
+    },
+    {
+      "No": 85,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MAIN",
+      "High": 875,
+      "Low": 815,
+      "Close": 875,
+      "Change": 50,
+      "Volume": 227600,
+      "Value": 191425500,
+      "Frekuensi": 46
+    },
+    {
+      "No": 86,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MAPA",
+      "High": 830,
+      "Low": 820,
+      "Close": 825,
+      "Change": 5,
+      "Volume": 506800,
+      "Value": 418012000,
+      "Frekuensi": 60
+    },
+    {
+      "No": 87,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MAPI",
+      "High": 1515,
+      "Low": 1490,
+      "Close": 1490,
+      "Change": -10,
+      "Volume": 147000,
+      "Value": 221376000,
+      "Frekuensi": 22
+    },
+    {
+      "No": 88,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MBMA",
+      "High": 545,
+      "Low": 530,
+      "Close": 535,
+      "Change": -10,
+      "Volume": 3728200,
+      "Value": 2009316500,
+      "Frekuensi": 227
+    },
+    {
+      "No": 89,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MDKA",
+      "High": 2480,
+      "Low": 2410,
+      "Close": 2450,
+      "Change": -20,
+      "Volume": 896800,
+      "Value": 2183153000,
+      "Frekuensi": 148
+    },
+    {
+      "No": 90,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MEDC",
+      "High": 1325,
+      "Low": 1295,
+      "Close": 1300,
+      "Change": 0,
+      "Volume": 5301700,
+      "Value": 6929679000,
+      "Frekuensi": 416
+    },
+    {
+      "No": 91,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MNCN",
+      "High": 340,
+      "Low": 328,
+      "Close": 332,
+      "Change": -4,
+      "Volume": 12039600,
+      "Value": 4022467400,
+      "Frekuensi": 333
+    },
+    {
+      "No": 92,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MPMX",
+      "High": 1025,
+      "Low": 1015,
+      "Close": 1015,
+      "Change": -5,
+      "Volume": 4659800,
+      "Value": 4744064500,
+      "Frekuensi": 215
+    },
+    {
+      "No": 93,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MTDL",
+      "High": 630,
+      "Low": 615,
+      "Close": 615,
+      "Change": -20,
+      "Volume": 682700,
+      "Value": 423887000,
+      "Frekuensi": 24
+    },
+    {
+      "No": 94,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MTEL",
+      "High": 670,
+      "Low": 665,
+      "Close": 665,
+      "Change": -10,
+      "Volume": 300200,
+      "Value": 200383000,
+      "Frekuensi": 3
+    },
+    {
+      "No": 95,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "MYOR",
+      "High": 2640,
+      "Low": 2640,
+      "Close": 2640,
+      "Change": -10,
+      "Volume": 1000,
+      "Value": 2640000,
+      "Frekuensi": 1
+    },
+    {
+      "No": 96,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "NCKL",
+      "High": 945,
+      "Low": 925,
+      "Close": 940,
+      "Change": 25,
+      "Volume": 307200,
+      "Value": 287914500,
+      "Frekuensi": 52
+    },
+    {
+      "No": 97,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "NISP",
+      "High": 1345,
+      "Low": 1335,
+      "Close": 1335,
+      "Change": -25,
+      "Volume": 221700,
+      "Value": 298067500,
+      "Frekuensi": 8
+    },
+    {
+      "No": 98,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "NOBU",
+      "High": 640,
+      "Low": 635,
+      "Close": 635,
+      "Change": 5,
+      "Volume": 2500,
+      "Value": 1592500,
+      "Frekuensi": 3
+    },
+    {
+      "No": 99,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "OMED",
+      "High": 188,
+      "Low": 186,
+      "Close": 186,
+      "Change": -1,
+      "Volume": 202500,
+      "Value": 37872500,
+      "Frekuensi": 12
+    },
+    {
+      "No": 100,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PDPP",
+      "High": 590,
+      "Low": 585,
+      "Close": 585,
+      "Change": 15,
+      "Volume": 33300,
+      "Value": 19530500,
+      "Frekuensi": 5
+    },
+    {
+      "No": 101,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PGAS",
+      "High": 1655,
+      "Low": 1575,
+      "Close": 1580,
+      "Change": -100,
+      "Volume": 21111400,
+      "Value": 33632039500,
+      "Frekuensi": 1120
+    },
+    {
+      "No": 102,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PGEO",
+      "High": 1185,
+      "Low": 1175,
+      "Close": 1180,
+      "Change": -5,
+      "Volume": 1103800,
+      "Value": 1301600500,
+      "Frekuensi": 141
+    },
+    {
+      "No": 103,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PMMP",
+      "High": 204,
+      "Low": 204,
+      "Close": 204,
+      "Change": 0,
+      "Volume": 50000,
+      "Value": 10200000,
+      "Frekuensi": 2
+    },
+    {
+      "No": 104,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PNBN",
+      "High": 1275,
+      "Low": 1275,
+      "Close": 1275,
+      "Change": 10,
+      "Volume": 100,
+      "Value": 127500,
+      "Frekuensi": 1
+    },
+    {
+      "No": 105,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PNLF",
+      "High": 386,
+      "Low": 370,
+      "Close": 376,
+      "Change": 2,
+      "Volume": 8409600,
+      "Value": 3187591200,
+      "Frekuensi": 306
+    },
+    {
+      "No": 106,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PRDA",
+      "High": 3300,
+      "Low": 3180,
+      "Close": 3190,
+      "Change": 30,
+      "Volume": 149100,
+      "Value": 480051000,
+      "Frekuensi": 78
+    },
+    {
+      "No": 107,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PSSI",
+      "High": 430,
+      "Low": 430,
+      "Close": 430,
+      "Change": 0,
+      "Volume": 400,
+      "Value": 172000,
+      "Frekuensi": 1
+    },
+    {
+      "No": 108,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PTBA",
+      "High": 2810,
+      "Low": 2760,
+      "Close": 2780,
+      "Change": 10,
+      "Volume": 217900,
+      "Value": 607177000,
+      "Frekuensi": 76
+    },
+    {
+      "No": 109,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PTPP",
+      "High": 458,
+      "Low": 442,
+      "Close": 442,
+      "Change": -14,
+      "Volume": 4395000,
+      "Value": 1960053800,
+      "Frekuensi": 137
+    },
+    {
+      "No": 110,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PTRO",
+      "High": 9075,
+      "Low": 8875,
+      "Close": 8950,
+      "Change": 0,
+      "Volume": 25100,
+      "Value": 223615000,
+      "Frekuensi": 22
+    },
+    {
+      "No": 111,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "PWON",
+      "High": 494,
+      "Low": 486,
+      "Close": 492,
+      "Change": 0,
+      "Volume": 4537900,
+      "Value": 2219314800,
+      "Frekuensi": 182
+    },
+    {
+      "No": 112,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "RAJA",
+      "High": 1330,
+      "Low": 1250,
+      "Close": 1280,
+      "Change": -55,
+      "Volume": 2013600,
+      "Value": 2567034500,
+      "Frekuensi": 147
+    },
+    {
+      "No": 113,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "RALS",
+      "High": 414,
+      "Low": 410,
+      "Close": 410,
+      "Change": -4,
+      "Volume": 797100,
+      "Value": 327641000,
+      "Frekuensi": 17
+    },
+    {
+      "No": 114,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ROTI",
+      "High": 1035,
+      "Low": 1030,
+      "Close": 1030,
+      "Change": -10,
+      "Volume": 200,
+      "Value": 206500,
+      "Frekuensi": 2
+    },
+    {
+      "No": 115,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SBMA",
+      "High": 132,
+      "Low": 132,
+      "Close": 132,
+      "Change": -4,
+      "Volume": 100,
+      "Value": 13200,
+      "Frekuensi": 1
+    },
+    {
+      "No": 116,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SCMA",
+      "High": 126,
+      "Low": 123,
+      "Close": 124,
+      "Change": -2,
+      "Volume": 9510100,
+      "Value": 1181600400,
+      "Frekuensi": 158
+    },
+    {
+      "No": 117,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SIDO",
+      "High": 700,
+      "Low": 690,
+      "Close": 690,
+      "Change": -5,
+      "Volume": 795500,
+      "Value": 555771500,
+      "Frekuensi": 84
+    },
+    {
+      "No": 118,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SIMP",
+      "High": 384,
+      "Low": 382,
+      "Close": 382,
+      "Change": 0,
+      "Volume": 7700,
+      "Value": 2942000,
+      "Frekuensi": 4
+    },
+    {
+      "No": 119,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SKRN",
+      "High": 320,
+      "Low": 318,
+      "Close": 318,
+      "Change": -2,
+      "Volume": 8000,
+      "Value": 2552000,
+      "Frekuensi": 2
+    },
+    {
+      "No": 120,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SMBR",
+      "High": 254,
+      "Low": 254,
+      "Close": 254,
+      "Change": -4,
+      "Volume": 35000,
+      "Value": 8890000,
+      "Frekuensi": 7
+    },
+    {
+      "No": 121,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SMDR",
+      "High": 356,
+      "Low": 348,
+      "Close": 350,
+      "Change": -10,
+      "Volume": 1466900,
+      "Value": 514522800,
+      "Frekuensi": 106
+    },
+    {
+      "No": 122,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SMGR",
+      "High": 4030,
+      "Low": 3950,
+      "Close": 3970,
+      "Change": -40,
+      "Volume": 484000,
+      "Value": 1920151000,
+      "Frekuensi": 270
+    },
+    {
+      "No": 123,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SMRA",
+      "High": 670,
+      "Low": 640,
+      "Close": 640,
+      "Change": -15,
+      "Volume": 6825600,
+      "Value": 4455902000,
+      "Frekuensi": 262
+    },
+    {
+      "No": 124,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SMSM",
+      "High": 1975,
+      "Low": 1965,
+      "Close": 1975,
+      "Change": 15,
+      "Volume": 30200,
+      "Value": 59345000,
+      "Frekuensi": 2
+    },
+    {
+      "No": 125,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SOCI",
+      "High": 177,
+      "Low": 177,
+      "Close": 177,
+      "Change": -1,
+      "Volume": 2800,
+      "Value": 495600,
+      "Frekuensi": 1
+    },
+    {
+      "No": 126,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SRTG",
+      "High": 2050,
+      "Low": 1885,
+      "Close": 1935,
+      "Change": 55,
+      "Volume": 2912300,
+      "Value": 5784300500,
+      "Frekuensi": 298
+    },
+    {
+      "No": 127,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SSIA",
+      "High": 1055,
+      "Low": 1035,
+      "Close": 1055,
+      "Change": 20,
+      "Volume": 24600,
+      "Value": 25881000,
+      "Frekuensi": 6
+    },
+    {
+      "No": 128,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "SSMS",
+      "High": 1085,
+      "Low": 1070,
+      "Close": 1070,
+      "Change": -5,
+      "Volume": 1378400,
+      "Value": 1491405500,
+      "Frekuensi": 56
+    },
+    {
+      "No": 129,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TAPG",
+      "High": 700,
+      "Low": 695,
+      "Close": 695,
+      "Change": 10,
+      "Volume": 51000,
+      "Value": 35695000,
+      "Frekuensi": 3
+    },
+    {
+      "No": 130,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TBIG",
+      "High": 1930,
+      "Low": 1920,
+      "Close": 1920,
+      "Change": -5,
+      "Volume": 700,
+      "Value": 1349500,
+      "Frekuensi": 3
+    },
+    {
+      "No": 131,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TBLA",
+      "High": 635,
+      "Low": 630,
+      "Close": 630,
+      "Change": -10,
+      "Volume": 155400,
+      "Value": 98179000,
+      "Frekuensi": 10
+    },
+    {
+      "No": 132,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TKIM",
+      "High": 7500,
+      "Low": 7400,
+      "Close": 7400,
+      "Change": -75,
+      "Volume": 95100,
+      "Value": 709502500,
+      "Frekuensi": 60
+    },
+    {
+      "No": 133,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TLKM",
+      "High": 2990,
+      "Low": 2950,
+      "Close": 2990,
+      "Change": 10,
+      "Volume": 2019600,
+      "Value": 5996332000,
+      "Frekuensi": 188
+    },
+    {
+      "No": 134,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TMAS",
+      "High": 151,
+      "Low": 150,
+      "Close": 150,
+      "Change": -2,
+      "Volume": 63400,
+      "Value": 9540000,
+      "Frekuensi": 5
+    },
+    {
+      "No": 135,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TOBA",
+      "High": 392,
+      "Low": 378,
+      "Close": 378,
+      "Change": -2,
+      "Volume": 1872100,
+      "Value": 723727400,
+      "Frekuensi": 150
+    },
+    {
+      "No": 136,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TOTL",
+      "High": 670,
+      "Low": 655,
+      "Close": 655,
+      "Change": 0,
+      "Volume": 147200,
+      "Value": 97559500,
+      "Frekuensi": 9
+    },
+    {
+      "No": 137,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TOWR",
+      "High": 825,
+      "Low": 810,
+      "Close": 825,
+      "Change": 15,
+      "Volume": 2523800,
+      "Value": 2079102000,
+      "Frekuensi": 166
+    },
+    {
+      "No": 138,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TPMA",
+      "High": 685,
+      "Low": 680,
+      "Close": 680,
+      "Change": -5,
+      "Volume": 755200,
+      "Value": 514536000,
+      "Frekuensi": 27
+    },
+    {
+      "No": 139,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TSPC",
+      "High": 2570,
+      "Low": 2550,
+      "Close": 2550,
+      "Change": -50,
+      "Volume": 51100,
+      "Value": 130325000,
+      "Frekuensi": 11
+    },
+    {
+      "No": 140,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "TUGU",
+      "High": 1140,
+      "Low": 1130,
+      "Close": 1140,
+      "Change": 0,
+      "Volume": 32900,
+      "Value": 37396000,
+      "Frekuensi": 7
+    },
+    {
+      "No": 141,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "ULTJ",
+      "High": 1805,
+      "Low": 1800,
+      "Close": 1800,
+      "Change": -10,
+      "Volume": 18000,
+      "Value": 32430000,
+      "Frekuensi": 4
+    },
+    {
+      "No": 142,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "UNIQ",
+      "High": 605,
+      "Low": 605,
+      "Close": 605,
+      "Change": -5,
+      "Volume": 10000,
+      "Value": 6050000,
+      "Frekuensi": 1
+    },
+    {
+      "No": 143,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "UNTR",
+      "High": 27250,
+      "Low": 26900,
+      "Close": 27250,
+      "Change": 300,
+      "Volume": 162000,
+      "Value": 4394775000,
+      "Frekuensi": 130
+    },
+    {
+      "No": 144,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "UNVR",
+      "High": 2350,
+      "Low": 2250,
+      "Close": 2290,
+      "Change": -60,
+      "Volume": 6663100,
+      "Value": 15226075000,
+      "Frekuensi": 981
+    },
+    {
+      "No": 145,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "WIFI",
+      "High": 298,
+      "Low": 274,
+      "Close": 284,
+      "Change": -10,
+      "Volume": 4307500,
+      "Value": 1226649200,
+      "Frekuensi": 163
+    },
+    {
+      "No": 146,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "WIIM",
+      "High": 960,
+      "Low": 945,
+      "Close": 950,
+      "Change": 5,
+      "Volume": 52700,
+      "Value": 50071500,
+      "Frekuensi": 11
+    },
+    {
+      "No": 147,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "WINS",
+      "High": 500,
+      "Low": 500,
+      "Close": 500,
+      "Change": 6,
+      "Volume": 100000,
+      "Value": 50000000,
+      "Frekuensi": 1
+    },
+    {
+      "No": 148,
+      "Date": "2024-08-27T00:00:00",
+      "Efek": "WTON",
+      "High": 108,
+      "Low": 106,
+      "Close": 106,
+      "Change": -2,
+      "Volume": 488800,
+      "Value": 52118200,
+      "Frekuensi": 29
     }
-  ],
-  "ItemCount": 34,
-  "PageSize": 1000,
-  "Links": [
-    {
-      "Rel": "all",
-      "Href": "/api/api/marketsummary/indexsummary",
-      "Method": "GET"
-    },
-    {
-      "Rel": "currentPage",
-      "Href": "/IDX/api/v1/marketsummary/indexsummary/group/constituent?pagenumber=1&pagesize=1000",
-      "Method": "GET"
-    }
-  ],
-  "PageNumber": 1,
-  "PageCount": 1,
-  "Language": null
+  ]
 }
