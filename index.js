@@ -29,9 +29,12 @@ import { getSectors } from "./market-data/stocks-data/stock-list/getSectors.js";
 import { getBoards } from "./market-data/stocks-data/stock-list/getBoards.js";
 import { getSecuritiesStock } from "./market-data/stocks-data/stock-list/getSecuritiesStock.js";
 
+import { getCompositeBondIndex } from "./market-data/bonds-sukuk/indobex/getCompositeBondIndex.js";
+import { getGovernmentBondIndex } from "./market-data/bonds-sukuk/indobex/getGovernmentBondIndex.js";
+import { getCorporateBondIndex } from "./market-data/bonds-sukuk/indobex/getCorporateBondIndex.js";
 
 
-const data = await getStockUploader('', '', 'preOpeningStocks');
+const data = await getCorporateBondIndex();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 

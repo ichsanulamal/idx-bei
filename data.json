@@ -1,66 +1,106 @@
 {
-  "SearchCriteria": {
-    "date": null,
-    "table": "preOpeningStocks",
-    "year": null,
-    "typeIndex": null,
-    "locale": "en",
-    "indexfrom": 0,
-    "pagesize": 0
-  },
-  "ResultCount": 4,
-  "Results": [
+  "Items": [
     {
-      "No": 0,
-      "StockUploaderID": 5866,
-      "Date": "2024-08-01T12:00:00",
-      "Group": "preOpeningStocks",
-      "NoPengumuman": "-",
-      "TypeIndex": "-",
-      "Description": "August 2023-January 2024",
-      "Year": "2024",
-      "AttachmentName": "saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-2024",
-      "AttachmentSize": "236",
-      "AttachmentUrl": "/media/uwdg1e0s/saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-2024.zip"
+      "IndexId": 27855,
+      "DateInserted": "2024-08-27T17:00:00",
+      "IndexCode": "INDOBeXC-TR",
+      "IndexType": "3",
+      "IndexMethodType": "1",
+      "IndexValue": 445.3168,
+      "IndexChgVal": 0.0699,
+      "IndexChgPct": 0.0157,
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/indices/indobex/27855",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 0,
-      "StockUploaderID": 5940,
-      "Date": "2024-07-26T12:00:00",
-      "Group": "preOpeningStocks",
-      "NoPengumuman": "Pengumuman Umbraco 00001",
-      "TypeIndex": "-",
-      "Description": "1 August 2024-31 October 2024",
-      "Year": "2024",
-      "AttachmentName": "peng-00164_bei-pop_07-2024-en.zip",
-      "AttachmentSize": "396 KB",
-      "AttachmentUrl": "/media/eiab2rse/peng-00164_bei-pop_07-2024-en.zip"
+      "IndexId": 27859,
+      "DateInserted": "2024-08-27T17:00:00",
+      "IndexCode": "INDOBeXC-CP",
+      "IndexType": "3",
+      "IndexMethodType": "2",
+      "IndexValue": 111.3992,
+      "IndexChgVal": -0.0079,
+      "IndexChgPct": -0.0071,
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/indices/indobex/27859",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 0,
-      "StockUploaderID": 5875,
-      "Date": "2024-04-24T12:00:00",
-      "Group": "preOpeningStocks",
-      "NoPengumuman": "-",
-      "TypeIndex": "-",
-      "Description": "2 May 2024-31 July 2024",
-      "Year": "2024",
-      "AttachmentName": "saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-20240424",
-      "AttachmentSize": "366",
-      "AttachmentUrl": "/media/23dpix3q/saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-20240424.zip"
+      "IndexId": 27857,
+      "DateInserted": "2024-08-27T17:00:00",
+      "IndexCode": "INDOBeXC-GP",
+      "IndexType": "3",
+      "IndexMethodType": "3",
+      "IndexValue": 112.584,
+      "IndexChgVal": 0.0126,
+      "IndexChgPct": 0.0112,
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/indices/indobex/27857",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 0,
-      "StockUploaderID": 5874,
-      "Date": "2024-01-31T12:00:00",
-      "Group": "preOpeningStocks",
-      "NoPengumuman": "-",
-      "TypeIndex": "-",
-      "Description": "1 February 2024-31 July 2024",
-      "Year": "2024",
-      "AttachmentName": "pengumuman-saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-preop",
-      "AttachmentSize": "371",
-      "AttachmentUrl": "/media/rglf1zp2/pengumuman-saham-yang-dapat-diperdagangkan-melalui-sesi-pra-pembukaan-di-pasar-reguler-preop.zip"
+      "IndexId": 27858,
+      "DateInserted": "2024-08-27T17:00:00",
+      "IndexCode": "INDOBeXC-EY",
+      "IndexType": "3",
+      "IndexMethodType": "4",
+      "IndexValue": 7.8522,
+      "IndexChgVal": 0.0006,
+      "IndexChgPct": 0.008,
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/indices/indobex/27858",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "IndexId": 27856,
+      "DateInserted": "2024-08-27T17:00:00",
+      "IndexCode": "INDOBeXC-GY",
+      "IndexType": "3",
+      "IndexMethodType": "5",
+      "IndexValue": 7.8672,
+      "IndexChgVal": 0.0022,
+      "IndexChgPct": 0.028,
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/indices/indobex/27856",
+          "Method": "GET"
+        }
+      ]
     }
-  ]
+  ],
+  "ItemCount": 5,
+  "PageSize": 1000,
+  "Links": [
+    {
+      "Rel": "all",
+      "Href": "/api/api/indices/indobex",
+      "Method": "GET"
+    },
+    {
+      "Rel": "currentPage",
+      "Href": "/IDX/api/v1/indices/indobex/corporate?pagenumber=1&pagesize=1000",
+      "Method": "GET"
+    }
+  ],
+  "PageNumber": 1,
+  "PageCount": 1,
+  "Language": null
 }

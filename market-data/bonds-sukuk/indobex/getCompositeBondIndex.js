@@ -1,8 +1,8 @@
 import { fetchData } from "../../../utils/template.js";
 
-export async function getSectors() {
-  const url = "https://www.idx.co.id/primary/Helper/GetSectors?language=en-us";
-  const referrer = "https://www.idx.co.id/en/market-data/stocks-data/stock-list/";
+export async function getCompositeBondIndex() {
+  const url = "https://www.idx.co.id/primary/BondSukuk/GetCompositeBondIndex";
+  const referrer = "https://www.idx.co.id/en/market-data/bonds-sukuk/indobex/";
 
   try {
     const res = await fetchData(url, referrer);
