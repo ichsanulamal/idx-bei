@@ -48,7 +48,23 @@ import { getPdQuotationReference } from "./market-data/bonds-sukuk/pds-quotation
 import { getMaturityYear } from "./market-data/asset-backed-securities-data/getMaturityYear.js";
 import { getAbs } from "./market-data/asset-backed-securities-data/getAbs.js";
 import { getAbsSearchTable } from "./market-data/asset-backed-securities-data/getAbsSearchTable.js";
+
 import { getEtfMarket } from "./market-data/exchanged-traded-fund-etf-data/getEtfMarket.js";
+
+import { getContractCodeList } from "./market-data/derivatives-data/getContractCodeList.js";
+
+import { getFutureToday } from "./market-data/derivatives-data/getFutureToday.js";
+import { getMarketSummary } from "./market-data/derivatives-data/getMarketSummary.js";
+import { getMarketHistory } from "./market-data/derivatives-data/getMarketHistory.js";
+import { getFuturesChart } from "./market-data/derivatives-data/getFuturesChart.js";
+import { getMostActiveBroker } from "./market-data/derivatives-data/getMostActiveBroker.js";
+import { getMostActiveContract } from "./market-data/derivatives-data/getMostActiveContract.js";
+
+
+
+
+
+
 
 
 const data = await getEtfMarket();
