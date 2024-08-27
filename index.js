@@ -19,8 +19,11 @@ import { getStockSummary } from "./market-data/trading-summary/stock-summary/get
 import { getMarginSummary } from "./market-data/trading-summary/stock-summary/getMarginSummary.js";
 import { getShortSellSummary } from "./market-data/trading-summary/stock-summary/getShortSellSummary.js";
 
+import { getBrokerSummary } from "./market-data/trading-summary/broker-summary/GetBrokerSummary.js";
 
-const data = await getMarginSummary();
+import { getPedSummary } from "./market-data/trading-summary/ped-summary/getPedSummary.js";
+
+const data = await getPedSummary();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 
