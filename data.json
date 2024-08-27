@@ -1,337 +1,599 @@
 {
-  "draw": 0,
-  "recordsTotal": 30,
-  "recordsFiltered": 30,
-  "data": [
+  "Items": [
     {
-      "No": 1,
-      "IDRecap": 80042,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ACCEL",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 3770000,
-      "Value": 995280000,
-      "Frequency": 1
+      "IndexCode": "COMPOSITE",
+      "PrevVal": 7606.195,
+      "HighVal": 7610.201,
+      "LowVal": 7547.263,
+      "LastVal": 7597.881,
+      "ChgVal": -8.31,
+      "ChgPct": -0.11,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/COMPOSITE",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 2,
-      "IDRecap": 80043,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ACCEL",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 312676600,
-      "Value": 66584974500,
-      "Frequency": 14664
+      "IndexCode": "MBX",
+      "PrevVal": 2099.566,
+      "HighVal": 2100.531,
+      "LowVal": 2080.627,
+      "LastVal": 2094.154,
+      "ChgVal": -5.41,
+      "ChgPct": -0.26,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/MBX",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 3,
-      "IDRecap": 80044,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ACCEL",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "DBX",
+      "PrevVal": 1759.229,
+      "HighVal": 1768.469,
+      "LowVal": 1756.451,
+      "LastVal": 1768.469,
+      "ChgVal": 9.24,
+      "ChgPct": 0.53,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/DBX",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 4,
-      "IDRecap": 80045,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "MUTI",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "INFOBANK15",
+      "PrevVal": 1338.703,
+      "HighVal": 1337.667,
+      "LowVal": 1308.532,
+      "LastVal": 1319.921,
+      "ChgVal": -18.78,
+      "ChgPct": -1.4,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/INFOBANK15",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 5,
-      "IDRecap": 80046,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "MUTI",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 1029200,
-      "Value": 332034600,
-      "Frequency": 88
+      "IndexCode": "KOMPAS100",
+      "PrevVal": 1170.167,
+      "HighVal": 1171.103,
+      "LowVal": 1160.665,
+      "LastVal": 1169.55,
+      "ChgVal": -0.62,
+      "ChgPct": -0.05,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/KOMPAS100",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 6,
-      "IDRecap": 80047,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "MUTI",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "ABX",
+      "PrevVal": 1115.901,
+      "HighVal": 1120.987,
+      "LowVal": 1101.446,
+      "LastVal": 1118.719,
+      "ChgVal": 2.82,
+      "ChgPct": 0.25,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/ABX",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 7,
-      "IDRecap": 80048,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ORDI",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 1109492158,
-      "Value": 1004018718105,
-      "Frequency": 392
+      "IndexCode": "LQ45",
+      "PrevVal": 950.058,
+      "HighVal": 950.267,
+      "LowVal": 939.757,
+      "LastVal": 946.512,
+      "ChgVal": -3.55,
+      "ChgPct": -0.37,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/LQ45",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 8,
-      "IDRecap": 80049,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ORDI",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 12888817800,
-      "Value": 9567508399000,
-      "Frequency": 1146349
+      "IndexCode": "BISNIS-27",
+      "PrevVal": 597.783,
+      "HighVal": 597.931,
+      "LowVal": 589.054,
+      "LastVal": 593.634,
+      "ChgVal": -4.15,
+      "ChgPct": -0.69,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/BISNIS-27",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 9,
-      "IDRecap": 80050,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ORDI",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 1000,
-      "Value": 60600,
-      "Frequency": 2
+      "IndexCode": "IDXHIDIV20",
+      "PrevVal": 581.761,
+      "HighVal": 582.116,
+      "LowVal": 573.32,
+      "LastVal": 578.374,
+      "ChgVal": -3.39,
+      "ChgPct": -0.58,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXHIDIV20",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 10,
-      "IDRecap": 80051,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "S_WARI",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "JII",
+      "PrevVal": 519.334,
+      "HighVal": 521.775,
+      "LowVal": 517.994,
+      "LastVal": 521.613,
+      "ChgVal": 2.28,
+      "ChgPct": 0.44,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/JII",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 11,
-      "IDRecap": 80052,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "S_WARI",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 28011500,
-      "Value": 1595446700,
-      "Frequency": 554
+      "IndexCode": "Investor33",
+      "PrevVal": 496.766,
+      "HighVal": 496.741,
+      "LowVal": 489.219,
+      "LastVal": 493.768,
+      "ChgVal": -3,
+      "ChgPct": -0.6,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/Investor33",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 12,
-      "IDRecap": 80053,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "S_WARI",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "IDX30",
+      "PrevVal": 481.659,
+      "HighVal": 481.857,
+      "LowVal": 474.311,
+      "LastVal": 478.263,
+      "ChgVal": -3.4,
+      "ChgPct": -0.71,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDX30",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 13,
-      "IDRecap": 80054,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WARI",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "SRI-KEHATI",
+      "PrevVal": 426.251,
+      "HighVal": 426.4,
+      "LowVal": 419.377,
+      "LastVal": 422.924,
+      "ChgVal": -3.33,
+      "ChgPct": -0.78,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/SRI-KEHATI",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 14,
-      "IDRecap": 80055,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WARI",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 274388600,
-      "Value": 1784157200,
-      "Frequency": 7507
+      "IndexCode": "IDXBUMN20",
+      "PrevVal": 412.951,
+      "HighVal": 413.159,
+      "LowVal": 404.088,
+      "LastVal": 407.53,
+      "ChgVal": -5.42,
+      "ChgPct": -1.31,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXBUMN20",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 15,
-      "IDRecap": 80056,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WARI",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "MNC36",
+      "PrevVal": 364.479,
+      "HighVal": 364.636,
+      "LowVal": 359.27,
+      "LastVal": 362.188,
+      "ChgVal": -2.29,
+      "ChgPct": -0.63,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/MNC36",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 16,
-      "IDRecap": 80057,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WARI_CALL",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "IDXSMC-LIQ",
+      "PrevVal": 326.234,
+      "HighVal": 327.033,
+      "LowVal": 323.941,
+      "LastVal": 325.232,
+      "ChgVal": -1,
+      "ChgPct": -0.31,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXSMC-LIQ",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 17,
-      "IDRecap": 80058,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WARI_CALL",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 84284300,
-      "Value": 186515100,
-      "Frequency": 2969
+      "IndexCode": "IDXSMC-COM",
+      "PrevVal": 322.385,
+      "HighVal": 323,
+      "LowVal": 321.759,
+      "LastVal": 322.701,
+      "ChgVal": 0.32,
+      "ChgPct": 0.1,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXSMC-COM",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 18,
-      "IDRecap": 80059,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WARI_CALL",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 10500,
-      "Value": 42000,
-      "Frequency": 1
+      "IndexCode": "SMInfra18",
+      "PrevVal": 306.469,
+      "HighVal": 306.559,
+      "LowVal": 301.943,
+      "LastVal": 304.937,
+      "ChgVal": -1.53,
+      "ChgPct": -0.5,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/SMInfra18",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 19,
-      "IDRecap": 80060,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WATCH_CALL",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 572351298,
-      "Value": 81799283303,
-      "Frequency": 22
+      "IndexCode": "PRIMBANK10",
+      "PrevVal": 250.3,
+      "HighVal": 249.604,
+      "LowVal": 244.46,
+      "LastVal": 246.679,
+      "ChgVal": -3.62,
+      "ChgPct": -1.45,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/PRIMBANK10",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 20,
-      "IDRecap": 80061,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WATCH_CALL",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 913518200,
-      "Value": 43853460000,
-      "Frequency": 28523
+      "IndexCode": "I-GRADE",
+      "PrevVal": 243.949,
+      "HighVal": 243.789,
+      "LowVal": 239.323,
+      "LastVal": 241.702,
+      "ChgVal": -2.25,
+      "ChgPct": -0.92,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/I-GRADE",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 21,
-      "IDRecap": 80062,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "WATCH_CALL",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 3000,
-      "Value": 54000,
-      "Frequency": 1
+      "IndexCode": "ISSI",
+      "PrevVal": 223.398,
+      "HighVal": 224.458,
+      "LowVal": 223.15,
+      "LastVal": 224.458,
+      "ChgVal": 1.06,
+      "ChgPct": 0.47,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/ISSI",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 22,
-      "IDRecap": 80063,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "DIRE",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 12200,
-      "Value": 700400,
-      "Frequency": 8
+      "IndexCode": "PEFINDO25",
+      "PrevVal": 208.2,
+      "HighVal": 209.483,
+      "LowVal": 206.59,
+      "LastVal": 207.926,
+      "ChgVal": -0.27,
+      "ChgPct": -0.13,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/PEFINDO25",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 23,
-      "IDRecap": 80064,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ETF",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "JII70",
+      "PrevVal": 184.718,
+      "HighVal": 185.558,
+      "LowVal": 184.162,
+      "LastVal": 185.558,
+      "ChgVal": 0.84,
+      "ChgPct": 0.46,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/JII70",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 24,
-      "IDRecap": 80065,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "DIRE",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "IDXESGL",
+      "PrevVal": 166.312,
+      "HighVal": 166.274,
+      "LowVal": 163.456,
+      "LastVal": 165.11,
+      "ChgVal": -1.2,
+      "ChgPct": -0.72,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXESGL",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 25,
-      "IDRecap": 80066,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "DINFRA",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "IDXQ30",
+      "PrevVal": 160.954,
+      "HighVal": 161.032,
+      "LowVal": 159.153,
+      "LastVal": 160.356,
+      "ChgVal": -0.6,
+      "ChgPct": -0.37,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXQ30",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 26,
-      "IDRecap": 80067,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "DINFRA",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "IDXG30",
+      "PrevVal": 157.996,
+      "HighVal": 158.107,
+      "LowVal": 155.628,
+      "LastVal": 156.851,
+      "ChgVal": -1.15,
+      "ChgPct": -0.73,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXG30",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 27,
-      "IDRecap": 80068,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "DIRE",
-      "NameInstrument": null,
-      "IDBoard": "NG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "ESGQKEHATI",
+      "PrevVal": 141.604,
+      "HighVal": 141.589,
+      "LowVal": 139.423,
+      "LastVal": 140.599,
+      "ChgVal": -1.01,
+      "ChgPct": -0.71,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/ESGQKEHATI",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 28,
-      "IDRecap": 80069,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ETF",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 1017000,
-      "Value": 331334200,
-      "Frequency": 80
+      "IndexCode": "ESGSKEHATI",
+      "PrevVal": 141.387,
+      "HighVal": 141.372,
+      "LowVal": 139.309,
+      "LastVal": 140.46,
+      "ChgVal": -0.93,
+      "ChgPct": -0.66,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/ESGSKEHATI",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 29,
-      "IDRecap": 80070,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "ETF",
-      "NameInstrument": null,
-      "IDBoard": "TN",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "IDXV30",
+      "PrevVal": 140.092,
+      "HighVal": 140.493,
+      "LowVal": 138.783,
+      "LastVal": 139.632,
+      "ChgVal": -0.46,
+      "ChgPct": -0.33,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXV30",
+          "Method": "GET"
+        }
+      ]
     },
     {
-      "No": 30,
-      "IDRecap": 80071,
-      "Date": "2024-08-27T00:00:00",
-      "IDInstrument": "DINFRA",
-      "NameInstrument": null,
-      "IDBoard": "RG",
-      "Volume": 0,
-      "Value": 0,
-      "Frequency": 0
+      "IndexCode": "ECONOMIC30",
+      "PrevVal": 135.364,
+      "HighVal": 135.107,
+      "LowVal": 132.603,
+      "LastVal": 133.829,
+      "ChgVal": -1.54,
+      "ChgPct": -1.13,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/ECONOMIC30",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "IndexCode": "IDXLQ45LCL",
+      "PrevVal": 132.795,
+      "HighVal": 132.782,
+      "LowVal": 130.9,
+      "LastVal": 131.952,
+      "ChgVal": -0.84,
+      "ChgPct": -0.64,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXLQ45LCL",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "IndexCode": "IDX80",
+      "PrevVal": 132.437,
+      "HighVal": 132.569,
+      "LowVal": 131.442,
+      "LastVal": 132.314,
+      "ChgVal": -0.12,
+      "ChgPct": -0.09,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDX80",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "IndexCode": "IDXSHAGROW",
+      "PrevVal": 93.435,
+      "HighVal": 93.684,
+      "LowVal": 92.628,
+      "LastVal": 93.31,
+      "ChgVal": -0.13,
+      "ChgPct": -0.13,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXSHAGROW",
+          "Method": "GET"
+        }
+      ]
+    },
+    {
+      "IndexCode": "IDXMESBUMN",
+      "PrevVal": 77.615,
+      "HighVal": 77.635,
+      "LowVal": 76.199,
+      "LastVal": 76.656,
+      "ChgVal": -0.96,
+      "ChgPct": -1.24,
+      "DtCreate": "2024-08-27T00:00:00",
+      "Links": [
+        {
+          "Rel": "self",
+          "Href": "/api/api/marketsummary/indexsummary/IDXMESBUMN",
+          "Method": "GET"
+        }
+      ]
     }
-  ]
+  ],
+  "ItemCount": 34,
+  "PageSize": 1000,
+  "Links": [
+    {
+      "Rel": "all",
+      "Href": "/api/api/marketsummary/indexsummary",
+      "Method": "GET"
+    },
+    {
+      "Rel": "currentPage",
+      "Href": "/IDX/api/v1/marketsummary/indexsummary/group/constituent?pagenumber=1&pagesize=1000",
+      "Method": "GET"
+    }
+  ],
+  "PageNumber": 1,
+  "PageCount": 1,
+  "Language": null
 }
