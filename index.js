@@ -29,7 +29,13 @@ import { getCorporateBondIndex } from "./market-data/bonds-sukuk/indobex/getCorp
 import { getGovIssuer } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/getGovIssuer.js";
 import { getBondSukuk } from "./market-data/bonds-sukuk/corporate-bonds-sukuk/getBondSukuk.js";
 
-const data = await getGovIssuer();
+import { getETPTickerList } from "./market-data/bonds-sukuk/etp-trading/getETPTickerList.js";
+import { getETPTradeActivity } from "./market-data/bonds-sukuk/etp-trading/getETPTradeActivity.js";
+import { getETPMarketSnapshot } from "./market-data/bonds-sukuk/etp-trading/getETPMarketSnapshot.js";
+import { getETPDailySummary } from "./market-data/bonds-sukuk/etp-trading/getETPDailySummary.js";
+import { getETPSecurityList } from "./market-data/bonds-sukuk/etp-trading/getETPSecurityList.js";
+
+const data = await getETPSecurityList();
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 
