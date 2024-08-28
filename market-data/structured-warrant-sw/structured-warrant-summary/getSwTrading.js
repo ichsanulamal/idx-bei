@@ -15,9 +15,8 @@ export async function getSwTrading({
   issuer = '',
   swType = '',
   start = 0,
-  dateFrom = '1901-01-01',
-  dateTo = '2024-08-27'
-} = {}) {
+  dateFrom = '',
+  dateTo = ''} = {}) {
   const baseUrl = "https://www.idx.co.id/secondary/get/StructuredWarrant/Trading";
   const queryParams = new URLSearchParams({
     length,
@@ -32,7 +31,7 @@ export async function getSwTrading({
 
   try {
     const response = await fetchData(url, referrer);
-    return JSON.stringify(response, null, 2);
+    return JSON.stringify(response["Results"], null, 2);
   } catch (error) {
     console.error("Error fetching structured warrant trading data:", error.message);
     throw new Error(`Failed to fetch structured warrant trading data: ${error.message}`);
