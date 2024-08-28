@@ -4,6 +4,7 @@ import { getSwTrading } from "./market-data/structured-warrant-sw/structured-war
 import { getFutureToday } from "./market-data/derivatives-data/getFutureToday.js";
 import { getMarketSummary } from "./market-data/derivatives-data/getMarketSummary.js";
 import { getAbsSearchTable } from "./market-data/asset-backed-securities-data/getAbsSearchTable.js";
+import { getSecuritiesStock } from "./market-data/stocks-data/stock-list/getSecuritiesStock.js";
 
 export { getTradeSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getTradeSummary.js";
 export { getRecapSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getRecapSummary.js";
@@ -92,7 +93,7 @@ export { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lendi
 
 
 
-const data = await getAbsSearchTable();
+const data = await getSecuritiesStock('','Transportation & Logistic', '');
 
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing

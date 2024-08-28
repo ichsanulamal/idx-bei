@@ -1,14 +1,30 @@
 import { fetchData } from "../../../utils/template.js";
 
-export async function getSecuritiesStock(code='', sector='', board='') {
-  const url = `https://www.idx.co.id/primary/StockData/GetSecuritiesStock?start=0&length=9999&code=${encodeURIComponent(code)}&sector=${encodeURIComponent(sector)}&board=${encodeURIComponent(board)}&language=en-us`;
+/**
+ * Retrieves securities stock data from IDX based on specified parameters.
+ * @param {string} [code=''] - The stock code to filter by.
+ * @param {string} [sector=''] - The sector to filter by.
+ * @param {string} [board=''] - The board to filter by.
+ * @returns {Promise<string>} - A JSON string of the securities stock data.
+ */
+export async function getSecuritiesStock(code = '', sector = '', board = '') {
+  const baseUrl = "https://www.idx.co.id/primary/StockData/GetSecuritiesStock";
+  const queryParams = new URLSearchParams({
+    start: 0,
+    length: 9999,
+    code,
+    sector,
+    board,
+    language: 'en-us'
+  }).toString();
+  const url = `${baseUrl}?${queryParams}`;
   const referrer = "https://www.idx.co.id/en/market-data/stocks-data/stock-list/";
 
   try {
-    const res = await fetchData(url, referrer);
-    return JSON.stringify(res, null, 2);
+    const response = await fetchData(url, referrer);
+    return JSON.stringify(response, null, 2);
   } catch (error) {
-    console.error("Error fetching boards:", error);
-    throw error;
+    console.error("Error fetching securities stock data:", error.message);
+    throw new Error(`Failed to fetch securities stock data: ${error.message}`);
   }
 }

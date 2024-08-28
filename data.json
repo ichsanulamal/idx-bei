@@ -1,212 +1,266 @@
-[
-  {
-    "Id": "MGIA01",
-    "Name": "Efek Beragun Aset Mandiri GIAA01 - Surat Berharga Hak Atas Penjualan Tiket Kelas A",
-    "Type": 3,
-    "ListingDate": "2018-07-31T00:00:00",
-    "MatureDate": "2032-12-31T00:00:00",
-    "Outstanding": 935325000000,
-    "CouponRate": 0,
-    "Rating": "idAA+",
-    "Trustee": "Bank Maybank Indonesia Tbk.",
-    "IssuerCode": "MGIA",
-    "TTM": 9.34,
-    "ISIN": "IDU000002107",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/MGIA01",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBRIS01A",
-    "Name": "EBAS SP SMF-BRIS 01 KELAS A",
-    "Type": 3,
-    "ListingDate": "2023-06-08T00:00:00",
-    "MatureDate": "2041-10-30T00:00:00",
-    "Outstanding": 297700000000,
-    "CouponRate": 7,
-    "Rating": "idAAA-sfsy",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFR01",
-    "TTM": 18.17,
-    "ISIN": "IDU0000029A7",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBRIS01A",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN02A2",
-    "Name": "EBA-SP SMF-BTN 02 Kelas A Seri A2",
-    "Type": 3,
-    "ListingDate": "2016-11-01T00:00:00",
-    "MatureDate": "2027-06-07T00:00:00",
-    "Outstanding": 14588917800,
-    "CouponRate": 8.75,
-    "Rating": "idAAA",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFB02",
-    "TTM": 3.76,
-    "ISIN": "IDU0000014A9",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN02A2",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN03A2",
-    "Name": "EBA-SP SMF-BTN 03 Kelas A Seri A2",
-    "Type": 3,
-    "ListingDate": "2017-05-02T00:00:00",
-    "MatureDate": "2029-07-07T00:00:00",
-    "Outstanding": 111917728000,
-    "CouponRate": 8.4,
-    "Rating": "idAAA",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFB03",
-    "TTM": 5.85,
-    "ISIN": "IDU0000016A4",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN03A2",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN04A2",
-    "Name": "EBA-SP SMF-BTN 04 Kelas A Seri A2",
-    "Type": 3,
-    "ListingDate": "2018-03-01T00:00:00",
-    "MatureDate": "2029-05-07T00:00:00",
-    "Outstanding": 290157658000,
-    "CouponRate": 7.5,
-    "Rating": "idAAA",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFB04",
-    "TTM": 5.68,
-    "ISIN": "IDU0000020A6",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN04A2",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN05A1",
-    "Name": "EBA-SP SMF-BTN 05 kelas A Seri A1",
-    "Type": 3,
-    "ListingDate": "2019-11-28T00:00:00",
-    "MatureDate": "2025-06-27T00:00:00",
-    "Outstanding": 120397791000,
-    "CouponRate": 8.5,
-    "Rating": "idAAA(sf)",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFB05",
-    "TTM": 1.82,
-    "ISIN": "IDU0000023A0",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN05A1",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN05A2",
-    "Name": "EBA-SP SMF-BTN 05 Kelas A Seri A2",
-    "Type": 3,
-    "ListingDate": "2019-11-28T00:00:00",
-    "MatureDate": "2028-03-27T00:00:00",
-    "Outstanding": 706186100000,
-    "CouponRate": 8.75,
-    "Rating": "idAAA(sf)",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFB05",
-    "TTM": 4.57,
-    "ISIN": "IDU0000024A8",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN05A2",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN06A",
-    "Name": "EBA-SP SMF-BTN 06 Kelas A",
-    "Type": 3,
-    "ListingDate": "2021-01-05T00:00:00",
-    "MatureDate": "2027-08-27T00:00:00",
-    "Outstanding": 262381552000,
-    "CouponRate": 6.5,
-    "Rating": "idAAA(sf)",
-    "Trustee": "Bank Mandiri Tbk.",
-    "IssuerCode": "SMFB06",
-    "TTM": 3.99,
-    "ISIN": "IDU0000027A1",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN06A",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFBTN07A",
-    "Name": "EBA-SP SMF-BTN 07 Kelas A",
-    "Type": 3,
-    "ListingDate": "2022-12-23T00:00:00",
-    "MatureDate": "2034-01-07T00:00:00",
-    "Outstanding": 382219878000,
-    "CouponRate": 7.7,
-    "Rating": "idAAA(sf)",
-    "Trustee": "Bank Mandiri Tbk",
-    "IssuerCode": "SMFB07",
-    "TTM": 10.36,
-    "ISIN": "IDU0000028A9",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFBTN07A",
-        "Method": "GET"
-      }
-    ]
-  },
-  {
-    "Id": "SPSMFMRI01A2",
-    "Name": "Efek Beragun Aset Berbentuk Surat Partisipasi SMF-BMRI 01 Kelas A2",
-    "Type": 3,
-    "ListingDate": "2016-08-26T00:00:00",
-    "MatureDate": "2029-10-27T00:00:00",
-    "Outstanding": 31156441100,
-    "CouponRate": 9.1,
-    "Rating": "idAAA",
-    "Trustee": "BRI Tbk.",
-    "IssuerCode": "SMFM01",
-    "TTM": 6.16,
-    "ISIN": "IDU0000012A3",
-    "Links": [
-      {
-        "Rel": "self",
-        "Href": "/api/api/securities/bond/SPSMFMRI01A2",
-        "Method": "GET"
-      }
-    ]
-  }
-]
+{
+  "draw": 0,
+  "recordsTotal": 37,
+  "recordsFiltered": 37,
+  "data": [
+    {
+      "Code": "AKSI",
+      "Name": "Mineral Sumberdaya Mandiri Tbk",
+      "ListingDate": "2001-07-13T00:00:00",
+      "Shares": 720000000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "ASSA",
+      "Name": "Adi Sarana Armada Tbk.",
+      "ListingDate": "2012-11-12T00:00:00",
+      "Shares": 3691137517,
+      "ListingBoard": "Main"
+    },
+    {
+      "Code": "BIRD",
+      "Name": "Blue Bird Tbk.",
+      "ListingDate": "2014-11-05T00:00:00",
+      "Shares": 2502100000,
+      "ListingBoard": "Main"
+    },
+    {
+      "Code": "BLTA",
+      "Name": "Berlian Laju Tanker Tbk",
+      "ListingDate": "1990-03-26T00:00:00",
+      "Shares": 25940187103,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "BPTR",
+      "Name": "Batavia Prosperindo Trans Tbk.",
+      "ListingDate": "2018-07-09T00:00:00",
+      "Shares": 3534000000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "CMPP",
+      "Name": "AirAsia Indonesia Tbk.",
+      "ListingDate": "1994-12-08T00:00:00",
+      "Shares": 10685124441,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "DEAL",
+      "Name": "Dewata Freightinternational Tb",
+      "ListingDate": "2018-11-11T00:00:00",
+      "Shares": 1146170959,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "ELPI",
+      "Name": "Pelayaran Nasional Ekalya Purn",
+      "ListingDate": "2022-08-08T00:00:00",
+      "Shares": 7412000000,
+      "ListingBoard": "Main"
+    },
+    {
+      "Code": "GIAA",
+      "Name": "Garuda Indonesia (Persero) Tbk",
+      "ListingDate": "2011-02-11T00:00:00",
+      "Shares": 91480783837,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "GTRA",
+      "Name": "Grahaprima Suksesmandiri Tbk.",
+      "ListingDate": "2023-03-30T00:00:00",
+      "Shares": 1894375000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "HAIS",
+      "Name": "Hasnur Internasional Shipping ",
+      "ListingDate": "2021-09-01T00:00:00",
+      "Shares": 2626250000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "HATM",
+      "Name": "Habco Trans Maritima Tbk.",
+      "ListingDate": "2022-07-26T00:00:00",
+      "Shares": 7000000000,
+      "ListingBoard": "Main"
+    },
+    {
+      "Code": "HELI",
+      "Name": "Jaya Trishindo Tbk.",
+      "ListingDate": "2018-03-27T00:00:00",
+      "Shares": 832862387,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "IMJS",
+      "Name": "Indomobil Multi Jasa Tbk.",
+      "ListingDate": "2013-12-10T00:00:00",
+      "Shares": 8654325000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "JAYA",
+      "Name": "Armada Berjaya Trans Tbk.",
+      "ListingDate": "2019-02-21T00:00:00",
+      "Shares": 798499394,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "KJEN",
+      "Name": "Krida Jaringan Nusantara Tbk.",
+      "ListingDate": "2019-07-01T00:00:00",
+      "Shares": 500000000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "KLAS",
+      "Name": "Pelayaran Kurnia Lautan Semest",
+      "ListingDate": "2023-06-12T00:00:00",
+      "Shares": 2165000000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "LAJU",
+      "Name": "Jasa Berdikari Logistics Tbk.",
+      "ListingDate": "2023-01-27T00:00:00",
+      "Shares": 2149942974,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "LOPI",
+      "Name": "Logisticsplus International Tb",
+      "ListingDate": "2023-10-11T00:00:00",
+      "Shares": 1100008512,
+      "ListingBoard": "Acceleration"
+    },
+    {
+      "Code": "LRNA",
+      "Name": "Eka Sari Lorena Transport Tbk.",
+      "ListingDate": "2014-04-15T00:00:00",
+      "Shares": 350000022,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "MIRA",
+      "Name": "Mitra International Resources ",
+      "ListingDate": "1997-01-30T00:00:00",
+      "Shares": 3961452039,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "MITI",
+      "Name": "Mitra Investindo Tbk.",
+      "ListingDate": "1997-07-16T00:00:00",
+      "Shares": 3540735503,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "MPXL",
+      "Name": "MPX Logistics International Tb",
+      "ListingDate": "2023-05-09T00:00:00",
+      "Shares": 2000014587,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "NELY",
+      "Name": "Pelayaran Nelly Dwi Putri Tbk.",
+      "ListingDate": "2012-10-11T00:00:00",
+      "Shares": 2350000000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "PPGL",
+      "Name": "Prima Globalindo Logistik Tbk.",
+      "ListingDate": "2020-07-20T00:00:00",
+      "Shares": 771178020,
+      "ListingBoard": "Acceleration"
+    },
+    {
+      "Code": "PURA",
+      "Name": "Putra Rajawali Kencana Tbk.",
+      "ListingDate": "2020-01-29T00:00:00",
+      "Shares": 6301930902,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "RCCC",
+      "Name": "Utama Radar Cahaya Tbk.",
+      "ListingDate": "2022-08-02T00:00:00",
+      "Shares": 787500000,
+      "ListingBoard": "Acceleration"
+    },
+    {
+      "Code": "SAFE",
+      "Name": "Steady Safe Tbk",
+      "ListingDate": "1994-08-15T00:00:00",
+      "Shares": 615145012,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "SAPX",
+      "Name": "Satria Antaran Prima Tbk.",
+      "ListingDate": "2018-10-03T00:00:00",
+      "Shares": 833333300,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "SDMU",
+      "Name": "Sidomulyo Selaras Tbk.",
+      "ListingDate": "2011-07-12T00:00:00",
+      "Shares": 1135225000,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "SMDR",
+      "Name": "Samudera Indonesia  Tbk.",
+      "ListingDate": "1999-07-05T00:00:00",
+      "Shares": 16375600000,
+      "ListingBoard": "Main"
+    },
+    {
+      "Code": "TAXI",
+      "Name": "Express Transindo Utama Tbk.",
+      "ListingDate": "2012-11-02T00:00:00",
+      "Shares": 10223647156,
+      "ListingBoard": "Watchlist"
+    },
+    {
+      "Code": "TMAS",
+      "Name": "Temas Tbk.",
+      "ListingDate": "2003-07-09T00:00:00",
+      "Shares": 57051500000,
+      "ListingBoard": "Main"
+    },
+    {
+      "Code": "TNCA",
+      "Name": "Trimuda Nuansa Citra Tbk.",
+      "ListingDate": "2018-06-28T00:00:00",
+      "Shares": 421640000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "TRJA",
+      "Name": "Transkon Jaya Tbk.",
+      "ListingDate": "2020-08-27T00:00:00",
+      "Shares": 1510200000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "TRUK",
+      "Name": "Guna Timur Raya Tbk.",
+      "ListingDate": "2018-05-23T00:00:00",
+      "Shares": 435000000,
+      "ListingBoard": "Development"
+    },
+    {
+      "Code": "WEHA",
+      "Name": "WEHA Transportasi Indonesia Tb",
+      "ListingDate": "2007-05-31T00:00:00",
+      "Shares": 1460554819,
+      "ListingBoard": "Development"
+    }
+  ]
+}
