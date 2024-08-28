@@ -1,266 +1,472 @@
 {
   "draw": 0,
-  "recordsTotal": 37,
-  "recordsFiltered": 37,
+  "recordsTotal": 93,
+  "recordsFiltered": 93,
   "data": [
     {
-      "Code": "AKSI",
-      "Name": "Mineral Sumberdaya Mandiri Tbk",
-      "ListingDate": "2001-07-13T00:00:00",
-      "Shares": 720000000,
-      "ListingBoard": "Development"
+      "Code": "XC",
+      "Name": "AJAIB SEKURITAS ASIA",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "ASSA",
-      "Name": "Adi Sarana Armada Tbk.",
-      "ListingDate": "2012-11-12T00:00:00",
-      "Shares": 3691137517,
-      "ListingBoard": "Main"
+      "Code": "PP",
+      "Name": "ALDIRACITA SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "BIRD",
-      "Name": "Blue Bird Tbk.",
-      "ListingDate": "2014-11-05T00:00:00",
-      "Shares": 2502100000,
-      "ListingBoard": "Main"
+      "Code": "YO",
+      "Name": "AMANTARA SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "BLTA",
-      "Name": "Berlian Laju Tanker Tbk",
-      "ListingDate": "1990-03-26T00:00:00",
-      "Shares": 25940187103,
-      "ListingBoard": "Watchlist"
+      "Code": "ID",
+      "Name": "ANUGERAH SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "BPTR",
-      "Name": "Batavia Prosperindo Trans Tbk.",
-      "ListingDate": "2018-07-09T00:00:00",
-      "Shares": 3534000000,
-      "ListingBoard": "Development"
+      "Code": "SH",
+      "Name": "ARTHA SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "CMPP",
-      "Name": "AirAsia Indonesia Tbk.",
-      "ListingDate": "1994-12-08T00:00:00",
-      "Shares": 10685124441,
-      "ListingBoard": "Watchlist"
+      "Code": "DX",
+      "Name": "BAHANA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "DEAL",
-      "Name": "Dewata Freightinternational Tb",
-      "ListingDate": "2018-11-11T00:00:00",
-      "Shares": 1146170959,
-      "ListingBoard": "Watchlist"
+      "Code": "SQ",
+      "Name": "BCA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "ELPI",
-      "Name": "Pelayaran Nasional Ekalya Purn",
-      "ListingDate": "2022-08-08T00:00:00",
-      "Shares": 7412000000,
-      "ListingBoard": "Main"
+      "Code": "AR",
+      "Name": "BINAARTHA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "GIAA",
-      "Name": "Garuda Indonesia (Persero) Tbk",
-      "ListingDate": "2011-02-11T00:00:00",
-      "Shares": 91480783837,
-      "ListingBoard": "Watchlist"
+      "Code": "GA",
+      "Name": "BNC SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "GTRA",
-      "Name": "Grahaprima Suksesmandiri Tbk.",
-      "ListingDate": "2023-03-30T00:00:00",
-      "Shares": 1894375000,
-      "ListingBoard": "Development"
+      "Code": "NI",
+      "Name": "BNI SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "HAIS",
-      "Name": "Hasnur Internasional Shipping ",
-      "ListingDate": "2021-09-01T00:00:00",
-      "Shares": 2626250000,
-      "ListingBoard": "Development"
+      "Code": "OD",
+      "Name": "BRI DANAREKSA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "HATM",
-      "Name": "Habco Trans Maritima Tbk.",
-      "ListingDate": "2022-07-26T00:00:00",
-      "Shares": 7000000000,
-      "ListingBoard": "Main"
+      "Code": "RF",
+      "Name": "BUANA CAPITAL SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "HELI",
-      "Name": "Jaya Trishindo Tbk.",
-      "ListingDate": "2018-03-27T00:00:00",
-      "Shares": 832862387,
-      "ListingBoard": "Development"
+      "Code": "ZR",
+      "Name": "BUMIPUTERA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "IMJS",
-      "Name": "Indomobil Multi Jasa Tbk.",
-      "ListingDate": "2013-12-10T00:00:00",
-      "Shares": 8654325000,
-      "ListingBoard": "Development"
+      "Code": "YU",
+      "Name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "JAYA",
-      "Name": "Armada Berjaya Trans Tbk.",
-      "ListingDate": "2019-02-21T00:00:00",
-      "Shares": 798499394,
-      "ListingBoard": "Development"
+      "Code": "KI",
+      "Name": "CIPTADANA SEKURITAS ASIA",
+      "License": "Penjamin Emisi Efek"
     },
     {
-      "Code": "KJEN",
-      "Name": "Krida Jaringan Nusantara Tbk.",
-      "ListingDate": "2019-07-01T00:00:00",
-      "Shares": 500000000,
-      "ListingBoard": "Development"
+      "Code": "KZ",
+      "Name": "CLSA SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "KLAS",
-      "Name": "Pelayaran Kurnia Lautan Semest",
-      "ListingDate": "2023-06-12T00:00:00",
-      "Shares": 2165000000,
-      "ListingBoard": "Development"
+      "Code": "PF",
+      "Name": "DANASAKTI SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "LAJU",
-      "Name": "Jasa Berdikari Logistics Tbk.",
-      "ListingDate": "2023-01-27T00:00:00",
-      "Shares": 2149942974,
-      "ListingBoard": "Development"
+      "Code": "II",
+      "Name": "DANATAMA MAKMUR SEKURITAS",
+      "License": "Manajer Investasi, Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "LOPI",
-      "Name": "Logisticsplus International Tb",
-      "ListingDate": "2023-10-11T00:00:00",
-      "Shares": 1100008512,
-      "ListingBoard": "Acceleration"
+      "Code": "DP",
+      "Name": "DBS VICKERS SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "LRNA",
-      "Name": "Eka Sari Lorena Transport Tbk.",
-      "ListingDate": "2014-04-15T00:00:00",
-      "Shares": 350000022,
-      "ListingBoard": "Development"
+      "Code": "TS",
+      "Name": "DWIDANA SAKTI SEKURITAS",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "MIRA",
-      "Name": "Mitra International Resources ",
-      "ListingDate": "1997-01-30T00:00:00",
-      "Shares": 3961452039,
-      "ListingBoard": "Watchlist"
+      "Code": "ES",
+      "Name": "EKOKAPITAL SEKURITAS",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "MITI",
-      "Name": "Mitra Investindo Tbk.",
-      "ListingDate": "1997-07-16T00:00:00",
-      "Shares": 3540735503,
-      "ListingBoard": "Development"
+      "Code": "SA",
+      "Name": "ELIT SUKSES SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "MPXL",
-      "Name": "MPX Logistics International Tb",
-      "ListingDate": "2023-05-09T00:00:00",
-      "Shares": 2000014587,
-      "ListingBoard": "Development"
+      "Code": "BS",
+      "Name": "EQUITY SEKURITAS INDONESIA",
+      "License": "Manajer Investasi, Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "NELY",
-      "Name": "Pelayaran Nelly Dwi Putri Tbk.",
-      "ListingDate": "2012-10-11T00:00:00",
-      "Shares": 2350000000,
-      "ListingBoard": "Development"
+      "Code": "AO",
+      "Name": "ERDIKHA ELIT SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "PPGL",
-      "Name": "Prima Globalindo Logistik Tbk.",
-      "ListingDate": "2020-07-20T00:00:00",
-      "Shares": 771178020,
-      "ListingBoard": "Acceleration"
+      "Code": "EL",
+      "Name": "EVERGREEN SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "PURA",
-      "Name": "Putra Rajawali Kencana Tbk.",
-      "ListingDate": "2020-01-29T00:00:00",
-      "Shares": 6301930902,
-      "ListingBoard": "Watchlist"
+      "Code": "PC",
+      "Name": "FAC SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "RCCC",
-      "Name": "Utama Radar Cahaya Tbk.",
-      "ListingDate": "2022-08-02T00:00:00",
-      "Shares": 787500000,
-      "ListingBoard": "Acceleration"
+      "Code": "FO",
+      "Name": "FORTE GLOBAL SEKURITAS",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "SAFE",
-      "Name": "Steady Safe Tbk",
-      "ListingDate": "1994-08-15T00:00:00",
-      "Shares": 615145012,
-      "ListingBoard": "Watchlist"
+      "Code": "AF",
+      "Name": "HARITA KENCANA SEKURITAS",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "SAPX",
-      "Name": "Satria Antaran Prima Tbk.",
-      "ListingDate": "2018-10-03T00:00:00",
-      "Shares": 833333300,
-      "ListingBoard": "Development"
+      "Code": "HP",
+      "Name": "HENAN PUTIHRAI SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "SDMU",
-      "Name": "Sidomulyo Selaras Tbk.",
-      "ListingDate": "2011-07-12T00:00:00",
-      "Shares": 1135225000,
-      "ListingBoard": "Watchlist"
+      "Code": "GW",
+      "Name": "HSBC SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "SMDR",
-      "Name": "Samudera Indonesia  Tbk.",
-      "ListingDate": "1999-07-05T00:00:00",
-      "Shares": 16375600000,
-      "ListingBoard": "Main"
+      "Code": "SC",
+      "Name": "IMG SEKURITAS",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "TAXI",
-      "Name": "Express Transindo Utama Tbk.",
-      "ListingDate": "2012-11-02T00:00:00",
-      "Shares": 10223647156,
-      "ListingBoard": "Watchlist"
+      "Code": "RB",
+      "Name": "INA SEKURITAS INDONESIA",
+      "License": "Manajer Investasi, Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "TMAS",
-      "Name": "Temas Tbk.",
-      "ListingDate": "2003-07-09T00:00:00",
-      "Shares": 57051500000,
-      "ListingBoard": "Main"
+      "Code": "IU",
+      "Name": "INDO CAPITAL SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "TNCA",
-      "Name": "Trimuda Nuansa Citra Tbk.",
-      "ListingDate": "2018-06-28T00:00:00",
-      "Shares": 421640000,
-      "ListingBoard": "Development"
+      "Code": "IH",
+      "Name": "INDO HARVEST SEKURITAS",
+      "License": "Perantara Pedagang Efek"
     },
     {
-      "Code": "TRJA",
-      "Name": "Transkon Jaya Tbk.",
-      "ListingDate": "2020-08-27T00:00:00",
-      "Shares": 1510200000,
-      "ListingBoard": "Development"
+      "Code": "PD",
+      "Name": "INDO PREMIER SEKURITAS",
+      "License": "Manajer Investasi, Penjamin Emisi Efek"
     },
     {
-      "Code": "TRUK",
-      "Name": "Guna Timur Raya Tbk.",
-      "ListingDate": "2018-05-23T00:00:00",
-      "Shares": 435000000,
-      "ListingBoard": "Development"
+      "Code": "BF",
+      "Name": "INTI  FIKASA  SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     },
     {
-      "Code": "WEHA",
-      "Name": "WEHA Transportasi Indonesia Tb",
-      "ListingDate": "2007-05-31T00:00:00",
-      "Shares": 1460554819,
-      "ListingBoard": "Development"
+      "Code": "IT",
+      "Name": "INTI TELADAN SEKURITAS",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "IN",
+      "Name": "INVESTINDO NUSANTARA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "BK",
+      "Name": "J.P. MORGAN SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "YB",
+      "Name": "JASA UTAMA CAPITAL SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "DU",
+      "Name": "KAF SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "CP",
+      "Name": "KB VALBURY SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "HD",
+      "Name": "KGI SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AG",
+      "Name": "KIWOOM SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "BQ",
+      "Name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "YJ",
+      "Name": "LOTUS ANDALAN SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "RX",
+      "Name": "MACQUARIE SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "PI",
+      "Name": "MAGENTA KAPITAL SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "DD",
+      "Name": "MAKINDO SEKURITAS",
+      "License": "Penjamin Emisi Efek"
+    },
+    {
+      "Code": "CC",
+      "Name": "MANDIRI SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "DM",
+      "Name": "MASINDO ARTHA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "ZP",
+      "Name": "MAYBANK SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "CD",
+      "Name": "MEGA CAPITAL SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "MU",
+      "Name": "MINNA PADI INVESTAMA SEKURITAS TBK",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "YP",
+      "Name": "MIRAE ASSET SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "EP",
+      "Name": "MNC SEKURITAS",
+      "License": "Penjamin Emisi Efek"
+    },
+    {
+      "Code": "OK",
+      "Name": "NET SEKURITAS",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "XA",
+      "Name": "NH KORINDO SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "TP",
+      "Name": "OCBC SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AP",
+      "Name": "PACIFIC SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek"
+    },
+    {
+      "Code": "PG",
+      "Name": "PANCA GLOBAL SEKURITAS",
+      "License": "Penjamin Emisi Efek"
+    },
+    {
+      "Code": "GR",
+      "Name": "PANIN SEKURITAS TBK.",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "PS",
+      "Name": "PARAMITRA ALFA SEKURITAS",
+      "License": "Manajer Investasi, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "KK",
+      "Name": "PHILLIP SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AT",
+      "Name": "PHINTRACO SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "PO",
+      "Name": "PILARMAS INVESTINDO SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "RO",
+      "Name": "PLUANG MAJU SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "RG",
+      "Name": "PROFINDO SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AD",
+      "Name": "PT OSO Sekuritas Indonesia",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "QA",
+      "Name": "PT Tuntun Sekuritas Indonesia",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "LS",
+      "Name": "RELIANCE SEKURITAS INDONESIA TBK.",
+      "License": "Penjamin Emisi Efek"
+    },
+    {
+      "Code": "DR",
+      "Name": "RHB SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "IF",
+      "Name": "SAMUEL SEKURITAS  INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "MG",
+      "Name": "SEMESTA INDOVEST SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AH",
+      "Name": "SHINHAN SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "DH",
+      "Name": "SINARMAS SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "XL",
+      "Name": "STOCKBIT SEKURITAS DIGITAL",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AZ",
+      "Name": "SUCOR SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "SS",
+      "Name": "SUPRA SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "SF",
+      "Name": "SURYA FAJAR SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "LG",
+      "Name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "BR",
+      "Name": "TRUST SEKURITAS",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AK",
+      "Name": "UBS SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "TF",
+      "Name": "UNIVERSAL BROKER INDONESIA SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AI",
+      "Name": "UOB KAY HIAN SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "BB",
+      "Name": "VERDHANA SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "MI",
+      "Name": "VICTORIA SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "AN",
+      "Name": "WANTEG SEKURITAS",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "FZ",
+      "Name": "WATERFRONT SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "GI",
+      "Name": "WEBULL SEKURITAS INDONESIA",
+      "License": "Perantara Pedagang Efek"
+    },
+    {
+      "Code": "FS",
+      "Name": "YUANTA SEKURITAS INDONESIA",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "IP",
+      "Name": "YUGEN BERTUMBUH SEKURITAS",
+      "License": "Manajer Investasi, Penjamin Emisi Efek, Perantara Pedagang Efek"
+    },
+    {
+      "Code": "RS",
+      "Name": "YULIE SEKURITAS INDONESIA TBK.",
+      "License": "Penjamin Emisi Efek, Perantara Pedagang Efek"
     }
   ]
 }
