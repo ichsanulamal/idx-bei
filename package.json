@@ -1,6 +1,6 @@
 {
   "name": "idx-bei",
-  "version": "1.0.0",
+  "version": "1.0.0-prealpha.1",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,5 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "json2csv": "^6.0.0-alpha.2"
   }
 }
