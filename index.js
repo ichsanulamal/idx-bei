@@ -1,4 +1,8 @@
 import fs from "fs";
+import { getIssuerList } from "./market-data/structured-warrant-sw/issuer-company-list/getIssuerList.js";
+import { getSwTrading } from "./market-data/structured-warrant-sw/structured-warrant-summary/getSwTrading.js";
+import { getFutureToday } from "./market-data/derivatives-data/getFutureToday.js";
+import { getMarketSummary } from "./market-data/derivatives-data/getMarketSummary.js";
 
 export { getTradeSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getTradeSummary.js";
 export { getRecapSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getRecapSummary.js";
@@ -85,22 +89,18 @@ export { getSlbTopActiveStock } from "./market-data/securities-borrowing-and-len
 export { getSlbTopLenderFreq } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderFreq.js";
 export { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lending/getSlbTopLenderVal.js";
 
-// getBook
 
 
-// getStatistic
+const data = await getMarketSummary();
 
-// const data = await getSlbTopLenderVal();
+// console.log(data);
+// const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
 
-// https://www.idx.co.id/primary/MarketData/GetAbsSearchTable?draw=1&start=0&length=9999&yearMatured=&bondId=SPSMFBTN02A2
-// // console.log(data);
-// // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
-
-// // Write JSON to file
-// fs.writeFile('data.json', data, (err) => {
-//   if (err) {
-//     console.error('Error writing to file', err);
-//   } else {
-//     console.log('Data successfully written to file');
-//   }
-// });
+// Write JSON to file
+fs.writeFile('data.json', data, (err) => {
+  if (err) {
+    console.error('Error writing to file', err);
+  } else {
+    console.log('Data successfully written to file');
+  }
+});
