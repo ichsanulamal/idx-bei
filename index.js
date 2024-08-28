@@ -3,6 +3,7 @@ import { getIssuerList } from "./market-data/structured-warrant-sw/issuer-compan
 import { getSwTrading } from "./market-data/structured-warrant-sw/structured-warrant-summary/getSwTrading.js";
 import { getFutureToday } from "./market-data/derivatives-data/getFutureToday.js";
 import { getMarketSummary } from "./market-data/derivatives-data/getMarketSummary.js";
+import { getAbsSearchTable } from "./market-data/asset-backed-securities-data/getAbsSearchTable.js";
 
 export { getTradeSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getTradeSummary.js";
 export { getRecapSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getRecapSummary.js";
@@ -91,7 +92,7 @@ export { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lendi
 
 
 
-const data = await getMarketSummary();
+const data = await getAbsSearchTable();
 
 // console.log(data);
 // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
