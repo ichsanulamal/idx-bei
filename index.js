@@ -1,5 +1,9 @@
 import fs from "fs";
 
+import CompanyProfile from "./listed-companies/company-profiles/companyProfile.mjs"
+
+console.log(new CompanyProfile('ABS').getCompanyDetails());
+
 // import { getBrokerSearch } from "./members-and-participants/exchange-members-profiles/index.js";
 
 // export { getTradeSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getTradeSummary.js";
