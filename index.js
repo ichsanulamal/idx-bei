@@ -1,7 +1,5 @@
 import fs from "fs";
 
-import { getBrokerSearch } from "./members-and-participants/exchange-members-profiles/index.js";
-
 export { getTradeSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getTradeSummary.js";
 export { getRecapSummary } from "./market-data/trading-summary/trading-summary-and-recapitulation/getRecapSummary.js";
 
