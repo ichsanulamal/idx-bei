@@ -87,18 +87,3 @@ export { getSlbTopLenderVal } from "./market-data/securities-borrowing-and-lendi
 
 export * from './listed-companies/companyProfiles.js';
 export * from './members-and-participants/memberProfiles.js';
-
-
-// const data = await getBrokerSearch();
-
-// // console.log(data);
-// // const jsonData = JSON.stringify(data, null, 2); // `null` and `2` are for pretty-printing
-
-// // Write JSON to file
-// fs.writeFile('data.json', data, (err) => {
-//   if (err) {
-//     console.error('Error writing to file', err);
-//   } else {
-//     console.log('Data successfully written to file');
-//   }
-// });

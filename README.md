@@ -1,7 +1,7 @@
-# edx-bei
+# idx-bei
 
 ## Overview
-**edx-bei** is a Node.js application designed to facilitate the easy download of data from the Indonesia Stock Exchange (IDX) / Bursa Efek Indonesia (BEI). This tool allows users to list available API endpoints from the IDX website and export the retrieved data in either JSON or CSV formats.
+**idx-bei** is a Node.js application designed to facilitate the easy download of data from the Indonesia Stock Exchange (IDX) / Bursa Efek Indonesia (BEI). This tool allows users to list available API endpoints from the IDX website and export the retrieved data in either JSON or CSV formats.
 
 ### Purpose
 The primary purpose of this tool is educational. It provides a straightforward way to access financial data from IDX, helping users learn about financial data retrieval and manipulation. Users should review and comply with IDX's Terms of Service and Conditions (ToC) for proper usage.
@@ -18,8 +18,8 @@ The primary purpose of this tool is educational. It provides a straightforward w
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ichsanulamal/edx-bei.git
-   cd edx-bei
+   git clone https://github.com/ichsanulamal/idx-bei.git
+   cd idx-bei
    ```
 
 2. **Install dependencies:**
