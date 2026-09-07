@@ -284,11 +284,102 @@
       "retail_turnover_rp_b": 4060.59,
       "smart_money_delta": 1.84,
       "market_signal": "NEUTRAL",
-      "anomalies_detected": 0
+      "anomalies_detected": 22
     },
     "signal": "NEUTRAL",
     "smart_money_delta": 1.84,
-    "anomalies": []
+    "anomalies": [
+      {
+        "StockCode": "ABMM",
+        "PriceChangePct": 1.39,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": -1.1,
+        "TurnoverRpB": 3.84,
+        "Signal": "RETAIL_TRAP",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "BFIN",
+        "PriceChangePct": 6.84,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": -15.64,
+        "TurnoverRpB": 56.85,
+        "Signal": "RETAIL_TRAP",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "CMNT",
+        "PriceChangePct": 1.37,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": -13.63,
+        "TurnoverRpB": 26.07,
+        "Signal": "RETAIL_TRAP",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "GOTO",
+        "PriceChangePct": 0.0,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": 0.84,
+        "TurnoverRpB": 1.67,
+        "Signal": "STEALTH_ACCUMULATION",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "GPRA",
+        "PriceChangePct": 0.94,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": 3.71,
+        "TurnoverRpB": 13.61,
+        "Signal": "STEALTH_ACCUMULATION",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "KLBF",
+        "PriceChangePct": 1.29,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": -61.16,
+        "TurnoverRpB": 153.3,
+        "Signal": "RETAIL_TRAP",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "LABS",
+        "PriceChangePct": 23.64,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": -4.26,
+        "TurnoverRpB": 16.29,
+        "Signal": "RETAIL_TRAP",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "MBSS",
+        "PriceChangePct": 0.7,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": 0.6,
+        "TurnoverRpB": 1.67,
+        "Signal": "STEALTH_ACCUMULATION",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "PWON",
+        "PriceChangePct": 0.72,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": 2.56,
+        "TurnoverRpB": 8.14,
+        "Signal": "STEALTH_ACCUMULATION",
+        "Priority": "HIGH"
+      },
+      {
+        "StockCode": "RONY",
+        "PriceChangePct": 2.53,
+        "SmartMoneyDelta": 1.84,
+        "NetForeignFlowRpB": -2.36,
+        "TurnoverRpB": 3.94,
+        "Signal": "RETAIL_TRAP",
+        "Priority": "HIGH"
+      }
+    ]
   },
   "audit_risk_shield": [
     {

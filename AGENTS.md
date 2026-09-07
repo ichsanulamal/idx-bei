@@ -14,7 +14,7 @@ This repository is organized as a unified Python quantitative data pipeline, MCP
   - `api.py`: high-performance async FastAPI REST & WebSocket microservice.
   - `signals.py`: 7 decision-support screens (Composite Alpha, Foreign Flow, Bandarmology Broker Dominance, Audit Risk, Dilution Watch, Sharia Value, Pasar Nego).
   - `cli.py`: unified CLI entrypoint for `idx` command.
-- `python/tests/`: automated pytest suite (156 passing unit tests, >=85% coverage).
+- `python/tests/`: automated pytest suite (157 passing unit tests, >=85% coverage).
 - `data/`: local datasets (partitioned time-series, Parquet exports, daily briefings, dynamic USD/IDR rate cache, and KSEI ownership CSVs).
 - `frontend/`: Modern React 19 + TypeScript + Vite single-page application (SPA) with TradingView Lightweight Charts v5 (candlesticks, EMA-20/50, Bollinger Bands, Foreign Flow sub-panel), Vis.js relationship graphs, Bandarmology & Stealth Accumulation radar, Dividend Decision & Trap Radar, Interactive Strategy Backtester, Lucide icons, and live WebSocket streaming.
 - `dashboard/`: Vanilla HTML/CSS/JS reference dashboard.
@@ -47,7 +47,7 @@ Run all commands from the repository root using modern `uv`:
 - `uv run idx serve --port 8000`: start unified Web Dashboard (serves `frontend/dist` with fallback to `dashboard/`), FastAPI REST API & WebSocket server.
 - `uv run idx dashboard --port 8000`: start unified Web Dashboard, FastAPI REST API & WebSocket server.
 - `uv run idx mcp`: start Model Context Protocol (MCP) server for AI assistants.
-- `uv run pytest python/tests`: run full 156-test automated pytest suite with >=85% coverage enforcement.
+- `uv run pytest python/tests`: run full 157-test automated pytest suite with >=85% coverage enforcement.
 - `uv run mypy python/src/idx`: run Mypy static type checker.
 - `uv run ruff check python/src python/tests`: run Ruff linter.
 - `uv run ruff format python/src python/tests`: format Python codebase.

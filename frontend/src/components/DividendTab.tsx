@@ -27,16 +27,16 @@ export const DividendTab: React.FC<DividendTabProps> = ({ onSelectStock }) => {
       const data = await fetchDividendScreen(minYield);
       // Map records to DividendOpportunity format
       const formatted: DividendOpportunity[] = (data || []).map((d: any) => ({
-        StockCode: d.code || d.StockCode || d.ticker,
-        StockName: d.name || d.StockName,
-        DPS: Number(d.dps ?? d.DPS ?? 0),
-        DividendYield: Number(d.yield ?? d.DividendYield ?? 0),
-        CumDate: d.cum_date || d.CumDate || '—',
-        ExDate: d.ex_date || d.ExDate || '—',
-        PaymentDate: d.payment_date || d.PaymentDate || '—',
-        PayoutRatio: Number(d.payout_ratio ?? d.PayoutRatio ?? 0),
-        TrapScore: Number(d.trap_score ?? d.TrapScore ?? 25),
-        Recommendation: d.recommendation || (Number(d.yield ?? 0) > 8 ? 'ARBITRAGE' : 'BUY'),
+        StockCode: d.Ticker || d.code || d.StockCode || d.ticker || '',
+        StockName: d.Name || d.name || d.StockName || '',
+        DPS: Number(d.DPS_IDR ?? d.dps ?? d.DPS ?? 0),
+        DividendYield: Number(d['Yield%'] ?? d.yield ?? d.DividendYield ?? 0),
+        CumDate: d.CumDate || d.cum_date || '—',
+        ExDate: d.ExDate || d.ex_date || '—',
+        PaymentDate: d.PaymentDate || d.payment_date || '—',
+        PayoutRatio: Number(d['DPR%'] ?? d.payout_ratio ?? d.PayoutRatio ?? 0),
+        TrapScore: Number(d.TrapScore ?? d.trap_score ?? 0),
+        Recommendation: d.Verdict || d.recommendation || 'NEUTRAL',
       }));
       setOpportunities(formatted);
       if (formatted.length > 0 && !formatted.some(f => f.StockCode === selectedTicker)) {

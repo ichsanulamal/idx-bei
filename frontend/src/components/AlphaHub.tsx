@@ -14,7 +14,9 @@ import {
   Award
 } from 'lucide-react';
 import type { Company, StealthAnomaly, DividendOpportunity } from '../types';
-import { fetchStealthAccumulation, fetchDividendScreen } from '../services/api';
+import { fetchStealthAccumulation, fetchDividendScreen, fetchDailyBriefing, fetchBrokerFlow } from '../services/api';
+import { DailyBriefingModal } from './DailyBriefingModal';
+
 
 interface AlphaHubProps {
   companies: Company[];
@@ -36,6 +38,40 @@ export const AlphaHub: React.FC<AlphaHubProps> = ({
   const [stealthAnomalies, setStealthAnomalies] = useState<StealthAnomaly[]>([]);
   const [dividendOpps, setDividendOpps] = useState<DividendOpportunity[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [briefingOpen, setBriefingOpen] = useState<boolean>(false);
+  const [briefingData, setBriefingData] = useState<any>(null);
+  const [, setBriefingLoading] = useState<boolean>(false);
+
+  const handleOpenBriefing = async () => {
+    setBriefingOpen(true);
+    if (!briefingData) {
+      setBriefingLoading(true);
+      try {
+        const data = await fetchDailyBriefing();
+        setBriefingData(data);
+      } catch (e) {
+        console.warn('Failed to load briefing from backend, attempting live broker flow:', e);
+        try {
+          const brokerFlow = await fetchBrokerFlow();
+          setBriefingData({
+            trade_date: new Date().toISOString().split('T')[0],
+            stealth_accumulation: { anomalies: stealthAnomalies },
+            foreign_flow_radar: companies.slice(0, 5),
+            composite_alpha_rankings: companies.slice(0, 5).map((c) => ({
+              StockCode: c.code,
+              ROE: c.roe,
+              PER: c.per,
+            })),
+            bandarmology_summary: brokerFlow?.summary || {},
+          });
+        } catch {
+          setBriefingData(null);
+        }
+      } finally {
+        setBriefingLoading(false);
+      }
+    }
+  };
 
   // Load real backend intelligence
   const loadIntelligence = async () => {
@@ -229,26 +265,50 @@ export const AlphaHub: React.FC<AlphaHubProps> = ({
           </p>
         </div>
 
-        <button
-          onClick={loadIntelligence}
-          disabled={loading}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            padding: '0.6rem 1.25rem',
-            borderRadius: '10px',
-            background: 'rgba(56, 189, 248, 0.15)',
-            border: '1px solid rgba(56, 189, 248, 0.3)',
-            color: '#38bdf8',
-            fontWeight: 700,
-            fontSize: '0.85rem',
-            cursor: 'pointer',
-          }}
-        >
-          <RotateCw size={15} className={loading ? 'spinning' : ''} />
-          <span>Refresh Alpha</span>
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <button
+            onClick={handleOpenBriefing}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.6rem 1.25rem',
+              borderRadius: '10px',
+              background: 'rgba(234, 179, 8, 0.2)',
+              border: '1px solid rgba(234, 179, 8, 0.45)',
+              color: '#facc15',
+              fontWeight: 800,
+              fontSize: '0.85rem',
+              cursor: 'pointer',
+              boxShadow: '0 0 16px rgba(234, 179, 8, 0.15)',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            <Zap size={16} />
+            <span>Today's Market Wrap</span>
+          </button>
+
+          <button
+            onClick={loadIntelligence}
+            disabled={loading}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.6rem 1.25rem',
+              borderRadius: '10px',
+              background: 'rgba(56, 189, 248, 0.15)',
+              border: '1px solid rgba(56, 189, 248, 0.3)',
+              color: '#38bdf8',
+              fontWeight: 700,
+              fontSize: '0.85rem',
+              cursor: 'pointer',
+            }}
+          >
+            <RotateCw size={15} className={loading ? 'spinning' : ''} />
+            <span>Refresh Alpha</span>
+          </button>
+        </div>
       </div>
 
       {/* Top 3 High-Conviction Champion Compounders of the Week */}
@@ -1024,6 +1084,15 @@ export const AlphaHub: React.FC<AlphaHubProps> = ({
           </tbody>
         </table>
       </div>
+
+      {/* Daily Market-Close Executive Briefing Modal */}
+      {briefingOpen && (
+        <DailyBriefingModal
+          briefingData={briefingData}
+          onClose={() => setBriefingOpen(false)}
+          onSelectStock={onSelectStock}
+        />
+      )}
     </div>
   );
 };

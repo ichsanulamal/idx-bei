@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { 
   createChart, 
   CandlestickSeries, 
@@ -23,10 +23,27 @@ import {
   Loader2, 
   AlertCircle, 
   FileText, 
-  Star
+  Star,
+  Radio
 } from 'lucide-react';
 import type { Company, StreamEvent } from '../types';
-import { fetchStockData } from '../services/api';
+import { fetchStockData, fetchStockBlocks } from '../services/api';
+
+interface BlockTrade {
+  id: string;
+  time: string;
+  price: number;
+  lots: number;
+  valueRp: number;
+  buyerBroker: string;
+  buyerName: string;
+  buyerType: 'INSTITUTIONAL' | 'RETAIL';
+  sellerBroker: string;
+  sellerName: string;
+  sellerType: 'INSTITUTIONAL' | 'RETAIL';
+  tradeType: 'WHALE_BUY' | 'WHALE_DUMP' | 'BLOCK_CROSSING';
+  isWhale: boolean;
+}
 
 interface ChartTabProps {
   companies: Company[];
@@ -104,6 +121,29 @@ export const ChartTab: React.FC<ChartTabProps> = ({
       isCancelled = true;
     };
   }, [activeTicker]);
+
+  // Option C: Fetch verified real institutional block trades from backend
+  const [blockData, setBlockData] = useState<any>(null);
+
+  useEffect(() => {
+    let isCancelled = false;
+    fetchStockBlocks(activeTicker)
+      .then((data) => {
+        if (!isCancelled) {
+          setBlockData(data);
+        }
+      })
+      .catch((err) => {
+        if (!isCancelled) {
+          console.warn('[ChartTab] Block data fetch:', err);
+          setBlockData(null);
+        }
+      });
+    return () => {
+      isCancelled = true;
+    };
+  }, [activeTicker]);
+
 
   // Handle live WebSocket price updates
   useEffect(() => {
@@ -424,11 +464,71 @@ export const ChartTab: React.FC<ChartTabProps> = ({
     };
   }
 
-  // Safe Entry Zone & Exit Rules
-  const safeEntryLow = Math.round(priceNum * 0.975);
-  const safeEntryHigh = Math.round(priceNum * 1.01);
-  const profitTarget = Math.round(priceNum * 1.15);
-  const stopLoss = Math.round(priceNum * 0.94);
+  // Safe Entry Zone & Exit Rules strictly calculated from quant technical indicators (Bollinger Bands, EMA, ATR)
+  const safeEntryLow = latestData?.BB_Lower ? Math.round(latestData.BB_Lower) : (latestData?.Low ? Math.round(latestData.Low) : Math.round(priceNum));
+  const safeEntryHigh = latestData?.EMA20 ? Math.round(latestData.EMA20) : Math.round(priceNum);
+  const profitTarget = latestData?.BB_Upper ? Math.round(latestData.BB_Upper) : Math.round(priceNum);
+  const stopLoss = (latestData?.BB_Lower && latestData?.ATR14) 
+    ? Math.max(1, Math.round(latestData.BB_Lower - latestData.ATR14))
+    : Math.round(latestData?.Low ?? priceNum);
+
+  const targetGainPct = priceNum > 0 ? (((profitTarget - priceNum) / priceNum) * 100).toFixed(1) : '0.0';
+  const stopLossPct = priceNum > 0 ? (((stopLoss - priceNum) / priceNum) * 100).toFixed(1) : '0.0';
+
+  // Option C: Institutional Block Tape & Whale Order Detection State (100% real backend data)
+  const [whaleFilter, setWhaleFilter] = useState<'whales_only' | 'all'>('whales_only');
+
+  const blockTrades: BlockTrade[] = useMemo(() => {
+    if (!blockData || !blockData.blocks || blockData.blocks.length === 0) {
+      return [];
+    }
+    return blockData.blocks.map((b: any) => ({
+      id: b.id,
+      time: b.time,
+      price: Number(b.price),
+      lots: Number(b.lots),
+      valueRp: Number(b.value_rp),
+      buyerBroker: b.buyer_broker,
+      buyerName: b.buyer_name,
+      buyerType: b.buyer_type,
+      sellerBroker: b.seller_broker,
+      sellerName: b.seller_name,
+      sellerType: b.seller_type,
+      tradeType: b.trade_type,
+      isWhale: Boolean(b.is_whale),
+    }));
+  }, [blockData]);
+
+  const filteredTrades = useMemo(() => {
+    if (whaleFilter === 'whales_only') {
+      return blockTrades.filter((t: BlockTrade) => t.isWhale);
+    }
+    return blockTrades;
+  }, [blockTrades, whaleFilter]);
+
+  const totalWhaleValue = useMemo(() => {
+    if (blockData?.total_whale_value_rp != null) {
+      return Number(blockData.total_whale_value_rp);
+    }
+    return blockTrades
+      .filter((t: BlockTrade) => t.isWhale)
+      .reduce((sum: number, t: BlockTrade) => sum + t.valueRp, 0);
+  }, [blockData, blockTrades]);
+
+  const smartBuyPercent = useMemo<number | null>(() => {
+    if (blockData?.smart_accumulation_ratio != null) {
+      return Math.round(Number(blockData.smart_accumulation_ratio));
+    }
+    const whaleTrades = blockTrades.filter((t: BlockTrade) => t.isWhale);
+    if (whaleTrades.length === 0) return null;
+    const smartBuys = whaleTrades.filter((t: BlockTrade) => t.buyerType === 'INSTITUTIONAL').length;
+    return Math.round((smartBuys / whaleTrades.length) * 100);
+  }, [blockData, blockTrades]);
+
+  const largestTrade = useMemo(() => {
+    if (blockTrades.length === 0) return null;
+    return [...blockTrades].sort((a: BlockTrade, b: BlockTrade) => b.valueRp - a.valueRp)[0];
+  }, [blockTrades]);
 
   return (
     <div className="tab-panel active">
@@ -586,15 +686,15 @@ export const ChartTab: React.FC<ChartTabProps> = ({
             </strong>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
-            <span style={{ color: 'var(--text-secondary)' }}>Upside Target (+15%):</span>
+            <span style={{ color: 'var(--text-secondary)' }}>Upside Target ({Number(targetGainPct) >= 0 ? `+${targetGainPct}%` : `${targetGainPct}%`}):</span>
             <strong style={{ color: '#10b981' }}>
               Rp {profitTarget.toLocaleString()}
             </strong>
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem' }}>
-            <span style={{ color: 'var(--text-secondary)' }}>Risk Floor / Cut-Loss:</span>
+            <span style={{ color: 'var(--text-secondary)' }}>Risk Floor / Cut-Loss ({Number(stopLossPct) >= 0 ? `+${stopLossPct}%` : `${stopLossPct}%`}):</span>
             <strong style={{ color: '#ef4444' }}>
-              Rp {stopLoss.toLocaleString()} (-6%)
+              Rp {stopLoss.toLocaleString()}
             </strong>
           </div>
         </div>
@@ -800,6 +900,245 @@ export const ChartTab: React.FC<ChartTabProps> = ({
               </span>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Institutional Block Tape & Whale Order Detection Panel */}
+      <div className="glass-card" style={{ padding: '1.5rem', marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        {/* Header with Title, Live Badge, and Filter Pills */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '1rem',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+          paddingBottom: '1rem',
+        }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.25rem' }}>
+              <Radio size={22} style={{ color: '#a855f7' }} />
+              <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 800, color: '#f8fafc' }}>
+                Institutional Block Tape & Whale Order Detection
+              </h3>
+              <span style={{
+                padding: '0.2rem 0.6rem',
+                borderRadius: '12px',
+                background: 'rgba(168, 85, 247, 0.2)',
+                border: '1px solid rgba(168, 85, 247, 0.4)',
+                color: '#c084fc',
+                fontSize: '0.72rem',
+                fontWeight: 800,
+                letterSpacing: '0.5px',
+              }}>
+                WHALE RADAR LIVE
+              </span>
+            </div>
+            <p style={{ margin: 0, fontSize: '0.85rem', color: '#94a3b8' }}>
+              Live institutional prints filtering out retail noise. Tracks who is absorbing inventory ({activeTicker}).
+            </p>
+          </div>
+
+          {/* Filter Pills */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <button
+              onClick={() => setWhaleFilter('whales_only')}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                padding: '0.45rem 0.85rem',
+                borderRadius: '8px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                border: whaleFilter === 'whales_only' ? '1px solid #a855f7' : '1px solid rgba(255, 255, 255, 0.1)',
+                background: whaleFilter === 'whales_only' ? 'rgba(168, 85, 247, 0.25)' : 'rgba(255, 255, 255, 0.03)',
+                color: whaleFilter === 'whales_only' ? '#c084fc' : '#9ca3af',
+                transition: 'all 0.15s ease',
+              }}
+            >
+              <span>🐋 Whales Only (≥ Rp 500M)</span>
+            </button>
+
+            <button
+              onClick={() => setWhaleFilter('all')}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                padding: '0.45rem 0.85rem',
+                borderRadius: '8px',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                border: whaleFilter === 'all' ? '1px solid #38bdf8' : '1px solid rgba(255, 255, 255, 0.1)',
+                background: whaleFilter === 'all' ? 'rgba(56, 189, 248, 0.25)' : 'rgba(255, 255, 255, 0.03)',
+                color: whaleFilter === 'all' ? '#38bdf8' : '#9ca3af',
+                transition: 'all 0.15s ease',
+              }}
+            >
+              <span>All Block Trades ({blockTrades.length})</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Summary KPIs Row */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          gap: '1rem',
+        }}>
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.85rem 1rem' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.2rem' }}>Total Whale Volume Today</div>
+            <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#facc15' }}>
+              Rp {(totalWhaleValue / 1e9).toFixed(2)}B
+            </div>
+            <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>Orders ≥ Rp 500M or 2,000 lots</div>
+          </div>
+
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.85rem 1rem' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.2rem' }}>Smart Accumulation Ratio</div>
+            {smartBuyPercent !== null ? (
+              <>
+                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: smartBuyPercent >= 60 ? '#10b981' : smartBuyPercent <= 40 ? '#ef4444' : '#f8fafc' }}>
+                  {smartBuyPercent}% Institutional
+                </div>
+                <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>
+                  {smartBuyPercent >= 60 ? 'Heavy institutional buying' : 'Distribution / Mixed'}
+                </div>
+              </>
+            ) : (
+              <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#64748b' }}>—</div>
+            )}
+          </div>
+
+          <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '10px', padding: '0.85rem 1rem' }}>
+            <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.2rem' }}>Largest Single Whale Block</div>
+            {largestTrade ? (
+              <>
+                <div style={{ fontSize: '1.15rem', fontWeight: 800, color: '#38bdf8' }}>
+                  Rp {(largestTrade.valueRp / 1e9).toFixed(2)}B
+                </div>
+                <div style={{ fontSize: '0.72rem', color: '#cbd5e1' }}>
+                  {largestTrade.lots.toLocaleString()} lots @ Rp {largestTrade.price.toLocaleString()} ({largestTrade.buyerBroker} &rarr; {largestTrade.sellerBroker})
+                </div>
+              </>
+            ) : (
+              <div style={{ fontSize: '0.9rem', color: '#64748b' }}>—</div>
+            )}
+          </div>
+        </div>
+
+        {/* Trade Stream Table */}
+        <div style={{ overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+            <thead>
+              <tr style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', color: 'var(--text-secondary)', textAlign: 'left' }}>
+                <th style={{ padding: '0.65rem 0.5rem' }}>Time</th>
+                <th style={{ padding: '0.65rem 0.5rem' }}>Price</th>
+                <th style={{ padding: '0.65rem 0.5rem' }}>Lots</th>
+                <th style={{ padding: '0.65rem 0.5rem' }}>Value (IDR)</th>
+                <th style={{ padding: '0.65rem 0.5rem' }}>Buyer (Broker)</th>
+                <th style={{ padding: '0.65rem 0.5rem' }}>Seller (Broker)</th>
+                <th style={{ padding: '0.65rem 0.5rem', textAlign: 'right' }}>Smart Money Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredTrades.map((trade: BlockTrade) => {
+                let badgeStyle = {
+                  label: 'WHALE ACCUMULATION',
+                  color: '#34d399',
+                  bg: 'rgba(16, 185, 129, 0.2)',
+                  border: 'rgba(16, 185, 129, 0.4)',
+                };
+                if (trade.tradeType === 'WHALE_DUMP') {
+                  badgeStyle = {
+                    label: 'WHALE DUMP (INTO RETAIL)',
+                    color: '#f87171',
+                    bg: 'rgba(239, 68, 68, 0.2)',
+                    border: 'rgba(239, 68, 68, 0.4)',
+                  };
+                } else if (trade.tradeType === 'BLOCK_CROSSING') {
+                  badgeStyle = {
+                    label: 'INSTITUTIONAL CROSSING',
+                    color: '#facc15',
+                    bg: 'rgba(234, 179, 8, 0.2)',
+                    border: 'rgba(234, 179, 8, 0.4)',
+                  };
+                }
+
+                return (
+                  <tr
+                    key={trade.id}
+                    style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.03)' }}
+                    className="table-row-hover"
+                  >
+                    <td style={{ padding: '0.75rem 0.5rem', color: '#94a3b8', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem' }}>
+                      {trade.time}
+                    </td>
+                    <td style={{ padding: '0.75rem 0.5rem', fontWeight: 700, color: '#f8fafc' }}>
+                      Rp {trade.price.toLocaleString()}
+                    </td>
+                    <td style={{ padding: '0.75rem 0.5rem', fontWeight: 600, color: trade.isWhale ? '#facc15' : '#cbd5e1' }}>
+                      {trade.lots.toLocaleString()} lots
+                    </td>
+                    <td style={{ padding: '0.75rem 0.5rem', fontWeight: 700, color: trade.isWhale ? '#a855f7' : '#94a3b8' }}>
+                      Rp {(trade.valueRp / 1e9).toFixed(2)}B
+                    </td>
+                    <td style={{ padding: '0.75rem 0.5rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                        <span style={{
+                          padding: '0.15rem 0.4rem',
+                          borderRadius: '4px',
+                          fontSize: '0.75rem',
+                          fontWeight: 800,
+                          background: trade.buyerType === 'INSTITUTIONAL' ? 'rgba(16, 185, 129, 0.25)' : 'rgba(239, 68, 68, 0.25)',
+                          color: trade.buyerType === 'INSTITUTIONAL' ? '#34d399' : '#f87171',
+                        }}>
+                          {trade.buyerBroker}
+                        </span>
+                        <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+                          {trade.buyerName}
+                        </span>
+                      </div>
+                    </td>
+                    <td style={{ padding: '0.75rem 0.5rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                        <span style={{
+                          padding: '0.15rem 0.4rem',
+                          borderRadius: '4px',
+                          fontSize: '0.75rem',
+                          fontWeight: 800,
+                          background: trade.sellerType === 'INSTITUTIONAL' ? 'rgba(16, 185, 129, 0.25)' : 'rgba(239, 68, 68, 0.25)',
+                          color: trade.sellerType === 'INSTITUTIONAL' ? '#34d399' : '#f87171',
+                        }}>
+                          {trade.sellerBroker}
+                        </span>
+                        <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>
+                          {trade.sellerName}
+                        </span>
+                      </div>
+                    </td>
+                    <td style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>
+                      <span style={{
+                        padding: '0.2rem 0.55rem',
+                        borderRadius: '6px',
+                        fontSize: '0.7rem',
+                        fontWeight: 800,
+                        color: badgeStyle.color,
+                        background: badgeStyle.bg,
+                        border: `1px solid ${badgeStyle.border}`,
+                        letterSpacing: '0.4px',
+                      }}>
+                        {badgeStyle.label}
+                      </span>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

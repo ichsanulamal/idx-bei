@@ -216,7 +216,19 @@ class TestAPI(unittest.TestCase):
         data = resp.json()
         self.assertIsInstance(data, list)
 
+    def test_stock_blocks_endpoint(self):
+        # Existing ticker (e.g. BBCA)
+        resp = self.client.get("/api/stock/BBCA/blocks")
+        if resp.status_code == 200:
+            data = resp.json()
+            self.assertEqual(data["ticker"], "BBCA")
+            self.assertIn("blocks", data)
+            self.assertIn("non_regular_value_rp", data)
+            self.assertIn("smart_accumulation_ratio", data)
+        # Non-existent ticker 404
+        resp_404 = self.client.get("/api/stock/INVALID_ZZZZ/blocks")
+        self.assertEqual(resp_404.status_code, 404)
+
 
 if __name__ == "__main__":
     unittest.main()
-

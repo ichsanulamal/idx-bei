@@ -53,7 +53,7 @@ export const BandarmologyTab: React.FC<BandarmologyTabProps> = ({ onSelectStock 
       ? data.summary
       : summaryObj
       ? `On session ${summaryObj.on_date}, Smart Money Turnover reached Rp ${summaryObj.smart_money_turnover_rp_b?.toLocaleString()}B vs Retail Rp ${summaryObj.retail_turnover_rp_b?.toLocaleString()}B. Detected ${summaryObj.anomalies_detected} stocks exhibiting significant accumulation divergence.`
-      : 'Institutional accumulation detected across banking and conglomerate blue-chips. Retail participants remain predominantly net sellers.';
+      : (data ? 'No abnormal institutional accumulation detected for this trading session.' : 'Analyzing market-wide broker transactions...');
 
   return (
     <div className="bandarmology-tab" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>

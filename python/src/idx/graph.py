@@ -335,7 +335,9 @@ def get_company_network(ticker: str) -> dict:
                 "from": sh_id,
                 "to": root_id,
                 "label": f"{pct:.1f}%" if pct > 0 else "OWNS",
-                "color": {"color": "rgba(217, 119, 6, 0.8)" if is_ctrl else "rgba(139, 92, 246, 0.6)"},
+                "color": {
+                    "color": "rgba(217, 119, 6, 0.8)" if is_ctrl else "rgba(139, 92, 246, 0.6)"
+                },
                 "arrows": "to",
                 "font": {"color": "#fcd34d" if is_ctrl else "#c4b5fd", "size": 10, "bold": True},
                 "width": 2 if is_ctrl else 1,
