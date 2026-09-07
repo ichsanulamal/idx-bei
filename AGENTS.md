@@ -14,11 +14,11 @@ This repository is organized as a unified Python quantitative data pipeline, MCP
   - `api.py`: high-performance async FastAPI REST & WebSocket microservice.
   - `signals.py`: 7 decision-support screens (Composite Alpha, Foreign Flow, Bandarmology Broker Dominance, Audit Risk, Dilution Watch, Sharia Value, Pasar Nego).
   - `cli.py`: unified CLI entrypoint for `idx` command.
-- `python/tests/`: automated pytest suite (115 passing unit tests).
+- `python/tests/`: automated pytest suite (156 passing unit tests, >=85% coverage).
 - `data/`: local datasets (partitioned time-series, Parquet exports, daily briefings, dynamic USD/IDR rate cache, and KSEI ownership CSVs).
-- `dashboard/`: interactive Smart Money & Network Alpha visual dashboard with TradingView Lightweight Charts, event markers, and live WebSocket streaming.
+- `frontend/`: Modern React 19 + TypeScript + Vite single-page application (SPA) with TradingView Lightweight Charts v5 (candlesticks, EMA-20/50, Bollinger Bands, Foreign Flow sub-panel), Vis.js relationship graphs, Bandarmology & Stealth Accumulation radar, Dividend Decision & Trap Radar, Interactive Strategy Backtester, Lucide icons, and live WebSocket streaming.
+- `dashboard/`: Vanilla HTML/CSS/JS reference dashboard.
 - `docker-compose/`: local Neo4j graph & PostgreSQL database definitions.
-- `.github/workflows/`: automated CI lint/test/type-check workflow (`tests.yml`) and daily market-close ingestion cron (`daily_ingest.yml`).
 
 ## Build, Test, and Development Commands
 Run all commands from the repository root using modern `uv`:
@@ -40,12 +40,14 @@ Run all commands from the repository root using modern `uv`:
 - `uv run idx backtest --strategy dividend_arbitrage`: simulate and compare Strategy A (Naive Hold), B (Pre-Cum Exit), and C (Post-Ex Rebuy).
 - `uv run idx graph --ubo BBCA`: resolve multi-hop Ultimate Beneficial Ownership (UBO) hierarchy.
 - `uv run idx graph --centrality`: rank corporate board powerbrokers by network centrality.
+- `uv run idx graph --ingest`: batch ingest company profiles and summaries into Neo4j graph.
 - `uv run idx drift --latest`: track month-over-month KSEI shareholder and tycoon position changes.
 - `uv run idx drift --ingest <path_or_url>`: ingest, clean, standardize, and compute drift deltas from KSEI shareholder reports.
-- `uv run idx serve --port 8000`: start high-performance FastAPI REST API & WebSocket server.
-- `uv run idx dashboard --port 8080`: launch visual network dashboard & TradingView candlestick charts.
+- `cd frontend && bun install && bun run build`: compile modern React 19 / TypeScript SPA to `frontend/dist`.
+- `uv run idx serve --port 8000`: start unified Web Dashboard (serves `frontend/dist` with fallback to `dashboard/`), FastAPI REST API & WebSocket server.
+- `uv run idx dashboard --port 8000`: start unified Web Dashboard, FastAPI REST API & WebSocket server.
 - `uv run idx mcp`: start Model Context Protocol (MCP) server for AI assistants.
-- `uv run pytest python/tests`: run full 115-test automated pytest suite with coverage.
+- `uv run pytest python/tests`: run full 156-test automated pytest suite with >=85% coverage enforcement.
 - `uv run mypy python/src/idx`: run Mypy static type checker.
 - `uv run ruff check python/src python/tests`: run Ruff linter.
 - `uv run ruff format python/src python/tests`: format Python codebase.

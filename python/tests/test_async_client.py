@@ -53,6 +53,64 @@ class TestAsyncIDXClient(unittest.IsolatedAsyncioTestCase):
         self.assertIn("Profiles", res)
         self.assertEqual(res["Profiles"][0]["NamaEmiten"], "Bank Central Asia")
 
+    @patch("curl_cffi.requests.AsyncSession.get")
+    async def test_async_retry_and_error(self, mock_get):
+        mock_resp_429 = MagicMock(status_code=429)
+        mock_resp_200 = MagicMock(status_code=200)
+        mock_resp_200.json.return_value = {"ok": True}
+        mock_get.side_effect = [mock_resp_429, mock_resp_200]
+
+        client = AsyncIDXClient(max_retries=1, delay_seconds=0.0)
+        with patch("asyncio.sleep"):
+            res = await client.get("/test/retry")
+            self.assertEqual(res.status_code, 200)
+
+        # Non-retryable 404
+        mock_resp_404 = MagicMock(status_code=404)
+        mock_get.side_effect = [mock_resp_404]
+        res_404 = await client.get("/test/404")
+        self.assertEqual(res_404.status_code, 404)
+
+        with self.assertRaises(IDXRequestError):
+            await client.get_json("/test/404", raise_on_error=True)
+
+
+class TestSyncIDXClient(unittest.TestCase):
+    @patch("curl_cffi.requests.get")
+    def test_sync_get_success_and_retry(self, mock_get):
+        from idx.core.client import IDXClient
+
+        client = IDXClient(max_retries=1, delay_seconds=0.0)
+
+        # 200 Success
+        mock_resp = MagicMock(status_code=200)
+        mock_resp.json.return_value = {"data": [1, 2, 3]}
+        mock_get.return_value = mock_resp
+        res = client.get_json("/test/sync")
+        self.assertEqual(res, {"data": [1, 2, 3]})
+
+        # 429 Retry then success
+        mock_429 = MagicMock(status_code=429)
+        mock_get.side_effect = [mock_429, mock_resp]
+        with patch("time.sleep"):
+            res_retry = client.get_json("/test/retry")
+            self.assertEqual(res_retry, {"data": [1, 2, 3]})
+
+        # 404 Error
+        mock_404 = MagicMock(status_code=404)
+        mock_get.side_effect = [mock_404]
+        self.assertIsNone(client.get_json("/test/notfound"))
+        with self.assertRaises(IDXRequestError):
+            client.get_json("/test/notfound", raise_on_error=True)
+
+        # JSON Decode Error
+        mock_bad = MagicMock(status_code=200)
+        mock_bad.json.side_effect = json.JSONDecodeError("err", "doc", 0)
+        mock_get.side_effect = [mock_bad]
+        self.assertIsNone(client.get_json("/test/bad"))
+        with self.assertRaises(IDXRequestError):
+            client.get_json("/test/bad", raise_on_error=True)
+
 
 if __name__ == "__main__":
     unittest.main()

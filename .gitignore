@@ -21,6 +21,11 @@ build/
 .coverage.*
 htmlcov/
 
+# --- Frontend (Node / Bun / Vite) ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
 # --- Databases & DuckDB ---
 *.duckdb
 *.duckdb.wal

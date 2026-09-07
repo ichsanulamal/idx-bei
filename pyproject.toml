@@ -29,6 +29,7 @@ pythonpath = ["python/src", "python"]
 [tool.mypy]
 python_version = "3.13"
 warn_unused_configs = true
+check_untyped_defs = true
 ignore_missing_imports = true
 follow_imports = "silent"
 
@@ -47,4 +48,9 @@ exclude_lines = [
     "if __name__ == .__main__.:",
     "raise NotImplementedError",
 ]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["*.ipynb"]
 

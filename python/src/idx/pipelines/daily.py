@@ -15,6 +15,7 @@ Usage:
 import datetime
 import logging
 import sys
+from typing import Any
 
 from idx.core import timeseries as ts
 from idx.core.client import IDXClient
@@ -68,7 +69,7 @@ def ingest_daily(date=None, client=None, export_parquet=True):
         date = _today_str()
 
     date_iso = f"{date[:4]}-{date[4:6]}-{date[6:8]}"
-    results = {}
+    results: dict[str, Any] = {}
 
     log.info("=" * 60)
     log.info("Daily ingestion started for %s", date_iso)

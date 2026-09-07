@@ -47,3 +47,49 @@ class TestCurrencyEngine(unittest.TestCase):
                 with open(self.cache_file) as f:
                     data = json.load(f)
                     self.assertEqual(data["rate"], 16325.0)
+
+    def test_corrupt_cache_handling(self):
+        with open(self.cache_file, "w") as f:
+            f.write("invalid json{")
+        with patch("idx.core.currency.CACHE_FILE", self.cache_file):
+            with patch("idx.core.currency.fetch_live_usd_idr_rate", return_value=16200.0):
+                rate = get_usd_idr_rate()
+                self.assertEqual(rate, 16200.0)
+
+    @patch("yfinance.Ticker")
+    def test_fetch_live_via_yfinance_fast_info(self, mock_ticker_cls):
+        from idx.core.currency import fetch_live_usd_idr_rate
+
+        mock_ticker = mock_ticker_cls.return_value
+        mock_ticker.fast_info.last_price = 16250.0
+        rate = fetch_live_usd_idr_rate()
+        self.assertEqual(rate, 16250.0)
+
+    @patch("yfinance.Ticker")
+    def test_fetch_live_via_yfinance_history(self, mock_ticker_cls):
+        import pandas as pd
+
+        from idx.core.currency import fetch_live_usd_idr_rate
+
+        mock_ticker = mock_ticker_cls.return_value
+        mock_ticker.fast_info = None
+        mock_ticker.history.return_value = pd.DataFrame({"Close": [16300.0]})
+        rate = fetch_live_usd_idr_rate()
+        self.assertEqual(rate, 16300.0)
+
+    @patch("yfinance.Ticker")
+    @patch("urllib.request.urlopen")
+    def test_fetch_live_via_open_exchange_fallback(self, mock_urlopen, mock_ticker_cls):
+        from unittest.mock import MagicMock
+
+        from idx.core.currency import fetch_live_usd_idr_rate
+
+        mock_ticker_cls.side_effect = RuntimeError("yfinance down")
+
+        mock_resp = MagicMock()
+        mock_resp.read.return_value = b'{"rates": {"IDR": 16400.0}}'
+        mock_resp.__enter__.return_value = mock_resp
+        mock_urlopen.return_value = mock_resp
+
+        rate = fetch_live_usd_idr_rate()
+        self.assertEqual(rate, 16400.0)

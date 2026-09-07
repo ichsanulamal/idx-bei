@@ -22,6 +22,7 @@ import glob
 import json
 import os
 import shutil
+from typing import Any
 
 import pandas as pd
 import pyarrow as pa
@@ -173,7 +174,12 @@ def migrate_json(dataset, base_dir=None, keep_backup=True):
         dict with 'migrated_dates', 'skipped_dates', 'total_records', 'source'
     """
     source = legacy_json_path(dataset, base_dir)
-    result = {"migrated_dates": 0, "skipped_dates": 0, "total_records": 0, "source": None}
+    result: dict[str, Any] = {
+        "migrated_dates": 0,
+        "skipped_dates": 0,
+        "total_records": 0,
+        "source": None,
+    }
 
     if not os.path.exists(source):
         return result
@@ -188,7 +194,7 @@ def migrate_json(dataset, base_dir=None, keep_backup=True):
         log.warning("Cannot read %s: %s", source, exc)
         return result
 
-    by_date = {}
+    by_date: dict[str, list[dict[str, Any]]] = {}
     for rec in records:
         key = str(rec.get("Date", ""))[:10]
         if key:
@@ -197,11 +203,11 @@ def migrate_json(dataset, base_dir=None, keep_backup=True):
     have = existing_dates(dataset, base_dir)
     for date_key, date_records in sorted(by_date.items()):
         if date_key in have:
-            result["skipped_dates"] += 1
+            result["skipped_dates"] = int(result["skipped_dates"]) + 1
             continue
         write_partition(dataset, date_key, date_records, base_dir)
-        result["migrated_dates"] += 1
-        result["total_records"] += len(date_records)
+        result["migrated_dates"] = int(result["migrated_dates"]) + 1
+        result["total_records"] = int(result["total_records"]) + len(date_records)
         log.info("Migrated %s %s: %d records", dataset, date_key, len(date_records))
 
     result["source"] = source

@@ -6,14 +6,10 @@ Entry point for `idx` executable and `python cli.py`.
 
 import argparse
 import logging
-import os
-import subprocess
-import sys
 
 import pandas as pd
 
 from idx.core.query import available_datasets, query_dataset
-from idx.core.utils import DATA_DIR
 from idx.pipelines.daily import ingest_daily
 from idx.pipelines.parquet import export_all as export_all_parquet
 from idx.scrapers.company import fetch_company_profiles
@@ -196,6 +192,9 @@ def build_parser():
     p_graph.add_argument(
         "--cross-holdings", action="store_true", help="Detect circular cross-holding loops"
     )
+    p_graph.add_argument(
+        "--ingest", action="store_true", help="Ingest company profiles and trade data into Neo4j"
+    )
 
     # 9. Shareholder Drift
     p_drift = sub.add_parser(
@@ -239,9 +238,12 @@ def build_parser():
     # 11. MCP Server
     sub.add_parser("mcp", help="Start the Model Context Protocol (MCP) stdio server")
 
-    # 12. Dashboard
-    p_dash = sub.add_parser("dashboard", help="Start visual Smart Money Dashboard HTTP server")
-    p_dash.add_argument("--port", type=int, default=8080, help="Port to bind (default 8080)")
+    # 12. Dashboard & Web Server
+    p_dash = sub.add_parser(
+        "dashboard", help="Start unified Smart Money Dashboard & API Web server"
+    )
+    p_dash.add_argument("--host", default="0.0.0.0", help="Host address (default: 0.0.0.0)")
+    p_dash.add_argument("--port", type=int, default=8000, help="Port to bind (default: 8000)")
 
     # 13. Dividend Decision Engine
     p_div = sub.add_parser("dividend", help="Dividend decision engine & dividend trap analyzer")
@@ -274,12 +276,14 @@ def main(argv=None):
 
         run_mcp_server()
     elif cmd == "dashboard":
-        root_dir = os.path.abspath(os.path.join(DATA_DIR, ".."))
-        print(f"=== Starting Smart Money Dashboard on http://localhost:{args.port}/dashboard/ ===")
-        print(f"Serving from {root_dir} (Press Ctrl+C to stop)...")
-        subprocess.run(
-            [sys.executable, "-m", "http.server", str(args.port), "--directory", root_dir]
+        from idx.api import run_server
+
+        print(
+            f"=== Starting Unified Smart Money Dashboard & Microservice API on http://localhost:{args.port}/ ==="
         )
+        print(f"  • Web Dashboard:  http://localhost:{args.port}/")
+        print(f"  • REST & WS API:  http://localhost:{args.port}/docs")
+        run_server(host=args.host, port=args.port)
     elif cmd == "company":
         print("--- Company Profiles Scraping ---")
         fetch_company_profiles()
@@ -511,9 +515,19 @@ def main(argv=None):
                 print(trades_df.tail(10).to_string(index=False))
 
     elif cmd == "graph":
-        from idx.graph import calculate_board_centrality, detect_cross_holdings, get_ubo_tree
+        from idx.graph import (
+            calculate_board_centrality,
+            detect_cross_holdings,
+            get_ubo_tree,
+            ingest_all_stock_profiles,
+            ingest_all_stock_summaries,
+        )
 
-        if args.ubo:
+        if args.ingest:
+            print("=== Ingesting Company Profiles & Summaries into Neo4j ===")
+            ingest_all_stock_profiles()
+            ingest_all_stock_summaries()
+        elif args.ubo:
             print(f"=== UBO Hierarchy: {args.ubo.upper()} ===")
             tree = get_ubo_tree(args.ubo)
             import json
@@ -531,7 +545,7 @@ def main(argv=None):
 
             print(json.dumps(loops, indent=2))
         else:
-            print("Specify --ubo <TICKER>, --centrality, or --cross-holdings.")
+            print("Specify --ubo <TICKER>, --centrality, --cross-holdings, or --ingest.")
 
     elif cmd == "drift":
         if getattr(args, "ingest", None):
@@ -583,8 +597,11 @@ def main(argv=None):
     elif cmd == "serve":
         from idx.api import run_server
 
-        print(f"=== Starting IDX-BEI FastAPI Microservice on http://{args.host}:{args.port} ===")
-        print(f"Interactive OpenAPI Swagger Docs: http://{args.host}:{args.port}/docs")
+        print(
+            f"=== Starting Unified Smart Money Dashboard & Microservice API on http://localhost:{args.port}/ ==="
+        )
+        print(f"  • Web Dashboard:  http://localhost:{args.port}/")
+        print(f"  • REST & WS API:  http://localhost:{args.port}/docs")
         run_server(host=args.host, port=args.port)
 
     elif cmd == "dividend":

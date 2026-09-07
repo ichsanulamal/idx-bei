@@ -7,7 +7,7 @@ services:
       - ./neo4j_data/data:/data
       - ./neo4j_data/plugins:/plugins
     environment:
-        - NEO4J_AUTH=${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD}
+        - NEO4J_AUTH=${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:-password}
     ports:
       - "7474:7474"
       - "7687:7687"

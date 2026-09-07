@@ -526,35 +526,36 @@ def detect_stealth_accumulation(
             if p_p <= 0 or c_p <= 0:
                 continue
             price_chg = (c_p - p_p) / p_p * 100.0
-            nff = float(row.get("ForeignBuy", 0)) - float(row.get("ForeignSell", 0))
+            nff_shares = float(row.get("ForeignBuy", 0)) - float(row.get("ForeignSell", 0))
+            nff_val = nff_shares * c_p
             val = float(row.get("Value", 0))
 
-            if val >= 5e9:
-                flow_ratio = nff / val if val > 0 else 0
+            if val >= 1e9:
+                flow_ratio = nff_val / val if val > 0 else 0
                 if abs(price_chg) <= max_price_change_pct and (
-                    overall_delta >= min_smart_delta or flow_ratio > 0.25
+                    overall_delta >= min_smart_delta or flow_ratio > 0.15
                 ):
                     records.append(
                         {
                             "StockCode": str(row.get("StockCode")),
                             "PriceChangePct": round(price_chg, 2),
                             "SmartMoneyDelta": overall_delta,
-                            "NetForeignFlowRpB": round(nff / 1e9, 2),
+                            "NetForeignFlowRpB": round(nff_val / 1e9, 2),
                             "TurnoverRpB": round(val / 1e9, 2),
                             "Signal": "STEALTH_ACCUMULATION",
-                            "Priority": "HIGH" if overall_delta >= min_smart_delta else "MEDIUM",
+                            "Priority": "HIGH" if flow_ratio > 0.25 else "MEDIUM",
                         }
                     )
-                elif price_chg > 1.0 and (overall_delta < 0.5 or flow_ratio < -0.25):
+                elif price_chg > 1.0 and (overall_delta < 0.5 or flow_ratio < -0.15):
                     records.append(
                         {
                             "StockCode": str(row.get("StockCode")),
                             "PriceChangePct": round(price_chg, 2),
                             "SmartMoneyDelta": overall_delta,
-                            "NetForeignFlowRpB": round(nff / 1e9, 2),
+                            "NetForeignFlowRpB": round(nff_val / 1e9, 2),
                             "TurnoverRpB": round(val / 1e9, 2),
                             "Signal": "RETAIL_TRAP",
-                            "Priority": "MEDIUM",
+                            "Priority": "HIGH" if flow_ratio < -0.25 else "MEDIUM",
                         }
                     )
 

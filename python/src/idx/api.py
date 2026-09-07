@@ -8,12 +8,19 @@ import os
 
 from fastapi import FastAPI, HTTPException, Query, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from idx.core.ownership import get_latest_shareholder_drift
 from idx.core.query import query_dataset
 from idx.core.utils import DATA_DIR, load_json
-from idx.graph import get_ubo_tree
+from idx.graph import (
+    calculate_board_centrality,
+    detect_cross_holdings,
+    get_company_network,
+    get_ubo_tree,
+)
 from idx.signals import broker_concentration_screen, build_briefing, compute_technical_indicators
 
 app = FastAPI(
@@ -30,15 +37,66 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+REPO_ROOT = os.path.abspath(os.path.join(DATA_DIR, ".."))
+DASHBOARD_DIR = os.path.join(REPO_ROOT, "dashboard")
+FRONTEND_DIST = os.path.join(REPO_ROOT, "frontend", "dist")
+
+SERVE_DIR = FRONTEND_DIST if os.path.exists(FRONTEND_DIST) else DASHBOARD_DIR
+if os.path.exists(SERVE_DIR):
+    app.mount("/dashboard", StaticFiles(directory=SERVE_DIR, html=True), name="dashboard")
+
+if os.path.exists(DATA_DIR):
+    app.mount("/data", StaticFiles(directory=DATA_DIR), name="data")
+
+FRONTEND_ASSETS = os.path.join(FRONTEND_DIST, "assets")
+if os.path.exists(FRONTEND_ASSETS):
+    app.mount("/assets", StaticFiles(directory=FRONTEND_ASSETS), name="assets")
+
+
+@app.get("/", include_in_schema=False)
+async def root_redirect():
+    """Redirect root path directly to the visual dashboard."""
+    return RedirectResponse(url="/dashboard/")
+
 
 class SQLQueryRequest(BaseModel):
     sql: str
     limit: int | None = 50
 
 
+class BacktestRequest(BaseModel):
+    strategy: str = "foreign_flow"
+    holding_days: int = 20
+    top_n: int = 10
+    min_turnover_rp: float = 1_000_000_000.0
+    start_date: str | None = None
+    end_date: str | None = None
+    stop_loss_pct: float | None = None
+    take_profit_pct: float | None = None
+
+
 @app.get("/health", tags=["System"])
 async def health():
     return {"status": "ok", "service": "idx-bei-api", "version": "0.2.0"}
+
+
+@app.get("/api/dashboard-data", tags=["Market Data"])
+async def get_dashboard_data():
+    """Return unified dashboard dataset containing companies with prices, super-insiders, and conglomerates."""
+    alpha_file = os.path.join(DATA_DIR, "network_alpha_data.json")
+    if os.path.exists(alpha_file):
+        return load_json(alpha_file)
+    return {"companies": [], "super_insiders": [], "conglomerates": []}
+
+
+@app.get("/api/companies", tags=["Fundamental"])
+async def get_companies():
+    """Return list of all listed companies with financial metrics, governance, and prices."""
+    alpha_file = os.path.join(DATA_DIR, "network_alpha_data.json")
+    if os.path.exists(alpha_file):
+        data = load_json(alpha_file)
+        return data.get("companies", [])
+    return []
 
 
 @app.get("/api/signals", tags=["Signals"])
@@ -56,17 +114,52 @@ async def get_signals(
 
 
 @app.get("/api/stock/{ticker}", tags=["Market Data"])
-async def get_stock_data(ticker: str, limit: int = 30):
+async def get_stock_data(ticker: str, limit: int = 120):
+    import numpy as np
+    import pandas as pd
+
     ticker = ticker.upper()
-    df = query_dataset("stock_summary", where=f"StockCode = '{ticker}'", limit=limit)
+    df = query_dataset("stock_summary", where=f"StockCode = '{ticker}'")
     if len(df) == 0:
         raise HTTPException(status_code=404, detail=f"Ticker '{ticker}' not found.")
 
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+    df = df.sort_values("Date").reset_index(drop=True)
+
     tech = compute_technical_indicators(df, ticker=ticker)
+    if limit and len(tech) > limit:
+        tech = tech.tail(limit).reset_index(drop=True)
+
+    # Standardize time and OHLC fields for charts
+    tech["time"] = tech["Date"].dt.strftime("%Y-%m-%d")
+    if "OpenPrice" in tech.columns:
+        tech["open"] = tech["OpenPrice"].fillna(tech["Close"])
+    else:
+        tech["open"] = tech["Close"]
+
+    if "High" in tech.columns:
+        tech["high"] = tech["High"].fillna(tech["Close"])
+    else:
+        tech["high"] = tech["Close"]
+
+    if "Low" in tech.columns:
+        tech["low"] = tech["Low"].fillna(tech["Close"])
+    else:
+        tech["low"] = tech["Close"]
+
+    tech["close"] = tech["Close"]
+    tech["volume"] = tech["Volume"].fillna(0) if "Volume" in tech.columns else 0
+
+    # Clean NaNs and infs for strict JSON compliance
+    clean_df = tech.replace([np.inf, -np.inf], np.nan).where(pd.notnull(tech), None)
+    clean_df["Date"] = clean_df["Date"].astype(str)
+
+    records = clean_df.to_dict(orient="records")
+    latest = records[-1] if records else {}
     return {
         "ticker": ticker,
-        "records": tech.to_dict(orient="records"),
-        "latest": tech.tail(1).to_dict(orient="records")[0] if len(tech) > 0 else {},
+        "records": records,
+        "latest": latest,
     }
 
 
@@ -131,6 +224,25 @@ async def get_ubo(ticker: str):
     return get_ubo_tree(ticker)
 
 
+@app.get("/api/graph/network/{ticker}", tags=["Knowledge Graph"])
+async def get_network(ticker: str):
+    data = get_company_network(ticker)
+    if not data.get("nodes"):
+        raise HTTPException(status_code=404, detail=f"No graph network found for {ticker}")
+    return data
+
+
+@app.get("/api/graph/centrality", tags=["Knowledge Graph"])
+async def get_centrality(top_n: int = 20):
+    df = calculate_board_centrality(top_n=top_n)
+    return df.to_dict(orient="records")
+
+
+@app.get("/api/graph/cross-holdings", tags=["Knowledge Graph"])
+async def get_cross():
+    return detect_cross_holdings()
+
+
 @app.post("/api/query/sql", tags=["Analytics"])
 async def execute_sql(req: SQLQueryRequest):
     sql = req.sql.strip()
@@ -178,6 +290,65 @@ async def get_stealth_accumulation(date: str | None = None):
         "smart_money_delta": res["smart_money_delta"],
         "anomalies": res["anomalies_df"].to_dict("records"),
     }
+
+
+@app.post("/api/backtest", tags=["Backtesting"])
+async def backtest_strategy(req: BacktestRequest):
+    import numpy as np
+
+    from idx.backtest import run_backtest
+
+    try:
+        metrics, trades_df = run_backtest(
+            strategy=req.strategy,
+            holding_days=req.holding_days,
+            top_n=req.top_n,
+            min_turnover_rp=req.min_turnover_rp,
+            start_date=req.start_date,
+            end_date=req.end_date,
+            stop_loss_pct=req.stop_loss_pct,
+            take_profit_pct=req.take_profit_pct,
+        )
+
+        # Sanitize metrics floats for JSON compliance
+        cleaned_metrics: dict[str, object] = {}
+        for k, v in metrics.items():
+            if isinstance(v, float) and (np.isnan(v) or np.isinf(v)):
+                cleaned_metrics[k] = None
+            else:
+                cleaned_metrics[k] = v
+
+        trades_list: list[dict] = []
+        equity_curve: list[dict[str, object]] = []
+
+        if len(trades_df) > 0:
+            trades_df_sorted = trades_df.sort_values("ExitDate")
+            running_equity = 100.0
+            first_entry = str(trades_df_sorted.iloc[0]["EntryDate"])
+            equity_curve.append({"time": first_entry, "value": 100.0})
+
+            # Calculate portfolio equity growth across rebalancing periods
+            for exit_dt, group in trades_df_sorted.groupby("ExitDate"):
+                avg_period_return = float(group["Return"].mean())
+                running_equity *= 1.0 + avg_period_return
+                equity_curve.append({"time": str(exit_dt), "value": round(running_equity, 2)})
+
+            trades_list = (
+                trades_df.replace({np.nan: None})
+                .sort_values("ExitDate", ascending=False)
+                .head(100)
+                .to_dict("records")
+            )
+        else:
+            equity_curve.append({"time": "2026-01-01", "value": 100.0})
+
+        return {
+            "metrics": cleaned_metrics,
+            "equity_curve": equity_curve,
+            "trades": trades_list,
+        }
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e)) from e
 
 
 class ConnectionManager:

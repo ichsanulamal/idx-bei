@@ -114,3 +114,16 @@ class TestIngestDaily:
         daily_mod.ingest_daily(date="20260105", client=client, export_parquet=False)
         assert set(ts.existing_dates("index_summary")) == {"2025-12-31"}
         assert not os.path.exists(legacy)  # renamed to .migrated
+
+    def test_ingest_daily_with_parquet_export_and_errors(self, ts_dir, monkeypatch):
+        responses = {
+            "/TradingSummary/GetStockSummary": RuntimeError("Connection timed out"),
+            "/TradingSummary/GetBrokerSummary": {"data": []},
+            "/TradingSummary/GetIndexSummary": {"data": []},
+        }
+        monkeypatch.setattr("idx.pipelines.parquet.export_all", lambda: {"status": "ok"})
+        results = daily_mod.ingest_daily(
+            date="20260105", client=FakeClient(responses), export_parquet=True
+        )
+        assert results["stock_summary"]["status"] == "error"
+        assert "parquet_export" in results

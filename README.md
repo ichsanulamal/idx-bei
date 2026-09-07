@@ -112,18 +112,29 @@ uv run idx dividend --screen --min-yield 4.0 --limit 20
 
 Read the full tactical strategy guide in [docs/DIVIDEND_DECISION_GUIDE.md](docs/DIVIDEND_DECISION_GUIDE.md).
 
-### Interactive Dashboard, REST API & AI Assistant (MCP)
+### Interactive Modern Dashboard, REST API & AI Assistant (MCP)
 
 ```bash
-# Launch Smart Money Dashboard with TradingView candlestick, event markers & live WS updates
-uv run idx dashboard --port 8080
+# Optional: compile modern React 19 SPA frontend (Vite + TypeScript)
+cd frontend && bun install && bun run build && cd ..
 
-# Start high-performance FastAPI REST API & WebSocket server (Swagger docs at /docs)
+# Launch Unified Web Dashboard & API (TradingView charts, live WS stream, REST docs)
+uv run idx dashboard
+
+# Or equivalently
 uv run idx serve --port 8000
 
 # Start Model Context Protocol (MCP) Server for Claude, Cursor, Antigravity
 uv run idx mcp
 ```
+
+The unified web dashboard automatically serves the compiled modern React 19 SPA from `frontend/dist` (with automatic fallback to `dashboard/`). It features:
+- **Stock Screener**: Multi-factor quantitative filtering, valuation tiers, tycoon stakes, and blue-chip filters.
+- **Charts & Flow**: TradingView Lightweight Charts v5 with live ticks, EMA-20/50, Bollinger Bands, and Net Foreign Flow sub-panel.
+- **Bandarmology & Institutional Radar**: Smart Money Delta tracking, stealth institutional accumulation scanner, and retail trap alerts.
+- **Dividend Decision & Trap Radar**: Dividend yield rankings, 0–100 Trap Risk scoring, and 3-way arbitrage comparison (Naive Hold vs Pre-Cum Exit vs Post-Ex Rebuy).
+- **Quantitative Strategy Simulator**: Interactive vectorized backtester with customizable holding periods, stop loss / take profit rules, Sharpe/Sortino ratios, and interactive equity curve plotting.
+- **Super-Insiders & Conglomerates**: Tycoon portfolio tracking and corporate ownership cluster graphs.
 
 The MCP server exposes 11 standard JSON-RPC tools for AI assistants:
 - `idx_analyze_dividend`: evaluate dividend announcements (Yield, DPR, Trap Risk 0–100, Buy/Hold/Sell verdict).
@@ -144,6 +155,10 @@ The MCP server exposes 11 standard JSON-RPC tools for AI assistants:
 idx-bei/
 ├── pyproject.toml                 # Root UV workspace configuration
 ├── uv.lock                        # Consolidated workspace lockfile
+├── frontend/                      # Modern React 19 + TypeScript + Vite SPA
+│   ├── src/                       # Components, hooks, services, types
+│   ├── package.json               # Bun / Node package definition
+│   └── vite.config.ts             # Vite bundler config
 ├── python/                        # Python package & scripts
 │   ├── src/idx/                   # Core package (src-layout)
 │   │   ├── core/                  # HTTP client (sync & async), DuckDB query layer, KSEI ownership engine, currency rates
@@ -151,29 +166,27 @@ idx-bei/
 │   │   ├── pipelines/             # Incremental Parquet export, daily ingestion, compaction
 │   │   ├── mcp/                   # Model Context Protocol (MCP) server (11 tools)
 │   │   ├── backtest.py            # Vectorized strategy simulator & dividend arbitrage backtester
-│   │   ├── graph.py               # Neo4j UBO tree resolution & board centrality
+│   │   ├── graph.py               # Neo4j UBO tree resolution, board centrality & ingestion
 │   │   ├── api.py                 # FastAPI REST microservice & WebSocket broadcast server
 │   │   ├── signals.py             # 7 decision-support screens & stealth accumulation model
 │   │   └── cli.py                 # CLI implementation
-│   ├── cli.py                     # CLI launcher
-│   ├── tests/                     # Pytest suite (115 passing unit tests)
-│   ├── neo4j_ingest.py            # Neo4j graph ingestion script
+│   ├── tests/                     # Pytest suite (154 passing unit tests, >=85% coverage)
 │   ├── neo4j.ipynb                # Graph analysis notebook
 │   └── pyproject.toml             # Package config (uv/setuptools)
 ├── data/                          # Generated datasets (gitignored)
 │   ├── timeseries/                # Historical OHLCV, broker, index partitions
 │   ├── parquet/                   # Columnar exports (daily and monthly compacted)
 │   └── briefings/                 # Daily signal briefings (md + json)
-├── .github/workflows/             # CI testing (tests.yml) & automated market-close cron (daily_ingest.yml)
+├── frontend/                      # Modern React 19 + TypeScript SPA (TradingView charts, Vis.js graph, simulator)
 ├── docker-compose/                # Neo4j & PostgreSQL service configs
-└── dashboard/index.html           # Visual dashboard with TradingView Lightweight Charts & live WS
+└── dashboard/                     # Reference vanilla dashboard (index.html, css/, js/)
 ```
 
 ## Testing & Code Quality
 
 ```bash
-# Run automated pytest suite with coverage (115 unit tests)
-uv run pytest python/tests --cov=idx --cov-report=term-missing
+# Run automated pytest suite with coverage enforcement (154 unit tests, >=85% coverage)
+uv run pytest python/tests --cov=idx --cov-fail-under=85
 
 # Run Mypy static type checker
 uv run mypy python/src/idx
@@ -190,7 +203,7 @@ uv run ruff format python/src python/tests
 docker compose up -d
 
 # 2. Ingest full 952-company network (12,000+ insiders, 5,400+ subsidiaries)
-uv run python/neo4j_ingest.py
+uv run idx graph --ingest
 
 # 3. Open Neo4j Browser UI
 # URL: http://localhost:7474 (user: neo4j, password: password)
@@ -200,12 +213,15 @@ uv run python/neo4j_ingest.py
 
 | Layer | Tools |
 |-------|-------|
-| Language | Python 3.13+ |
+| Backend Language | Python 3.13+ |
 | Package Manager | [uv](https://github.com/astral-sh/uv) (root workspace) |
+| Web API & Realtime | FastAPI, WebSockets, Uvicorn |
+| Frontend SPA | React 19, TypeScript, Vite, Tailwind/CSS tokens, Lucide |
+| Charting & Visualization | TradingView Lightweight Charts v5, Vis.js Network |
 | HTTP Client | `curl_cffi` (browser impersonation, Cloudflare bypass) |
 | Query & Storage | DuckDB, Parquet (`pyarrow`), JSON |
 | Databases | Neo4j (graph), PostgreSQL (relational) |
-| Analytics & ML | `pandas`, `scikit-learn`, `matplotlib`, `seaborn` |
+| Quantitative Engine | `numpy`, `pandas`, vectorized backtesting |
 | AI Assistant Protocol | Model Context Protocol (MCP stdio) |
 | Infrastructure | Docker Compose |
 

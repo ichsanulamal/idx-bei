@@ -1,0 +1,378 @@
+import React, { useEffect, useState } from 'react';
+import { 
+  Radar, 
+  TrendingUp, 
+  AlertTriangle, 
+  ShieldAlert, 
+  Eye, 
+  RotateCw, 
+  Activity, 
+  ArrowRight, 
+  Loader2, 
+  Users 
+} from 'lucide-react';
+import type { StealthAnomaly, StealthAccumulationResponse } from '../types';
+import { fetchStealthAccumulation } from '../services/api';
+
+interface BandarmologyTabProps {
+  onSelectStock: (ticker: string) => void;
+}
+
+export const BandarmologyTab: React.FC<BandarmologyTabProps> = ({ onSelectStock }) => {
+  const [data, setData] = useState<StealthAccumulationResponse | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+  const [filterSignal, setFilterSignal] = useState<string>('ALL');
+
+  const loadData = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const stealthRes = await fetchStealthAccumulation();
+      setData(stealthRes);
+    } catch (err: any) {
+      setError(err.message || 'Failed to load bandarmology intelligence');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const anomalies: StealthAnomaly[] = data?.anomalies || [];
+  const filteredAnomalies = anomalies.filter((a) => {
+    if (filterSignal === 'ALL') return true;
+    return a.Signal === filterSignal;
+  });
+
+  const summaryObj = typeof data?.summary === 'object' && data.summary !== null ? data.summary : null;
+  const summaryText =
+    typeof data?.summary === 'string'
+      ? data.summary
+      : summaryObj
+      ? `On session ${summaryObj.on_date}, Smart Money Turnover reached Rp ${summaryObj.smart_money_turnover_rp_b?.toLocaleString()}B vs Retail Rp ${summaryObj.retail_turnover_rp_b?.toLocaleString()}B. Detected ${summaryObj.anomalies_detected} stocks exhibiting significant accumulation divergence.`
+      : 'Institutional accumulation detected across banking and conglomerate blue-chips. Retail participants remain predominantly net sellers.';
+
+  return (
+    <div className="bandarmology-tab" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+      {/* Top Banner & Refresh */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        background: 'rgba(15, 23, 42, 0.65)',
+        backdropFilter: 'blur(16px)',
+        border: '1px solid rgba(255, 255, 255, 0.08)',
+        borderRadius: '16px',
+        padding: '1.5rem',
+      }}>
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.25rem' }}>
+            <Radar size={28} style={{ color: '#38bdf8' }} />
+            <h2 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 700 }}>Bandarmology & Institutional Radar</h2>
+          </div>
+          <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            Unmask quiet institutional accumulation, retail liquidity traps, and broker dominance shifts across the Indonesia Stock Exchange.
+          </p>
+        </div>
+        <button
+          onClick={loadData}
+          disabled={loading}
+          className="filter-btn"
+          style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.2rem', cursor: 'pointer' }}
+        >
+          <RotateCw size={16} className={loading ? 'spinning' : ''} />
+          <span>Refresh Radar</span>
+        </button>
+      </div>
+
+      {/* KPI Cards */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+        gap: '1rem',
+      }}>
+        <div className="stat-card" style={{
+          background: 'rgba(15, 23, 42, 0.55)',
+          border: '1px solid rgba(56, 189, 248, 0.2)',
+          borderRadius: '14px',
+          padding: '1.25rem',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+            <span>Smart Money Delta</span>
+            <Activity size={18} style={{ color: '#38bdf8' }} />
+          </div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '0.5rem', color: (data?.smart_money_delta ?? 0) >= 1.0 ? '#10b981' : '#ef4444' }}>
+            {data?.smart_money_delta !== undefined ? `${data.smart_money_delta}x` : '—'}
+          </div>
+          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
+            Institutional vs Retail broker turnover ratio
+          </div>
+        </div>
+
+        <div className="stat-card" style={{
+          background: 'rgba(15, 23, 42, 0.55)',
+          border: '1px solid rgba(16, 185, 129, 0.2)',
+          borderRadius: '14px',
+          padding: '1.25rem',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+            <span>Market Regime</span>
+            <TrendingUp size={18} style={{ color: '#10b981' }} />
+          </div>
+          <div style={{ fontSize: '1.6rem', fontWeight: 800, marginTop: '0.5rem', color: '#10b981' }}>
+            {data?.signal || 'NEUTRAL'}
+          </div>
+          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
+            Dominant order flow pressure
+          </div>
+        </div>
+
+        <div className="stat-card" style={{
+          background: 'rgba(15, 23, 42, 0.55)',
+          border: '1px solid rgba(245, 158, 11, 0.2)',
+          borderRadius: '14px',
+          padding: '1.25rem',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+            <span>Detected Anomalies</span>
+            <AlertTriangle size={18} style={{ color: '#f59e0b' }} />
+          </div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '0.5rem', color: '#f59e0b' }}>
+            {anomalies.length} Stocks
+          </div>
+          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
+            Stocks exhibiting accumulation divergence
+          </div>
+        </div>
+
+        <div className="stat-card" style={{
+          background: 'rgba(15, 23, 42, 0.55)',
+          border: '1px solid rgba(168, 85, 247, 0.2)',
+          borderRadius: '14px',
+          padding: '1.25rem',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+            <span>Institutional Flow</span>
+            <Users size={18} style={{ color: '#c084fc' }} />
+          </div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 800, marginTop: '0.5rem', color: '#c084fc' }}>
+            {summaryObj ? `Rp ${(summaryObj.smart_money_turnover_rp_b / 1000).toFixed(1)}T` : 'Active'}
+          </div>
+          <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
+            Smart money session turnover
+          </div>
+        </div>
+      </div>
+
+      {loading && !data && (
+        <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-secondary)' }}>
+          <Loader2 size={36} className="spinning" style={{ margin: '0 auto 1rem', color: '#38bdf8' }} />
+          <p>Scanning broker summaries & detecting stealth flow...</p>
+        </div>
+      )}
+
+      {error && (
+        <div className="error-banner" style={{ padding: '1.5rem' }}>
+          <ShieldAlert size={28} />
+          <div>
+            <h4 style={{ margin: 0 }}>Radar Alert</h4>
+            <p style={{ margin: 0, fontSize: '0.9rem' }}>{error}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Main Content Grid */}
+      {data && (
+        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem' }}>
+          {/* Anomalies Table */}
+          <div style={{
+            background: 'rgba(15, 23, 42, 0.55)',
+            backdropFilter: 'blur(16px)',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
+            borderRadius: '16px',
+            padding: '1.5rem',
+            overflow: 'hidden',
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+              <div>
+                <h3 style={{ margin: 0, fontSize: '1.15rem', fontWeight: 700 }}>Stealth Flow Anomalies ({filteredAnomalies.length})</h3>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                  Flat-price stealth accumulation vs retail distribution traps
+                </span>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem' }}>
+                {['ALL', 'STEALTH_ACCUMULATION', 'RETAIL_TRAP'].map((sig) => (
+                  <button
+                    key={sig}
+                    onClick={() => setFilterSignal(sig)}
+                    style={{
+                      padding: '0.35rem 0.75rem',
+                      borderRadius: '8px',
+                      fontSize: '0.75rem',
+                      fontWeight: 600,
+                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      background: filterSignal === sig ? 'rgba(56, 189, 248, 0.2)' : 'rgba(255, 255, 255, 0.04)',
+                      color: filterSignal === sig ? '#38bdf8' : 'var(--text-secondary)',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {sig.replace('_', ' ')}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {filteredAnomalies.length === 0 ? (
+              <div style={{ padding: '3rem', textAlign: 'center', color: 'var(--text-secondary)' }}>
+                <Eye size={32} style={{ margin: '0 auto 0.5rem', opacity: 0.5 }} />
+                <p>No anomalies detected under the current filter.</p>
+              </div>
+            ) : (
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.85rem' }}>
+                  <thead>
+                    <tr style={{ borderBottom: '1px solid rgba(255, 255, 255, 0.08)', color: 'var(--text-secondary)', textAlign: 'left' }}>
+                      <th style={{ padding: '0.75rem 0.5rem' }}>Ticker</th>
+                      <th style={{ padding: '0.75rem 0.5rem' }}>Signal</th>
+                      <th style={{ padding: '0.75rem 0.5rem' }}>Price Change</th>
+                      <th style={{ padding: '0.75rem 0.5rem' }}>Net Foreign Flow</th>
+                      <th style={{ padding: '0.75rem 0.5rem' }}>Turnover</th>
+                      <th style={{ padding: '0.75rem 0.5rem' }}>Priority</th>
+                      <th style={{ padding: '0.75rem 0.5rem', textAlign: 'right' }}>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredAnomalies.map((a, idx) => {
+                      const isStealth = a.Signal === 'STEALTH_ACCUMULATION';
+                      return (
+                        <tr
+                          key={`${a.StockCode}-${idx}`}
+                          style={{
+                            borderBottom: '1px solid rgba(255, 255, 255, 0.04)',
+                            transition: 'background 0.15s ease',
+                            cursor: 'pointer',
+                          }}
+                          className="table-row-hover"
+                          onClick={() => onSelectStock(a.StockCode)}
+                        >
+                          <td style={{ padding: '0.85rem 0.5rem' }}>
+                            <span style={{ fontWeight: 700, color: '#f8fafc', fontSize: '0.95rem' }}>{a.StockCode}</span>
+                          </td>
+                          <td style={{ padding: '0.85rem 0.5rem' }}>
+                            <span
+                              style={{
+                                padding: '0.2rem 0.5rem',
+                                borderRadius: '6px',
+                                fontSize: '0.7rem',
+                                fontWeight: 700,
+                                background: isStealth ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)',
+                                color: isStealth ? '#34d399' : '#f87171',
+                                border: isStealth ? '1px solid rgba(16, 185, 129, 0.3)' : '1px solid rgba(239, 68, 68, 0.3)',
+                              }}
+                            >
+                              {isStealth ? 'STEALTH ACCUMULATION' : 'RETAIL TRAP'}
+                            </span>
+                          </td>
+                          <td style={{ padding: '0.85rem 0.5rem', fontWeight: 600, color: a.PriceChangePct >= 0 ? '#10b981' : '#ef4444' }}>
+                            {a.PriceChangePct >= 0 ? `+${a.PriceChangePct.toFixed(2)}%` : `${a.PriceChangePct.toFixed(2)}%`}
+                          </td>
+                          <td style={{ padding: '0.85rem 0.5rem', fontWeight: 600, color: (a.NetForeignFlowRpB ?? 0) >= 0 ? '#10b981' : '#ef4444' }}>
+                            {a.NetForeignFlowRpB !== undefined
+                              ? `${a.NetForeignFlowRpB >= 0 ? '+' : ''}Rp ${a.NetForeignFlowRpB.toFixed(2)}B`
+                              : '—'}
+                          </td>
+                          <td style={{ padding: '0.85rem 0.5rem', color: 'var(--text-secondary)' }}>
+                            {a.TurnoverRpB !== undefined ? `Rp ${a.TurnoverRpB.toFixed(2)}B` : '—'}
+                          </td>
+                          <td style={{ padding: '0.85rem 0.5rem' }}>
+                            <span style={{
+                              padding: '0.15rem 0.45rem',
+                              borderRadius: '4px',
+                              fontSize: '0.7rem',
+                              fontWeight: 700,
+                              background: a.Priority === 'HIGH' ? 'rgba(234, 179, 8, 0.15)' : 'rgba(255, 255, 255, 0.05)',
+                              color: a.Priority === 'HIGH' ? '#facc15' : 'var(--text-secondary)',
+                            }}>
+                              {a.Priority || 'MEDIUM'}
+                            </span>
+                          </td>
+                          <td style={{ padding: '0.85rem 0.5rem', textAlign: 'right' }}>
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onSelectStock(a.StockCode);
+                              }}
+                              style={{
+                                background: 'rgba(56, 189, 248, 0.15)',
+                                border: '1px solid rgba(56, 189, 248, 0.3)',
+                                color: '#38bdf8',
+                                padding: '0.35rem 0.6rem',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '4px',
+                                fontSize: '0.75rem',
+                                fontWeight: 600,
+                              }}
+                            >
+                              <span>Chart</span>
+                              <ArrowRight size={12} />
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </div>
+
+          {/* Right Column: Bandarmology Principles & Summary */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{
+              background: 'rgba(15, 23, 42, 0.55)',
+              backdropFilter: 'blur(16px)',
+              border: '1px solid rgba(255, 255, 255, 0.08)',
+              borderRadius: '16px',
+              padding: '1.5rem',
+            }}>
+              <h3 style={{ margin: '0 0 1rem', fontSize: '1.05rem', fontWeight: 700 }}>Bandarmology Rules</h3>
+              <ul style={{ margin: 0, paddingLeft: '1.25rem', fontSize: '0.8rem', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                <li>
+                  <strong style={{ color: '#34d399' }}>Stealth Accumulation:</strong> High institutional net buying (Foreign Flow ratio &gt; 15%) while price remains flat (&le; 1.0%). Smart money is quietly absorbing supply without spiking prices.
+                </li>
+                <li>
+                  <strong style={{ color: '#f87171' }}>Retail Trap:</strong> Price gain (&gt; 1.0%) accompanied by heavy institutional net distribution (Foreign Flow ratio &lt; -15%). Retail buyers are bidding into smart money exit orders.
+                </li>
+                <li>
+                  <strong style={{ color: '#38bdf8' }}>Smart Money Delta:</strong> Ratio of institutional broker turnover (AK, BK, ZP, RX, CC) to retail broker turnover (YP, PD, XC, NI).
+                </li>
+              </ul>
+            </div>
+
+            {/* Quick Actions Card */}
+            <div style={{
+              background: 'rgba(15, 23, 42, 0.55)',
+              backdropFilter: 'blur(16px)',
+              border: '1px solid rgba(56, 189, 248, 0.2)',
+              borderRadius: '16px',
+              padding: '1.5rem',
+            }}>
+              <h4 style={{ margin: '0 0 0.5rem', fontSize: '0.95rem', fontWeight: 700, color: '#38bdf8' }}>
+                Market Session Verdict
+              </h4>
+              <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                {summaryText}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};

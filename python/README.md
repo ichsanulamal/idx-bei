@@ -22,25 +22,19 @@ python/
 ├── src/
 │   └── idx/
 │       ├── __init__.py             # SDK Exports
-│       ├── core/                   # Engine Core
-│       │   ├── client.py           # HTTP Client (Retries, Backoff, Rate Limits, Impersonation)
-│       │   └── utils.py            # Validation, Drift Fingerprinting, Anomaly Tracking, File I/O
-│       ├── scrapers/               # Domain Scrapers
-│       │   ├── company.py          # Company Profiles & Details
-│       │   ├── financial.py        # Financial Ratios & Fundamentals
-│       │   ├── trading.py          # Stock Summary (OHLCV), Broker Summary & Index Summary
-│       │   ├── corporate.py        # Corporate Actions (15 caTypes)
-│       │   ├── members.py          # Exchange Members & Broker Directory
-│       │   ├── news.py             # Market News & Company Disclosures (PDF Filings)
-│       │   └── historical.py      # Historical Time-Series Backfill Engine
-│       ├── pipelines/              # Data Pipelines
-│       │   ├── parquet.py          # Parquet Export Pipeline (Snappy, Quant Features)
-│       │   └── daily.py            # Daily Cron Scheduled Ingestion
-│       └── signals.py              # Decision-Support Screens & Daily Briefing
-├── cli.py                          # Unified Command-Line Interface
+│       ├── core/                   # Engine Core (client, timeseries, query, currency, utils)
+│       ├── scrapers/               # Domain Scrapers (company, financial, trading, corporate, members, news, historical)
+│       ├── pipelines/              # Parquet export, compaction, daily ingestion
+│       ├── mcp/                    # Model Context Protocol (MCP) server (11 tools)
+│       ├── backtest.py             # Vectorized strategy simulator & dividend arbitrage backtester
+│       ├── graph.py                # Neo4j UBO tree resolution, board centrality & ingestion
+│       ├── api.py                  # FastAPI REST microservice & WebSocket server
+│       ├── dividend.py             # Dividend decision engine & dividend trap analyzer
+│       ├── signals.py              # 7 decision-support screens & stealth accumulation model
+│       └── cli.py                  # Unified CLI implementation (idx entrypoint)
 ├── pyproject.toml                  # Package Configuration (src-layout)
-├── API_VERIFICATION_SPEC.md       # Empirical API Verification Specification
-└── tests/                          # Pytest Suite
+├── API_VERIFICATION_SPEC.md        # Empirical API Verification Specification
+└── tests/                          # Pytest Suite (150 passing unit tests)
 ```
 
 ---
@@ -98,9 +92,9 @@ uv run idx signals                     # all 5 screens, defaults
 uv run idx signals --window 10         # foreign-flow window override
 uv run idx signals --webhook-url "..." # broadcast to Discord/Slack/Telegram
 
-# MCP Server & Dashboard
+# MCP Server & Unified Web Dashboard
 uv run idx mcp                         # Model Context Protocol server for AI
-uv run idx dashboard --port 8080       # Smart Money visual network dashboard
+uv run idx dashboard                   # Unified Web Dashboard & API (default port 8000)
 ```
 
 ## 🎯 Decision-Support Signals (`idx.signals`)

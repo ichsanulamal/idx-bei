@@ -6,13 +6,7 @@ readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.13"
 dependencies = [
-    "arelle-release>=2.37.33",
-    "matplotlib>=3.10.3",
     "neo4j>=5.28.1",
-    "psycopg2-binary",
-    "scikit-learn>=1.6.1",
-    "seaborn>=0.13.2",
-    "sqlalchemy>=2.0.41",
     "tqdm>=4.67.1",
     "yfinance>=0.2.59",
     "curl_cffi>=0.15.0",
@@ -50,6 +44,7 @@ pythonpath = ["src", "."]
 [tool.ruff]
 line-length = 100
 target-version = "py313"
+extend-exclude = ["*.ipynb"]
 
 [tool.ruff.lint]
 select = [
@@ -71,6 +66,7 @@ ignore = [
 [tool.mypy]
 python_version = "3.13"
 warn_unused_configs = true
+check_untyped_defs = true
 ignore_missing_imports = true
 follow_imports = "silent"
 

@@ -518,7 +518,7 @@ def compact_partitions(dataset=None, freq="month", base_dir=None, remove_source=
             }
             continue
 
-        groups = {}
+        groups: dict[tuple[str, str], list[str]] = {}
         for fpath in daily_files:
             fname = os.path.basename(fpath)  # date=YYYY-MM-DD.parquet
             d_str = fname[len("date=") : -len(".parquet")]

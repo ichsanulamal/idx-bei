@@ -201,6 +201,45 @@ class TestDividendEngine(unittest.TestCase):
             self.assertIn("Ticker", df.columns)
             self.assertIn("Yield%", df.columns)
 
+    def test_dps_usd_and_idr_conversions(self):
+        details = {
+            "USDC": {
+                "Search": {"NamaEmiten": "PT USD Cents Tbk"},
+                "Dividen": [
+                    {
+                        "CashDividenPerSaham": 200.0,
+                        "CashDividenPerSahamMU": "USD",
+                        "CashDividenTotal": 0.0,
+                        "TanggalCum": "2026-06-15T00:00:00",
+                    }
+                ],
+            },
+            "IDRH": {
+                "Search": {"NamaEmiten": "PT High IDR Tbk"},
+                "Dividen": [
+                    {
+                        "CashDividenPerSaham": 8000.0,
+                        "CashDividenPerSahamMU": "IDR",
+                        "CashDividenTotal": 0.0,
+                        "TanggalCum": "2026-06-15T00:00:00",
+                    }
+                ],
+            },
+        }
+        res_usd = analyze_stock_dividend(
+            "USDC",
+            details_dict=details,
+            stock_df=self.mock_stock_df,
+            ratios_df=self.mock_ratios_df,
+            usd_rate=16000.0,
+        )
+        self.assertTrue(res_usd["has_dividend"])
+
+        res_idr = analyze_stock_dividend(
+            "IDRH", details_dict=details, stock_df=self.mock_stock_df, ratios_df=self.mock_ratios_df
+        )
+        self.assertTrue(res_idr["has_dividend"])
+
 
 if __name__ == "__main__":
     unittest.main()

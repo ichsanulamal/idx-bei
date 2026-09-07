@@ -4,6 +4,7 @@ Company profiles & company details scraper module.
 
 import os
 import time
+from typing import Any
 
 from idx.core.client import IDXClient
 from idx.core.utils import (
@@ -96,13 +97,13 @@ def fetch_all_company_details(
         tickers = tickers[:limit]
 
     # Load existing details for resume/checkpointing unless reset=True
+    existing: dict[str, Any]
     if reset:
         log.info("Reset requested: starting fresh company details collection.")
         existing = {}
     else:
-        existing = load_json(output_path) if os.path.exists(output_path) else {}
-        if not isinstance(existing, dict):
-            existing = {}
+        loaded = load_json(output_path) if os.path.exists(output_path) else {}
+        existing = loaded if isinstance(loaded, dict) else {}
 
     log.info("Starting company details backfill for %d tickers...", len(tickers))
     count = 0
@@ -189,12 +190,12 @@ async def async_fetch_all_company_details(
     if limit:
         tickers = tickers[:limit]
 
+    existing: dict[str, Any]
     if reset:
         existing = {}
     else:
-        existing = load_json(output_path) if os.path.exists(output_path) else {}
-        if not isinstance(existing, dict):
-            existing = {}
+        loaded = load_json(output_path) if os.path.exists(output_path) else {}
+        existing = loaded if isinstance(loaded, dict) else {}
 
     to_fetch = [t for t in tickers if not (t in existing and existing[t].get("Profiles"))]
     log.info(
