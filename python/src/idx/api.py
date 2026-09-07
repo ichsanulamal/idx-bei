@@ -253,16 +253,17 @@ async def execute_sql(req: SQLQueryRequest):
     import duckdb
 
     con = duckdb.connect(database=":memory:")
-    for name in [
-        "stock_summary",
-        "financial_ratios",
-        "corporate_actions",
-        "broker_summary",
-        "index_summary",
-    ]:
+    view_statements = {
+        "stock_summary": "CREATE VIEW stock_summary AS SELECT * FROM read_parquet(?)",
+        "financial_ratios": "CREATE VIEW financial_ratios AS SELECT * FROM read_parquet(?)",
+        "corporate_actions": "CREATE VIEW corporate_actions AS SELECT * FROM read_parquet(?)",
+        "broker_summary": "CREATE VIEW broker_summary AS SELECT * FROM read_parquet(?)",
+        "index_summary": "CREATE VIEW index_summary AS SELECT * FROM read_parquet(?)",
+    }
+    for name, create_view_stmt in view_statements.items():
         p_file = os.path.join(DATA_DIR, "parquet", f"{name}.parquet")
         if os.path.exists(p_file):
-            con.execute(f"CREATE VIEW {name} AS SELECT * FROM read_parquet('{p_file}')")
+            con.execute(create_view_stmt, [p_file])
 
     try:
         res_df = con.execute(sql).fetchdf()
