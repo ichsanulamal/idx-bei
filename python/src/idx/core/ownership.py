@@ -13,7 +13,7 @@ from idx.core.utils import DATA_DIR, get_logger
 
 log = get_logger("idx.core.ownership")
 
-DEFAULT_OWNERSHIP_CSV = os.path.join(DATA_DIR, "1%ownership-2025-03-04.csv")
+DEFAULT_OWNERSHIP_CSV = os.path.join(DATA_DIR, "1%ownership-2026-02-27.csv")
 
 NOTABLE_TYCOONS = {
     "LO KHENG HONG": "Lo Kheng Hong",
@@ -44,13 +44,18 @@ def parse_indonesian_float(val) -> float:
         return 0.0
 
 
-def load_ownership_csv(path=DEFAULT_OWNERSHIP_CSV) -> pd.DataFrame:
+def load_ownership_csv(path: str | None = None) -> pd.DataFrame:
     """Loads and standardizes a KSEI >1% ownership CSV file."""
-    if not os.path.exists(path):
-        log.warning("Ownership file not found at %s", path)
+    target_path = path
+    if target_path is None:
+        files = scan_ownership_files(DATA_DIR)
+        target_path = files[-1] if files else DEFAULT_OWNERSHIP_CSV
+
+    if not os.path.exists(target_path):
+        log.warning("Ownership file not found at %s", target_path)
         return pd.DataFrame()
 
-    df = pd.read_csv(path)
+    df = pd.read_csv(target_path)
     required_cols = [
         "DATE",
         "SHARE_CODE",
@@ -330,16 +335,16 @@ def ingest_ksei_ownership(path_or_url: str, output_dir: str | None = None) -> di
             col_map[col] = "SHARE_CODE"
         elif "ISSUER" in norm or "EMITEN" in norm:
             col_map[col] = "ISSUER_NAME"
+        elif "TYPE" in norm or "JENIS" in norm:
+            col_map[col] = "INVESTOR_TYPE"
+        elif "LOCAL" in norm or "ASING" in norm:
+            col_map[col] = "LOCAL_FOREIGN"
         elif "INVESTOR" in norm or "PEMEGANG" in norm or "HOLDER" in norm or "SHAREHOLDER" in norm:
             col_map[col] = "INVESTOR_NAME"
         elif "TOTAL_HOLDING" in norm or "JUMLAH" in norm or "SHARES" in norm:
             col_map[col] = "TOTAL_HOLDING_SHARES"
         elif "PERCENT" in norm or "PCT" in norm or "PORSI" in norm or "%" in norm:
             col_map[col] = "PERCENTAGE"
-        elif "LOCAL" in norm or "ASING" in norm:
-            col_map[col] = "LOCAL_FOREIGN"
-        elif "TYPE" in norm or "JENIS" in norm:
-            col_map[col] = "INVESTOR_TYPE"
 
     df = df.rename(columns=col_map)
 

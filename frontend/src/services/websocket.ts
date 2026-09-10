@@ -19,7 +19,7 @@ export class LiveStreamClient {
 
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     let wsHost = window.location.host || 'localhost:8000';
-    if (window.location.port === '3000') {
+    if (window.location.port !== '8000') {
       wsHost = `${window.location.hostname || 'localhost'}:8000`;
     }
     const wsUrl = `${protocol}//${wsHost}/ws/stream`;

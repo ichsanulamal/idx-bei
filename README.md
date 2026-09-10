@@ -18,19 +18,22 @@ uv sync
 # 1. Scrape all snapshot datasets (company profiles, financial ratios, corporate actions, brokers)
 uv run idx all
 
-# 2. Concurrent async backfill across company boards & shareholders (952 tickers)
+# 2. Inspect dataset inventory, 2026 calendar gaps, and tiered backfill recommendations
+uv run idx status
+
+# 3. Concurrent async backfill across company boards & shareholders (952 tickers)
 uv run idx company --all-details --concurrency 8
 
-# 3. Daily ingestion (today's OHLCV, broker summary & index flow)
+# 4. Daily ingestion (today's OHLCV, broker summary & index flow)
 uv run idx daily
 
-# 4. Concurrent historical backfill (for backtesting)
+# 5. Concurrent historical backfill (for backtesting)
 uv run idx backfill --start 20260101 --end 20260807 --concurrency 8
 
-# 5. Export all time-series and snapshots to Parquet (supports --incremental)
+# 6. Export all time-series and snapshots to Parquet (supports --incremental)
 uv run idx parquet
 
-# 6. Compact daily time-series partitions into monthly Snappy Parquet files
+# 7. Compact daily time-series partitions into monthly Snappy Parquet files
 uv run idx compact
 ```
 
@@ -134,6 +137,7 @@ The unified web dashboard automatically serves the compiled modern React 19 SPA 
 - **Bandarmology & Institutional Radar**: Smart Money Delta tracking, stealth institutional accumulation scanner, and retail trap alerts.
 - **Dividend Decision & Trap Radar**: Dividend yield rankings, 0–100 Trap Risk scoring, and 3-way arbitrage comparison (Naive Hold vs Pre-Cum Exit vs Post-Ex Rebuy).
 - **Quantitative Strategy Simulator**: Interactive vectorized backtester with customizable holding periods, stop loss / take profit rules, Sharpe/Sortino ratios, and interactive equity curve plotting.
+- **Data Ingestion & Backfill Horizon Status**: Live timeseries health matrix, calendar gap detection separating national holidays from missing trading sessions, and 4-tier quantitative backfill horizon guidance with 1-click execution.
 - **Super-Insiders & Conglomerates**: Tycoon portfolio tracking and corporate ownership cluster graphs.
 
 The MCP server exposes 11 standard JSON-RPC tools for AI assistants:
@@ -165,12 +169,14 @@ idx-bei/
 │   │   ├── scrapers/              # Domain scrapers (company, trading, corporate, financial, news, async backfillers)
 │   │   ├── pipelines/             # Incremental Parquet export, daily ingestion, compaction
 │   │   ├── mcp/                   # Model Context Protocol (MCP) server (11 tools)
+│   │   ├── dividend.py            # Dividend decision engine & trap risk analyzer
+│   │   ├── ingestion.py           # Dataset inventory, calendar gap detection & backfill recommendations
 │   │   ├── backtest.py            # Vectorized strategy simulator & dividend arbitrage backtester
 │   │   ├── graph.py               # Neo4j UBO tree resolution, board centrality & ingestion
 │   │   ├── api.py                 # FastAPI REST microservice & WebSocket broadcast server
 │   │   ├── signals.py             # 7 decision-support screens & stealth accumulation model
 │   │   └── cli.py                 # CLI implementation
-│   ├── tests/                     # Pytest suite (154 passing unit tests, >=85% coverage)
+│   ├── tests/                     # Pytest suite (165 passing unit tests, >=85% coverage)
 │   ├── neo4j.ipynb                # Graph analysis notebook
 │   └── pyproject.toml             # Package config (uv/setuptools)
 ├── data/                          # Generated datasets (gitignored)

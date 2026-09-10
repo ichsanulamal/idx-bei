@@ -4,6 +4,7 @@ import { AlphaHub } from './components/AlphaHub';
 import { ChartTab } from './components/ChartTab';
 import { PowerMapTab } from './components/PowerMapTab';
 import { BacktesterTab } from './components/BacktesterTab';
+import { IngestionTab } from './components/IngestionTab';
 import { InvestorMemoModal } from './components/InvestorMemoModal';
 import { WatchlistDrawer } from './components/WatchlistDrawer';
 import { useDashboardData } from './hooks/useDashboardData';
@@ -27,7 +28,7 @@ function parseRouteFromUrl(): { tab: TabType; ticker: string } {
   if (hash) {
     const [hashPath, hashQuery] = hash.split('?');
     if (hashPath) {
-      if (['opportunities', 'terminal', 'power_map', 'simulator'].includes(hashPath)) {
+      if (['opportunities', 'terminal', 'power_map', 'simulator', 'ingestion'].includes(hashPath)) {
         tabParam = hashPath as TabType;
       } else if (/^[A-Za-z0-9]{4,5}$/.test(hashPath)) {
         tabParam = 'terminal';
@@ -42,7 +43,7 @@ function parseRouteFromUrl(): { tab: TabType; ticker: string } {
     }
   }
 
-  const validTabs: TabType[] = ['opportunities', 'terminal', 'power_map', 'simulator'];
+  const validTabs: TabType[] = ['opportunities', 'terminal', 'power_map', 'simulator', 'ingestion'];
   const tab = tabParam && validTabs.includes(tabParam) ? tabParam : 'opportunities';
   const ticker = (tickerParam || 'BBCA').toUpperCase();
 
@@ -66,6 +67,8 @@ function syncRouteToUrl(tab: TabType, ticker: string, replace = false) {
     document.title = 'Tycoons & Power Map • IDX Smart Money';
   } else if (tab === 'simulator') {
     document.title = 'Strategy Simulator • IDX Smart Money';
+  } else if (tab === 'ingestion') {
+    document.title = 'Data Ingestion & Backfill • IDX Smart Money';
   }
 
   if (window.location.hash !== newHash) {
@@ -237,6 +240,13 @@ export const App: React.FC = () => {
             {activeTab === 'simulator' && (
               <BacktesterTab
                 onSelectStock={handleSelectStock}
+              />
+            )}
+
+            {/* 5. Data Ingestion & Backfill Horizon Status */}
+            {activeTab === 'ingestion' && (
+              <IngestionTab
+                lastLiveEvent={lastEvent}
               />
             )}
           </>

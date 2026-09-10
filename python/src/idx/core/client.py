@@ -143,6 +143,7 @@ class AsyncIDXClient:
         self.concurrency = concurrency
         self._semaphore = None
         self._session = None
+        self._cooldown_until = 0.0
 
     async def __aenter__(self):
         self._session = requests.AsyncSession(headers=self.headers)
@@ -175,7 +176,13 @@ class AsyncIDXClient:
 
             try:
                 retries = 0
+                loop = asyncio.get_running_loop()
                 while retries <= self.max_retries:
+                    # Adaptive cooldown across all concurrent workers
+                    now = loop.time()
+                    if self._cooldown_until > now:
+                        await asyncio.sleep(self._cooldown_until - now)
+
                     try:
                         log.debug(
                             "Async GET %s | params=%s (attempt %d/%d)",
@@ -201,12 +208,21 @@ class AsyncIDXClient:
 
                         elif status_code in (429, 500, 502, 503, 504):
                             backoff = _backoff_with_jitter(retries)
-                            log.warning(
-                                "Async HTTP %d for %s – retrying in %.1fs...",
-                                status_code,
-                                url,
-                                backoff,
-                            )
+                            self._cooldown_until = loop.time() + backoff
+                            if retries == self.max_retries:
+                                log.warning(
+                                    "Async HTTP %d for %s (rate limit, retrying in %.1fs...)",
+                                    status_code,
+                                    url,
+                                    backoff,
+                                )
+                            else:
+                                log.debug(
+                                    "Async HTTP %d for %s (throttling %.1fs...)",
+                                    status_code,
+                                    url,
+                                    backoff,
+                                )
                             await asyncio.sleep(backoff)
                             retries += 1
                         else:
@@ -215,7 +231,8 @@ class AsyncIDXClient:
 
                     except Exception as exc:
                         backoff = _backoff_with_jitter(retries, base=1.0)
-                        log.warning(
+                        self._cooldown_until = loop.time() + backoff
+                        log.debug(
                             "Async request error for %s: %s – retrying in %.1fs...",
                             url,
                             exc,

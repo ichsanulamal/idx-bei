@@ -263,6 +263,11 @@ def build_parser():
         "--limit", type=int, default=25, help="Max results for screener (default: 25)"
     )
 
+    # 14. Ingestion Status & Backfill Recommendation
+    sub.add_parser(
+        "status", help="Display dataset inventory, calendar gaps, and tiered backfill recommendations"
+    )
+
     sub.add_parser("all", help="Run all snapshot scrapers sequentially")
     return parser
 
@@ -626,6 +631,65 @@ def main(argv=None):
         else:
             analysis = analyze_stock_dividend(args.ticker)
             print(format_dividend_report(analysis))
+
+    elif cmd == "status":
+        from idx.ingestion import get_full_ingestion_status
+
+        status = get_full_ingestion_status()
+        inv = status["inventory"]
+        gaps = status["gaps"]
+        recs = status["recommendations"]
+
+        print("=" * 80)
+        print("             IDX-BEI DATA INGESTION & BACKFILL STATUS REPORT                    ")
+        print("=" * 80)
+        print(f" Health Status:    {status['status'].upper()} (Score: {status['health_score']}/100)")
+        print(f" Generated At:     {status['generated_at']}")
+        print("-" * 80)
+        print(" 1. TIMESERIES DATASETS (Partitioned Parquet)")
+        for ds, meta in inv["timeseries"].items():
+            print(
+                f"   • {ds:16}: {meta['total_dates']:3d} dates ({meta['start_date']} -> {meta['end_date']}) | {meta['total_size_mb']:.2f} MB"
+            )
+        print("\n 2. CONSOLIDATED PARQUET EXPORTS (data/parquet/)")
+        for ds, meta in inv["parquet_exports"].items():
+            status_str = (
+                f"{meta['row_count']:,} rows ({meta['size_mb']:.2f} MB)"
+                if meta["exists"]
+                else "NOT GENERATED"
+            )
+            print(f"   • {ds:18}: {status_str}")
+        print("\n 3. SNAPSHOT COVERAGE")
+        f_snap = inv["fundamental_snapshots"]
+        print(
+            f"   • Listed Companies:  {f_snap['total_listed_companies']} total | {f_snap['detailed_profiles_scraped']} detailed ({f_snap['profile_coverage_pct']}%)"
+        )
+        print(f"   • Financial Ratios:  {f_snap['financial_ratios']['size_mb']:.2f} MB")
+        print(f"   • Corporate Actions: {f_snap['corporate_actions']['size_mb']:.2f} MB")
+        print("\n 4. 2026 CALENDAR GAP DETECTION")
+        print(
+            f"   • Expected Weekdays: {gaps['total_calendar_weekdays']} | Ingested: {gaps['ingested_days']} ({gaps['coverage_percentage']}%)"
+        )
+        print(f"   • Official Holidays: {gaps['official_holidays_count']} dates recognized")
+        if gaps["true_missing_trading_days"]:
+            print(
+                f"   • MISSING TRADING SESSIONS ({gaps['true_missing_trading_days_count']} days):"
+            )
+            print(f"     {', '.join(gaps['true_missing_trading_days'])}")
+        else:
+            print("   • All 2026 trading sessions up-to-date!")
+        print("\n 5. QUANTITATIVE BACKFILL RECOMMENDATIONS")
+        print(f"   Action: {recs['summary']['recommended_action']}\n")
+        for t in recs["tiers"]:
+            print(f"   [Tier {t['tier']}: {t['name']}] ({t['priority']})")
+            print(
+                f"     Target Range: {t['target_range']['start']} -> {t['target_range']['end']} ({t['trading_days_to_fetch']} trading days, ~{t['estimated_payload_mb']} MB, ~{t['estimated_runtime_seconds_c8']}s)"
+            )
+            print("     Commands:")
+            for c in t["recommended_cli_commands"]:
+                print(f"       $ {c}")
+            print()
+        print("=" * 80)
 
     elif cmd == "all":
         print("=== Running All Snapshot Scrapers ===")

@@ -150,4 +150,32 @@ export async function fetchStockBlocks(ticker: string): Promise<any> {
   return await resp.json();
 }
 
+export async function fetchIngestionStatus(): Promise<any> {
+  const resp = await fetch('/api/system/ingestion-status');
+  if (!resp.ok) {
+    throw new Error('Failed to fetch data ingestion status');
+  }
+  return await resp.json();
+}
+
+export async function triggerIngestion(params: {
+  job_type: 'daily' | 'backfill';
+  date?: string;
+  start_date?: string;
+  end_date?: string;
+  concurrency?: number;
+}): Promise<any> {
+  const resp = await fetch('/api/system/trigger-ingestion', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params),
+  });
+  if (!resp.ok) {
+    const err = await resp.json().catch(() => ({ detail: 'Failed to trigger ingestion' }));
+    throw new Error(err.detail || 'Failed to trigger ingestion');
+  }
+  return await resp.json();
+}
+
+
 

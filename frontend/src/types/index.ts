@@ -2,7 +2,91 @@ export type TabType =
   | 'opportunities'
   | 'terminal'
   | 'power_map'
-  | 'simulator';
+  | 'simulator'
+  | 'ingestion';
+
+export interface DatasetTimeseriesMeta {
+  total_dates: number;
+  start_date: string | null;
+  end_date: string | null;
+  daily_partitions_count: number;
+  compacted_partitions_count: number;
+  total_size_mb: number;
+}
+
+export interface ParquetExportMeta {
+  exists: boolean;
+  row_count: number;
+  size_mb: number;
+  modified_iso: string | null;
+}
+
+export interface IngestionInventory {
+  timeseries: Record<string, DatasetTimeseriesMeta>;
+  parquet_exports: Record<string, ParquetExportMeta>;
+  fundamental_snapshots: {
+    total_listed_companies: number;
+    detailed_profiles_scraped: number;
+    profile_coverage_pct: number;
+    financial_ratios: { exists: boolean; size_mb: number; modified_iso: string | null };
+    corporate_actions: { exists: boolean; size_mb: number; modified_iso: string | null };
+    broker_directory: { exists: boolean; size_mb: number; modified_iso: string | null };
+  };
+  ksei_drift: {
+    files_count: number;
+    files: Array<{ file: string; size_mb: number; modified_iso: string | null }>;
+  };
+  system: {
+    usd_idr: { rate: number; last_updated: string | null };
+  };
+}
+
+export interface CalendarGapInfo {
+  dataset: string;
+  start_date: string;
+  end_date: string;
+  total_calendar_weekdays: number;
+  ingested_days: number;
+  official_holidays_count: number;
+  official_holidays: Array<{ date: string; holiday_name: string }>;
+  true_missing_trading_days_count: number;
+  true_missing_trading_days: string[];
+  coverage_percentage: number;
+}
+
+export interface BackfillTier {
+  tier: number;
+  id: string;
+  name: string;
+  priority: string;
+  description: string;
+  target_range: { start: string; end: string };
+  trading_days_to_fetch: number;
+  estimated_payload_mb: number;
+  estimated_runtime_seconds_c8: number;
+  unlocked_capabilities: string[];
+  recommended_cli_commands: string[];
+}
+
+export interface BackfillRecommendations {
+  as_of_date: string;
+  summary: {
+    current_status: string;
+    immediate_gaps_count: number;
+    immediate_gaps: string[];
+    recommended_action: string;
+  };
+  tiers: BackfillTier[];
+}
+
+export interface IngestionStatusResponse {
+  status: 'healthy' | 'warning' | 'critical';
+  health_score: number;
+  inventory: IngestionInventory;
+  gaps: CalendarGapInfo;
+  recommendations: BackfillRecommendations;
+  generated_at: string;
+}
 
 export interface ScoreBreakdown {
   financial: number;

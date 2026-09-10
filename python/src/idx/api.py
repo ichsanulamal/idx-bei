@@ -21,6 +21,12 @@ from idx.graph import (
     get_company_network,
     get_ubo_tree,
 )
+from idx.ingestion import (
+    get_full_ingestion_status,
+    get_job_status,
+    list_recent_jobs,
+    run_async_ingestion_job,
+)
 from idx.signals import broker_concentration_screen, build_briefing, compute_technical_indicators
 
 app = FastAPI(
@@ -73,6 +79,14 @@ class BacktestRequest(BaseModel):
     end_date: str | None = None
     stop_loss_pct: float | None = None
     take_profit_pct: float | None = None
+
+
+class TriggerIngestionRequest(BaseModel):
+    job_type: str = "daily"  # "daily" or "backfill"
+    date: str | None = None  # YYYYMMDD for daily
+    start_date: str | None = None  # YYYYMMDD for backfill
+    end_date: str | None = None  # YYYYMMDD for backfill
+    concurrency: int = 8
 
 
 @app.get("/health", tags=["System"])
@@ -552,6 +566,55 @@ async def broadcast_event(event: dict):
     """Broadcasts a live event payload to all connected dashboard WebSockets."""
     await ws_manager.broadcast(event)
     return {"status": "broadcast_sent", "active_clients": len(ws_manager.active_connections)}
+
+
+@app.get("/api/system/ingestion-status", tags=["Ingestion & Data Pipeline"])
+async def api_ingestion_status():
+    """Returns comprehensive dataset inventory, calendar gaps, and tiered backfill recommendations."""
+    return get_full_ingestion_status()
+
+
+@app.post("/api/system/trigger-ingestion", tags=["Ingestion & Data Pipeline"])
+async def api_trigger_ingestion(req: TriggerIngestionRequest):
+    """Triggers an async daily ingestion or historical backfill task in the background."""
+    import uuid
+
+    job_id = f"job-{uuid.uuid4().hex[:8]}"
+    params = {
+        "date": req.date,
+        "start_date": req.start_date,
+        "end_date": req.end_date,
+        "concurrency": req.concurrency,
+    }
+    asyncio.create_task(
+        run_async_ingestion_job(
+            job_id=job_id,
+            job_type=req.job_type,
+            params=params,
+            broadcast_callback=ws_manager.broadcast,
+        )
+    )
+    return {
+        "job_id": job_id,
+        "status": "scheduled",
+        "job_type": req.job_type,
+        "message": f"{req.job_type.capitalize()} job triggered in background.",
+    }
+
+
+@app.get("/api/system/jobs", tags=["Ingestion & Data Pipeline"])
+async def api_list_jobs(limit: int = 10):
+    """List recent background ingestion and backfill jobs."""
+    return list_recent_jobs(limit=limit)
+
+
+@app.get("/api/system/jobs/{job_id}", tags=["Ingestion & Data Pipeline"])
+async def api_get_job(job_id: str):
+    """Get status of a specific background job."""
+    job = get_job_status(job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail=f"Job '{job_id}' not found.")
+    return job
 
 
 @app.websocket("/ws/stream")
