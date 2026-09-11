@@ -268,6 +268,12 @@ def build_parser():
         "status", help="Display dataset inventory, calendar gaps, and tiered backfill recommendations"
     )
 
+    # 15. LHKPN & PEP Political Capital Radar
+    p_lhkpn = sub.add_parser(
+        "lhkpn", help="Cross-reference KPK LHKPN asset filings with IDX boards and tycoons"
+    )
+    p_lhkpn.add_argument("--query", type=str, default=None, help="Filter by official name or ticker code")
+
     sub.add_parser("all", help="Run all snapshot scrapers sequentially")
     return parser
 
@@ -702,6 +708,12 @@ def main(argv=None):
         fetch_index_summary()
         fetch_news_search()
         fetch_all_announcements()
+
+    elif cmd == "lhkpn":
+        from idx.lhkpn_radar import LHKPNRadar
+
+        radar = LHKPNRadar()
+        radar.print_radar(query=args.query)
 
 
 if __name__ == "__main__":
