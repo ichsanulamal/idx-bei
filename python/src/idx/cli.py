@@ -178,9 +178,9 @@ def build_parser():
     p_bt.add_argument(
         "--top", type=int, default=10, help="Top N stocks picked per session (default 10)"
     )
-    p_bt.add_argument("--stop-loss", type=float, default=None, help="Stop loss % e.g. 7.0 for -7%")
+    p_bt.add_argument("--stop-loss", type=float, default=None, help="Stop loss %% e.g. 7.0 for -7%%")
     p_bt.add_argument(
-        "--take-profit", type=float, default=None, help="Take profit % e.g. 15.0 for +15%"
+        "--take-profit", type=float, default=None, help="Take profit %% e.g. 15.0 for +15%%"
     )
 
     # 8. Knowledge Graph & UBO
@@ -256,7 +256,7 @@ def build_parser():
         help="Screen high-yield dividend opportunities across all stocks",
     )
     p_div.add_argument(
-        "--min-yield", type=float, default=3.0, help="Minimum dividend yield % (default: 3.0)"
+        "--min-yield", type=float, default=3.0, help="Minimum dividend yield %% (default: 3.0)"
     )
     p_div.add_argument("--year", default="2026", help="Filter by cum date year (default: 2026)")
     p_div.add_argument(
