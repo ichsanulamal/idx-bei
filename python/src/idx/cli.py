@@ -91,6 +91,12 @@ def build_parser():
         default=5,
         help="Concurrent async request limit (default 5)",
     )
+    p_backfill.add_argument(
+        "--delay",
+        type=float,
+        default=0.5,
+        help="Inter-request delay in seconds for polite throttling (default: 0.5)",
+    )
 
     # 4. Parquet & Query
     p_parquet = sub.add_parser("parquet", help="Export all datasets to Parquet format")
@@ -327,7 +333,7 @@ def main(argv=None):
         fetch_all_announcements()
     elif cmd == "backfill":
         print(
-            f"=== Historical Backfill: {args.start} → {args.end} (type={args.type}, concurrency={args.concurrency}) ==="
+            f"=== Historical Backfill: {args.start} → {args.end} (type={args.type}, concurrency={args.concurrency}, delay={args.delay}s) ==="
         )
         import asyncio
 
@@ -340,15 +346,15 @@ def main(argv=None):
         async def _run_backfill():
             if args.type in ("stock", "all"):
                 await async_backfill_stock_summary(
-                    args.start, args.end, concurrency=args.concurrency
+                    args.start, args.end, concurrency=args.concurrency, delay=args.delay
                 )
             if args.type in ("broker", "all"):
                 await async_backfill_broker_summary(
-                    args.start, args.end, concurrency=args.concurrency
+                    args.start, args.end, concurrency=args.concurrency, delay=args.delay
                 )
             if args.type in ("index", "all"):
                 await async_backfill_index_summary(
-                    args.start, args.end, concurrency=args.concurrency
+                    args.start, args.end, concurrency=args.concurrency, delay=args.delay
                 )
 
         asyncio.run(_run_backfill())

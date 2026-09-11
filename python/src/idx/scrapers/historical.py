@@ -158,6 +158,7 @@ async def async_backfill_dataset(
     start_date,
     end_date,
     concurrency=5,
+    delay=0.2,
     client=None,
 ):
     """Asynchronous concurrent backfill loop across trading days."""
@@ -170,12 +171,13 @@ async def async_backfill_dataset(
     to_fetch = [d for d in dates if d.strftime("%Y-%m-%d") not in have]
 
     log.info(
-        "Async backfill %s: %d total days (%d cached, %d to fetch, concurrency=%d)",
+        "Async backfill %s: %d total days (%d cached, %d to fetch, concurrency=%d, delay=%.2fs)",
         dataset,
         len(dates),
         len(dates) - len(to_fetch),
         len(to_fetch),
         concurrency,
+        delay,
     )
 
     if not to_fetch:
@@ -187,7 +189,7 @@ async def async_backfill_dataset(
             "total_records": 0,
         }
 
-    async_client = client or AsyncIDXClient(concurrency=concurrency)
+    async_client = client or AsyncIDXClient(concurrency=concurrency, delay_seconds=delay)
     sem = asyncio.Semaphore(concurrency)
     lock = asyncio.Lock()
 
@@ -202,6 +204,8 @@ async def async_backfill_dataset(
         date_api = dt.strftime("%Y%m%d")
 
         async with sem:
+            if delay > 0:
+                await asyncio.sleep(delay)
             try:
                 data = await async_client.get_json(
                     endpoint, params={"date": date_api, "start": 0, "length": 9999}
@@ -244,7 +248,7 @@ async def async_backfill_dataset(
     }
 
 
-async def async_backfill_stock_summary(start_date, end_date, concurrency=5, client=None):
+async def async_backfill_stock_summary(start_date, end_date, concurrency=5, delay=0.2, client=None):
     """Async backfill for stock OHLCV summaries."""
     return await async_backfill_dataset(
         "stock_summary",
@@ -252,11 +256,12 @@ async def async_backfill_stock_summary(start_date, end_date, concurrency=5, clie
         start_date,
         end_date,
         concurrency=concurrency,
+        delay=delay,
         client=client,
     )
 
 
-async def async_backfill_broker_summary(start_date, end_date, concurrency=5, client=None):
+async def async_backfill_broker_summary(start_date, end_date, concurrency=5, delay=0.2, client=None):
     """Async backfill for broker transaction summaries."""
     return await async_backfill_dataset(
         "broker_summary",
@@ -264,11 +269,12 @@ async def async_backfill_broker_summary(start_date, end_date, concurrency=5, cli
         start_date,
         end_date,
         concurrency=concurrency,
+        delay=delay,
         client=client,
     )
 
 
-async def async_backfill_index_summary(start_date, end_date, concurrency=5, client=None):
+async def async_backfill_index_summary(start_date, end_date, concurrency=5, delay=0.2, client=None):
     """Async backfill for index summaries."""
     return await async_backfill_dataset(
         "index_summary",
@@ -276,5 +282,6 @@ async def async_backfill_index_summary(start_date, end_date, concurrency=5, clie
         start_date,
         end_date,
         concurrency=concurrency,
+        delay=delay,
         client=client,
     )
