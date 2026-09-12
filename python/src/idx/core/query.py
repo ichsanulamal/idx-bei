@@ -27,9 +27,14 @@ def sql(query):
 
 def _dataset_glob(dataset, base_dir=None):
     """Glob pattern covering all partitions of a dataset; raises if none exist."""
-    pattern = os.path.join(ts.dataset_dir(dataset, base_dir), "date=*.parquet")
-    if not glob.glob(pattern):
-        raise FileNotFoundError(f"No partitions found for dataset '{dataset}' under {pattern}")
+    d_dir = ts.dataset_dir(dataset, base_dir)
+    pattern = os.path.join(d_dir, "**", "*.parquet")
+    if not glob.glob(pattern, recursive=True):
+        # Fallback to consolidated parquet if available
+        consolidated = os.path.join(os.path.dirname(d_dir), "parquet", f"{dataset}.parquet")
+        if os.path.exists(consolidated):
+            return consolidated
+        raise FileNotFoundError(f"No partitions found for dataset '{dataset}' under {d_dir}")
     return pattern
 
 
@@ -54,9 +59,9 @@ def query_dataset(
 
     conds = []
     if start:
-        conds.append(f"regexp_extract(filename, 'date=(.*)\\.parquet', 1) >= '{start}'")
+        conds.append(f"(Date >= '{start}' OR regexp_extract(filename, 'date=(.*)\\.parquet', 1) >= '{start}')")
     if end:
-        conds.append(f"regexp_extract(filename, 'date=(.*)\\.parquet', 1) <= '{end}'")
+        conds.append(f"(Date <= '{end}' OR regexp_extract(filename, 'date=(.*)\\.parquet', 1) <= '{end}')")
     if where:
         conds.append(f"({where})")
     where_clause = f"WHERE {' AND '.join(conds)}" if conds else ""
